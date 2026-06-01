@@ -1,6 +1,8 @@
 homepage: 'https://stape.io/'
 documentation: 'https://github.com/stape-io/google-conversion-events-tag'
 versions:
+  - sha: 330f7cce337612eb5872838c040f6f6e63dd0e7f
+    changeNotes: Logging removal.
   - sha: 12fe5eb701027ae4f23c58659ae32872b793df2a
     changeNotes: Fixed getUrl() typo and added ecommerce.items fallback.
   - sha: aff1538dd5c750230eec35f6fbba310e0aa48a4c
