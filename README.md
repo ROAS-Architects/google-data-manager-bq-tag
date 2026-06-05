@@ -1,10 +1,10 @@
-# Google Conversion Events Tag for Google Tag Manager Server-Side
+# Google Data Manager API Conversion Events Tag for Google Tag Manager Server-Side
 
-The **Google Conversion Events Tag** for Google Tag Manager Server-Side allows you to send conversion events directly to Google's advertising platforms (like Google Ads) using the [Data Manager API](https://developers.google.com/data-manager/api). This server-to-server integration ensures robust and accurate tracking of conversions, independent of client-side restrictions.
+The **Google Data Manager API Conversion Events Tag** for Google Tag Manager Server-Side allows you to send conversion events directly to Google's advertising platforms (like Google Ads) using the [Data Manager API](https://developers.google.com/data-manager/api). This server-to-server integration ensures robust and accurate tracking of conversions, independent of client-side restrictions.
 
 The tag is designed to handle both single and multiple conversion event uploads in a single request, with comprehensive support for user data, consent information, ad identifiers, and custom variables.
 
-## How to use the Google Conversion Events Tag
+## How to use the Google Data Manager API Conversion Events Tag
 
 1.  Choose the authentication method:
     *  **Stape Google Connection (recommended)**: sign in to the Data Manager API Connection via the Stape admin. This is the easiest way to set up the authentication. [How-to](https://stape.io/solutions/data-manager-api-connection).
@@ -18,16 +18,16 @@ The tag is designed to handle both single and multiple conversion event uploads 
        5) Connect the Service Account to the container using the `JSON Key` file:
           - If hosting on Stape, [use the **Service Account power-up**](https://stape.io/blog/how-to-connect-google-service-account-to-stape).
           - If NOT hosting on Stape, follow [these instructions](https://developers.google.com/tag-platform/tag-manager/server-side/manual-setup-guide#optional_include_google_cloud_credentials).
-       6) Grant the Service Account access to the product you're interacting with (Google Ads, DV360 etc.).
+       6) Grant the Service Account access to the product you're interacting with (Google Ads, CM360 etc.).
 
-2.  Add the **Google Conversion Events Tag** to your server container in GTM from the [GTM Template Gallery](https://tagmanager.google.com/gallery/#/owners/stape-io/templates/google-conversion-events-tag).
+2.  Add the **Google Data Manager API Conversion Events Tag** to your server container in GTM from the [GTM Template Gallery](https://tagmanager.google.com/gallery/#/owners/stape-io/templates/google-conversion-events-tag).
 3.  Choose the **Event Type**: `Conversion` or `Pageview`.
     1.  `Pageview`
     2.  `Conversion`
         1.  Set up your **Destination Accounts and Conversion Events**, specifying the Advertising Accounts Customer IDs and the corresponding Conversion Event IDs you want to send data to.
         2.  Choose your **Conversion Event Mode**: `Single` to configure one event's data through the UI, or `Multiple` to manually provide a pre-formatted array of events.
         3.  Configure the **Conversion Information**, **User Data**, and other relevant parameter groups. The tag can auto-map many of these fields from a standard GA4 or e-commerce data layer.
-            > ❗ If using Enhanced Conversions (user email address, user phone number etc.), ensure you do the following in Google Ads (_Goals > Conversions > Settings_). These settings must be active for the destination account and its manager (MCC) account, if applicable:
+            > ❗ If using Enhanced Conversions (user email address, user phone number etc.), ensure you do the following in Google Ads (_Goals > Conversions > Settings_) or CM360. These settings must be active for the destination account and its manager (MCC) account, if applicable:
             >    1.  Accept the [Customer Data Terms](https://support.google.com/adspolicy/answer/7475709).
             >    2.  Enable **Enhanced Conversions** and **Enhanced Conversions for Leads**.
         4.  Add a trigger to fire the tag on the appropriate server-side events (e.g., a `page_view` event or a `purchase` event).
@@ -50,11 +50,19 @@ This mode sends the conversion event.
 ---
 
 #### Destination Accounts and Conversion Events
-This is where you define which Google Ads accounts and specific conversion actions will receive the data.
--   **Product**: The Google product to send data to (currently Google Ads).
--   **Operating Customer ID**: The ID of the Google Ads account that will receive the conversion.
--   **Customer ID**: The ID of the account used for authorization (e.g., an MCC account). If the operating account is the same as the authorizing account, this can be the same.
--   **Conversion Event ID**: The unique ID for the conversion action in Google Ads.
+This is where you define which advertising accounts and specific conversion actions will receive the data.
+-   **Product**: The Google product to send data to. Currently supports **Google Ads** and **CM, DV and SA 360 (Floodlight)** (the latter, only for the `Own Google Credentials` authentication method).
+-   **Operating Customer ID**: The Account ID (without hyphens) of the account that will receive the conversion events.
+    -   **Google Ads**: this is your Google Ads Account ID (without hyphens).
+    -   **CM360**: this is the [Advertiser ID](https://support.google.com/campaignmanager/answer/11568119?hl=en).
+-   **Customer ID**: The Account ID (without hyphens) of the account used for authorization when making the API request.
+    -   **Google Ads**: if your credentials belong to an MCC account that manages the Operating Account, set this to the MCC Account ID. If your credentials belong directly to the Operating Account, you can leave this field empty.
+    -   **CM360**: this is also the [Advertiser ID](https://support.google.com/campaignmanager/answer/11568119?hl=en). If your credentials are for a Manager Account that manages the Operating Account, set this to the Manager Account ID.
+-   **Conversion Event ID**: The ID of the specific conversion action to receive data.
+    -   **Google Ads**: navigate to *Google Ads account > Goals > Conversions > Summary* and click on the desired Conversion Action. The ID is the value of the `ctId` query parameter in your browser's URL. [Learn more](https://developers.google.com/data-manager/api/devguides/concepts/destinations#ads-event).
+    -   **CM360 (Floodlight)**: this is the **Floodlight Activity ID**. Find it on the *Activities* page — the ID is the number shown next to the activity name in the Activity name column. [Learn more](https://developers.google.com/data-manager/api/devguides/concepts/destinations#floodlight-event).
+
+> ❗ **CM360 service account permissions**: the service account used for authentication must have a user role with the **Insert offline conversions** permission granted in CM360. [Learn more](https://developers.google.com/data-manager/api/devguides/concepts/destinations#cm3-credentials).
 
 ---
 
@@ -82,7 +90,7 @@ This section is crucial for matching the conversion to a user. You can provide m
 
 #### Ad Identifiers
 This section allows you to send click identifiers for attribution. It's as important as the User Data parameters for matching the conversion to a user.
--   **Click IDs**: `gclid`, `gbraid` and `wbraid`.
+-   **Click IDs**: `gclid`, `gbraid`, `wbraid` and `dclid`.
     -   **Auto-mapping**: If enabled, the tag will automatically pull Click IDs from, in this order, Event Data > URL Parameter > Server Cookie > JavaScript Cookie.
 -   **Landing Page Parameters and Session Attributes**: `Landing Page User Agent`, `Landing Page IP Address` and `Session Attributes`
     -   **Auto-mapping**: If enabled, the tag will automatically pull Session Attributes from, in this order: `session_attributes` Event Data value > `_dm_session_attributes` Common Cookie value > `_dm_session_attributes` cookie set by the Pageview event of this tag.
@@ -206,7 +214,7 @@ console.log('-------------------------------------------------------------------
 * **Consent Settings**: Prevent the tag from firing unless the necessary ad storage consent is granted by the user.
 
 ## Useful Resources
-* [Step-by-step guide on how to configure Google Conversion Events Tag](https://stape.io/helpdesk/documentation/configure-google-conversion-events-tag)
+* [Step-by-step guide on how to configure Google Data Manager API Conversion Events Tag](https://stape.io/helpdesk/documentation/configure-google-conversion-events-tag)
 * [Stape's Data Manager API Connection](https://stape.io/solutions/data-manager-api-connection)
 * [Data Manager API for Conversion Events](https://developers.google.com/data-manager/api/reference/rest/v1/events)
 * [Conversion Event definition](https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#Event)
@@ -214,7 +222,7 @@ console.log('-------------------------------------------------------------------
 * Session Attributes: [[1]](https://support.google.com/google-ads/answer/16194756?hl=en) and [[2]](https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#AdIdentifiers)
 
 ## Open Source
-The **Google Conversion Events Tag for GTM Server-Side** is developed and maintained by the [Stape Team](https://stape.io/) under the Apache 2.0 license.
+The **Google Data Manager API Conversion Events Tag for GTM Server-Side** is developed and maintained by the [Stape Team](https://stape.io/) under the Apache 2.0 license.
 
 ### GTM Gallery Status
 🟢 [Listed](https://tagmanager.google.com/gallery/#/owners/stape-io/templates/google-conversion-events-tag)

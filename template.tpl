@@ -13,7 +13,7 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "Google Conversion Events by Stape",
+  "displayName": "Google Data Manager API Conversion Events",
   "categories": [
     "ADVERTISING",
     "ANALYTICS",
@@ -26,7 +26,7 @@ ___INFO___
     "displayName": "stape.io",
     "thumbnail": "data:image/png;base64,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0cHn7nMA0BAg5GftLrRu6vHHPpqQnPnKEx/9fBMm8Xr30ZTk9Uev9x5NTyJQ4uciUJrX/TTPLInXqSOPDaJi+tnfHURGfB7BYbIBwH4ECPlZuwvZNGESmmlJa77w5ZQWn08AMApPQicva3cBAHpNgJCXtbsAAL0mQMjH2l0AgN4TIORh7S4AAEmAkIu1uwAAJAFCLtbuAgCQBAgAAJCRAAEAALIRIAAAQDYCBAAAyEaAAAAA2QgQAAAgGwECAABkI0AAAIBsBAgAAJCNAAEAALIRIAAAQDYCBAAAyEaAAAAA2QgQAAAgGwECAABkI0AAAIBsBAgAAJCNAAEAALIRIAAAQDYCBAAAyEaAAAAA2QgQAAAgGwECAABkI0AAAIBsBAgAAJCNAAEAALIRIAAAQDYCBAAAyEaAAAAA2QgQAAAgGwECAABkI0AAAIBsBAgAAJCNAAEAALIRIAAAQDYCBAAAyEaAAAAA2QgQAAAgGwECAABkI0AAAIBsBAgAAJCNAAEAALI5kiCHb/1+Ajrmic8nABiVACGPX/utBAAAjmABAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAsnnsv37xf3iYAABaMPUX/08C2IsJCAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANv8JvWIRK7gKXX8AAAAASUVORK5CYII\u003d"
   },
-  "description": "Tag that sends conversion events to Google\u0027s advertising platforms using the Data Manager API.",
+  "description": "Tag that sends conversion events to Google\u0027s platforms (Google Ads, Campaign Manager 360, Search Ads 360, and Display \u0026 Video 360) using the Data Manager API.",
   "containerContexts": [
     "SERVER"
   ]
@@ -283,6 +283,10 @@ ___TEMPLATE_PARAMETERS___
                   {
                     "value": "GOOGLE_ADS",
                     "displayValue": "Google Ads"
+                  },
+                  {
+                    "value": "FLOODLIGHT_CONFIG",
+                    "displayValue": "CM, DV and SA 360 (Floodlight)"
                   }
                 ]
               },
@@ -346,7 +350,7 @@ ___TEMPLATE_PARAMETERS___
               }
             ],
             "newRowButtonText": "Add Conversion Event",
-            "help": "\u003cb\u003eProduct\u003c/b\u003e: The Product the Conversion belongs to.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eOperating Customer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e (without hyphens) of the account (Google Ads account, DV360 account etc.) that will receive the conversion events. \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eCustomer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e of the account (Google Ads account, DV360 account etc.) used for authorization (without hyphens) when making the API request.\n\u003cbr/\u003e\nIf your credentials are for access to a \u003ci\u003eManager Account\u003c/i\u003e that has the \u003ci\u003eOperating Account\u003c/i\u003e as one of its subaccounts, set the \u003ci\u003eCustomer ID\u003c/i\u003e to the ID of the \u003ci\u003eManager Account\u003c/i\u003e.\n\u003cbr/\u003e\nIf your credentials are for the account that is the \u003ci\u003eOperating Account\u003c/i\u003e, you don\u0027t need to set \u003ci\u003eCustomer ID\u003c/i\u003e.\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/quickstart/send-events?persona\u003dadvertiser#prepare_a_destination\"\u003e[2]\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eConversion Event ID\u003c/b\u003e: The ID of the conversion you want to interact with.\n\u003cbr/\u003e\nYou can find it by going to the \u003ci\u003eGoogle Ads account \u003e Goals \u003e Conversions \u003e Summary \u003e Access the desired Conversion Action\u003c/i\u003e. After you click on the Conversion Action, the ID is on the \u003cb\u003ectId\u003c/b\u003e URL query parameter on your browser.\n\u003cbr/\u003e"
+            "help": "\u003cb\u003eProduct\u003c/b\u003e: The Product the Conversion belongs to.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eOperating Customer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e (without hyphens) of the account (Google Ads account, CM360 account etc.) that will receive the conversion events. For CM360, it\u0027s the same as the \u003ca href\u003d\"https://support.google.com/campaignmanager/answer/11568119?hl\u003den\"\u003e\u003ci\u003eAdvertiser ID\u003c/i\u003e\u003c/a\u003e. \n\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eCustomer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e of the account (Google Ads account, CM360 account etc.) used for authorization (without hyphens) when making the API request. For CM360, it\u0027s the same as the \u003ca href\u003d\"https://support.google.com/campaignmanager/answer/11568119?hl\u003den\"\u003e\u003ci\u003eAdvertiser ID\u003c/i\u003e\u003c/a\u003e.\n\u003cbr/\u003e\nIf your credentials are for access to a \u003ci\u003eManager Account\u003c/i\u003e that has the \u003ci\u003eOperating Account\u003c/i\u003e as one of its subaccounts, set the \u003ci\u003eCustomer ID\u003c/i\u003e to the ID of the \u003ci\u003eManager Account\u003c/i\u003e.\n\u003cbr/\u003e\nIf your credentials are for the account that is the \u003ci\u003eOperating Account\u003c/i\u003e, you don\u0027t need to set \u003ci\u003eCustomer ID\u003c/i\u003e.\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/quickstart/send-events?persona\u003dadvertiser#prepare_a_destination\"\u003e[2]\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eConversion Event ID\u003c/b\u003e: The ID of the conversion you want to interact with.\n\u003cbr/\u003e\nFor \u003cb\u003eGoogle Ads\u003c/b\u003e, you can find it by going to the \u003ci\u003eGoogle Ads account \u003e Goals \u003e Conversions \u003e Summary \u003e Access the desired Conversion Action\u003c/i\u003e. After you click on the Conversion Action, the ID is on the \u003cb\u003ectId\u003c/b\u003e URL query parameter on your browser. \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#ads-event\"\u003eLearn more\u003c/a\u003e\n\u003cbr/\u003e\nFor \u003cb\u003eCM, DV and SA 360\u003c/b\u003e, it\u0027s the Floodlight Activity ID. You can find it by going to the \u003ci\u003eActivities\u003c/i\u003e page. The ID is the number next to the name in the Activity name column. \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#floodlight-event\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e"
           }
         ]
       },
@@ -580,32 +584,6 @@ ___TEMPLATE_PARAMETERS___
             ],
             "simpleValueType": true,
             "help": "Send data for a single conversion event or for multiple conversion events."
-          },
-          {
-            "type": "GROUP",
-            "name": "conversionEventsMultipleGroup",
-            "subParams": [
-              {
-                "type": "TEXT",
-                "name": "conversionEvents",
-                "displayName": "Conversion Events Array",
-                "simpleValueType": true,
-                "help": "Specify the Conversion Events array. This is useful when you need to upload data for multiple conversion events at once. At most 2000 Conversion Events can be specified in the array.\n\u003cbr/\u003e\u003cbr/\u003e\nThe array must be formatted as specified in the\nGoogle Documentation. You can specify different consent types for each Conversion Event, overriding the request-level consent.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eIf you already pass SHA256 hashed fields to \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/UserData\"\u003e\u003ci\u003eUserData\u003c/i\u003e\u003c/a\u003e field, make sure to specify the SHA256 hash encoding in the corresponding template field. Otherwise, the tag will hash it automatically and set it for you.\u003c/b\u003e\n\u003cbr/\u003e\u003cbr/\u003e\nWhen working with multiple Conversion Event IDs, you can direct an event to a specific subset of them. To do so, list the desired Conversion Event IDs in the \u003ca target\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#event\"\u003e\u003ci\u003edestinationReferences\u003c/i\u003e\u003c/a\u003e array.\n\u003cbr/\u003e\u003cbr/\u003e\nReferences: \n\u003cul\u003e\n\u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#Event\"\u003eConversion Event\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/formatting\"\u003eNormalization guidelines\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/quickstart/send-events?persona\u003dadvertiser#build_the_request_body\"\u003eExample\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-                "valueValidators": [
-                  {
-                    "type": "NON_EMPTY"
-                  }
-                ]
-              }
-            ],
-            "enablingConditions": [
-              {
-                "paramName": "conversionEventMode",
-                "paramValue": "multiple",
-                "type": "EQUALS"
-              }
-            ],
-            "groupStyle": "NO_ZIPPY"
           }
         ]
       },
@@ -655,7 +633,7 @@ ___TEMPLATE_PARAMETERS___
                   },
                   {
                     "value": "IN_STORE",
-                    "displayValue": "IN_STORE"
+                    "displayValue": "IN_STORE (for Store Sales conversions)"
                   },
                   {
                     "value": "PHONE",
@@ -709,6 +687,13 @@ ___TEMPLATE_PARAMETERS___
                 "displayName": "Conversion Value",
                 "simpleValueType": true,
                 "help": "The conversion value associated with the event, for value-based conversions."
+              },
+              {
+                "type": "TEXT",
+                "name": "conversionCount",
+                "displayName": "Conversion Quantity",
+                "simpleValueType": true,
+                "help": "For Floodlight.\n\u003cbr/\u003e\nThe conversion quantity or the number of items associated with the event, for counting-based conversions. Must be at least 1 for the conversion to count towards certain metrics (such as Total Conversions)."
               }
             ]
           },
@@ -721,7 +706,7 @@ ___TEMPLATE_PARAMETERS___
               {
                 "type": "LABEL",
                 "name": "userDataGroupLabel",
-                "displayName": "When sending User Data Identifiers, \u003cb\u003eat least one\u003c/b\u003e of User Email Address(es), User Phone Number(s) or User Address must be specified.\nThe total number of User Data identifiers must not exceed 10 items.\n\u003cbr/\u003e\n❗ Ensure you have accepted the \u003ca href\u003d\"https://support.google.com/adspolicy/answer/7475709\"\u003e\u003cb\u003eCustomer Data Terms\u003c/b\u003e\u003c/a\u003e and enabled \u003cb\u003eEnhanced Conversions\u003c/b\u003e and \u003cb\u003eEnhanced Conversions for Leads\u003c/b\u003e in Google Ads (\u003ci\u003eGoals \u003e Conversions \u003e Settings\u003c/i\u003e). These settings must be active for the destination account and its manager (MCC) account, if applicable.\n\u003cbr/\u003e\u003cbr/\u003e"
+                "displayName": "When sending User Data Identifiers, \u003cb\u003eat least one\u003c/b\u003e of User Email Address(es), User Phone Number(s) or User Address must be specified.\nThe total number of User Data identifiers must not exceed 10 items.\n\u003cbr/\u003e\n❗ Ensure you have accepted the \u003ca href\u003d\"https://support.google.com/adspolicy/answer/7475709\"\u003e\u003cb\u003eCustomer Data Terms\u003c/b\u003e\u003c/a\u003e and enabled \u003cb\u003eEnhanced Conversions\u003c/b\u003e and \u003cb\u003eEnhanced Conversions for Leads\u003c/b\u003e in Google Ads (\u003ci\u003eGoals \u003e Conversions \u003e Settings\u003c/i\u003e) or CM360. These settings must be active for the destination account and its manager (MCC) account, if applicable.\n\u003cbr/\u003e\u003cbr/\u003e"
               },
               {
                 "type": "SELECT",
@@ -871,6 +856,41 @@ ___TEMPLATE_PARAMETERS___
               },
               {
                 "type": "TEXT",
+                "name": "adIdentifiersDclid",
+                "displayName": "dclid",
+                "simpleValueType": true,
+                "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Display Click ID (for Floodlight conversions) associated with this event."
+              },
+              {
+                "type": "TEXT",
+                "name": "adIdentifiersMatchId",
+                "displayName": "Match ID",
+                "simpleValueType": true,
+                "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Match ID field used to join this event with a previous event."
+              },
+              {
+                "type": "TEXT",
+                "name": "adIdentifiersImpressionId",
+                "displayName": "Impression ID",
+                "simpleValueType": true,
+                "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Impression ID associated with this event."
+              },
+              {
+                "type": "TEXT",
+                "name": "adIdentifiersEncryptedUserId",
+                "displayName": "Encrypted User ID",
+                "simpleValueType": true,
+                "help": "For Floodlight conversions.\n\u003cbr/\u003e\nAn array of objects containing an user identifier issued to be used for attribution.\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#adidentifiers\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#encrypteduserid\"\u003e[2]\u003c/a\u003e."
+              },
+              {
+                "type": "TEXT",
+                "name": "adIdentifiersMobileDeviceId",
+                "displayName": "Mobile Device ID",
+                "simpleValueType": true,
+                "help": "The mobile identifier for advertisers. This would be IDFA on iOS, AAID/GAID on Android, or other platforms’ identifiers for advertisers."
+              },
+              {
+                "type": "TEXT",
                 "name": "adIdentifiersLandingPageDeviceInfoUserAgent",
                 "displayName": "Landing Page User Agent",
                 "simpleValueType": true,
@@ -900,7 +920,7 @@ ___TEMPLATE_PARAMETERS___
                 ],
                 "simpleValueType": true,
                 "help": "If enabled, the tag will attempt to automatically map the \u003ci\u003eSession Attributes\u003c/i\u003e from, in this order: \n\u003cul\u003e\n\u003cli\u003e\u003ci\u003esession_attributes\u003c/i\u003e Event Data value\u003c/li\u003e\n\u003cli\u003e \u003ci\u003e_dm_session_attributes\u003c/i\u003e Common Cookie value \u003c/li\u003e \n\u003cli\u003e\u003ci\u003e_dm_session_attributes\u003c/i\u003e cookie set by the Pageview event\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eSession Attribute \u003ci\u003egad_source\u003c/i\u003e: \u003ci\u003egad_source\u003c/i\u003e URL Parameter value \u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003egad_campaignid\u003c/i\u003e: \u003ci\u003egad_campaignid\u003c/i\u003e URL Parameter value\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_url\u003c/i\u003e: \u003ci\u003epage_location\u003c/i\u003e Event Data value\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_referrer\u003c/i\u003e: \u003ci\u003epage_referrer\u003c/i\u003e Event Data value\u003c/li\u003e\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_user_agent\u003c/i\u003e: \u003ci\u003euser_agent\u003c/i\u003e Event Data value\u003c/li\u003e\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003esession_start_time_usec\u003c/i\u003e: current timestamp of the time when the Pageview tag set the cookie\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://support.google.com/google-ads/answer/16194756?hl\u003den\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://ads-developers.googleblog.com/2025/08/maximize-performance-of-your-google-ads.html\"\u003e[2]\u003c/a\u003e.",
-                "defaultValue": false
+                "defaultValue": true
               },
               {
                 "type": "TEXT",
@@ -933,7 +953,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n\u003cbr/\u003e\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eUser Agent: \u003ci\u003eeventData.user_agent\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eIP Address: \u003ci\u003eeventData.ip_override\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n\u003cbr/\u003e\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eUser Agent: \u003ci\u003eeventData.user_agent\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eIP Address: \u003ci\u003eeventData.ip_override\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eScreen Width: \u003ci\u003eeventData.screen_resolution.split(\u0027x\u0027)[0]\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eScreen Height: \u003ci\u003eeventData.screen_resolution.split(\u0027x\u0027)[1]\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e",
                 "defaultValue": true
               },
               {
@@ -949,6 +969,80 @@ ___TEMPLATE_PARAMETERS___
                 "displayName": "IP Address",
                 "simpleValueType": true,
                 "help": "Information gathered about the device\u0027s IP address being used (if any) when the event happened.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eNote:\u003c/b\u003e Google Ads does not support IP address matching for end users in the European Economic Area (EEA), United Kingdom (UK), or Switzerland (CH). Add logic to conditionally exclude sharing IP addresses from users from these regions and ensure that you provide users with clear and comprehensive information about the data you collect on your sites, apps, and other properties and get consent where required by law or any applicable Google policies. See the \u003ca href\u003d\"https://support.google.com/google-ads/answer/2998031\"\u003eAbout offline conversion imports page\u003c/a\u003e for more details."
+              },
+              {
+                "type": "SIMPLE_TABLE",
+                "name": "eventDeviceInfoList",
+                "displayName": "Event Device Information",
+                "simpleTableColumns": [
+                  {
+                    "defaultValue": "",
+                    "displayName": "Property Name",
+                    "name": "name",
+                    "type": "SELECT",
+                    "selectItems": [
+                      {
+                        "value": "category",
+                        "displayValue": "Category"
+                      },
+                      {
+                        "value": "languageCode",
+                        "displayValue": "Language Code"
+                      },
+                      {
+                        "value": "screenHeight",
+                        "displayValue": "Screen Height"
+                      },
+                      {
+                        "value": "screenWidth",
+                        "displayValue": "Screen Width"
+                      },
+                      {
+                        "value": "operatingSystem",
+                        "displayValue": "Operating System"
+                      },
+                      {
+                        "value": "operatingSystemVersion",
+                        "displayValue": "Operating System Version"
+                      },
+                      {
+                        "value": "model",
+                        "displayValue": "Model"
+                      },
+                      {
+                        "value": "brand",
+                        "displayValue": "Brand"
+                      },
+                      {
+                        "value": "browser",
+                        "displayValue": "Browser"
+                      },
+                      {
+                        "value": "browserVersion",
+                        "displayValue": "Browser Version"
+                      }
+                    ],
+                    "isUnique": true,
+                    "valueValidators": [
+                      {
+                        "type": "NON_EMPTY"
+                      }
+                    ]
+                  },
+                  {
+                    "defaultValue": "",
+                    "displayName": "Property Value",
+                    "name": "value",
+                    "type": "TEXT",
+                    "valueValidators": [
+                      {
+                        "type": "NON_EMPTY"
+                      }
+                    ]
+                  }
+                ],
+                "help": "\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#deviceinfo\"\u003eLearn more\u003c/a\u003e.",
+                "newRowButtonText": "Add Property"
               }
             ]
           },
@@ -1028,7 +1122,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n\u003cbr/\u003e\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eItems: \u003ci\u003eeventData.items\u003c/i\u003e and \u003ci\u003eeventData.ecommerce.items\u003c/i\u003e  (it only auto-maps items that have an \u003ci\u003eItem ID\u003ci\u003e)\u003c/li\u003e\n\u003c/ul\u003e",
+                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n\u003cbr/\u003e\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eItems: \u003ci\u003eeventData.items\u003c/i\u003e and \u003ci\u003eeventData.ecommerce.items\u003c/i\u003e. It only auto-maps items that have an \u003ci\u003eItem ID\u003ci\u003e. Auto-mapped properties: \u003ci\u003eitemId\u003c/i\u003e, \u003ci\u003emerchantProductId\u003c/i\u003e (same as Item ID), \u003ci\u003equantity\u003c/i\u003e and \u003ci\u003eunitPrice\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eCoupon Codes: \u003ci\u003eeventData.coupon\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e",
                 "defaultValue": true,
                 "subParams": [
                   {
@@ -1077,10 +1171,17 @@ ___TEMPLATE_PARAMETERS___
               },
               {
                 "type": "TEXT",
+                "name": "cartDataCouponCodes",
+                "displayName": "Cart-level Coupon Codes",
+                "simpleValueType": true,
+                "help": "The coupon codes that were applied to the cart. Cart-level and item-level coupon codes are independent.\n\u003cbr/\u003e\nSpecify a single coupon code, or an array of coupon codes."
+              },
+              {
+                "type": "TEXT",
                 "name": "cartDataItems",
                 "displayName": "Items",
                 "simpleValueType": true,
-                "help": "The list of items associated with the event.\n\u003cbr/\u003e\nEach item is an object in the list with the following properties: \n\u003cul\u003e\n\u003cli\u003e\u003ci\u003eitemId\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003emerchantProductId\u003c/i\u003e (\u003cb\u003erequired\u003c/b\u003e). If an item does not have it, it won\u0027t be included in the array.\u003c/li\u003e\n\u003cli\u003e\u003ci\u003equantity\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eunitPrice\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#item\"\u003eLearn more\u003c/a\u003e."
+                "help": "The array of items associated with the event.\n\u003cbr/\u003e\nEach item in the array is an object that must follow the \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#item\"\u003eItem\u003c/a\u003e object guidelines and supported properties.\n\u003cbr/\u003e\nIf an item does not have the \u003ci\u003emerchantProductId\u003c/i\u003e property, it won\u0027t be included in the array."
               }
             ]
           },
@@ -1139,6 +1240,72 @@ ___TEMPLATE_PARAMETERS___
           },
           {
             "type": "GROUP",
+            "name": "eventLocationGroup",
+            "displayName": "Event Location",
+            "groupStyle": "ZIPPY_OPEN_ON_PARAM",
+            "subParams": [
+              {
+                "type": "SIMPLE_TABLE",
+                "name": "eventLocationList",
+                "displayName": "Event Location",
+                "simpleTableColumns": [
+                  {
+                    "defaultValue": "",
+                    "displayName": "Property Name",
+                    "name": "name",
+                    "type": "SELECT",
+                    "selectItems": [
+                      {
+                        "value": "storeId",
+                        "displayValue": "Store ID (for Store Sales)"
+                      },
+                      {
+                        "value": "city",
+                        "displayValue": "City"
+                      },
+                      {
+                        "value": "subdivisionCode",
+                        "displayValue": "Subdivision Code"
+                      },
+                      {
+                        "value": "regionCode",
+                        "displayValue": "Region Code (Country Code)"
+                      },
+                      {
+                        "value": "subcontinentCode",
+                        "displayValue": "Subcontinent Code"
+                      },
+                      {
+                        "value": "continentCode",
+                        "displayValue": "Continent Code"
+                      }
+                    ],
+                    "isUnique": true,
+                    "valueValidators": [
+                      {
+                        "type": "NON_EMPTY"
+                      }
+                    ]
+                  },
+                  {
+                    "defaultValue": "",
+                    "displayName": "Property Value",
+                    "name": "value",
+                    "type": "TEXT",
+                    "valueValidators": [
+                      {
+                        "type": "NON_EMPTY"
+                      }
+                    ]
+                  }
+                ],
+                "help": "The location where the event occurred. \n\u003cbr/\u003e\nUseful for Store Sales conversions for Google Ads.\n\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#eventlocation\"\u003eLearn more\u003c/a\u003e.",
+                "newRowButtonText": "Add Property"
+              }
+            ]
+          },
+          {
+            "type": "GROUP",
             "name": "experimentalFieldsGroup",
             "displayName": "Experimental Fields",
             "groupStyle": "ZIPPY_OPEN_ON_PARAM",
@@ -1189,6 +1356,32 @@ ___TEMPLATE_PARAMETERS___
             "type": "EQUALS"
           }
         ]
+      },
+      {
+        "type": "GROUP",
+        "name": "conversionEventsMultipleGroup",
+        "subParams": [
+          {
+            "type": "TEXT",
+            "name": "conversionEvents",
+            "displayName": "Conversion Events Array",
+            "simpleValueType": true,
+            "help": "Specify the Conversion Events array. This is useful when you need to upload data for multiple conversion events at once. At most 2000 Conversion Events can be specified in the array.\n\u003cbr/\u003e\u003cbr/\u003e\nThe array must be formatted as specified in the\nGoogle Documentation. You can specify different consent types for each Conversion Event, overriding the request-level consent.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eIf you already pass SHA256 hashed fields to \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/UserData\"\u003e\u003ci\u003eUserData\u003c/i\u003e\u003c/a\u003e field, make sure to specify the SHA256 hash encoding in the corresponding template field. Otherwise, the tag will hash it automatically and set it for you.\u003c/b\u003e\n\u003cbr/\u003e\u003cbr/\u003e\nWhen working with multiple Conversion Event IDs, you can direct an event to a specific subset of them. To do so, list the desired Conversion Event IDs in the \u003ca target\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#event\"\u003e\u003ci\u003edestinationReferences\u003c/i\u003e\u003c/a\u003e array.\n\u003cbr/\u003e\u003cbr/\u003e\nReferences: \n\u003cul\u003e\n\u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#Event\"\u003eConversion Event\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/formatting\"\u003eNormalization guidelines\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/quickstart/send-events?persona\u003dadvertiser#build_the_request_body\"\u003eExample\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+            "valueValidators": [
+              {
+                "type": "NON_EMPTY"
+              }
+            ]
+          }
+        ],
+        "enablingConditions": [
+          {
+            "paramName": "conversionEventMode",
+            "paramValue": "multiple",
+            "type": "EQUALS"
+          }
+        ],
+        "groupStyle": "NO_ZIPPY"
       },
       {
         "type": "GROUP",
@@ -1564,6 +1757,10 @@ function addConversionInformation(data, eventData, conversionEvent) {
     conversionEvent.conversionValue = makeNumber(data.conversionValue);
   }
 
+  if (isValidValue(data.conversionCount)) {
+    conversionEvent.conversionCount = makeNumber(data.conversionCount);
+  }
+
   if (data.eventSource) conversionEvent.eventSource = data.eventSource;
 
   return conversionEvent;
@@ -1650,11 +1847,21 @@ function addAdIdentifiers(data, eventData, conversionEvent) {
     if (clickIds.gclid) adIdentifiers.gclid = clickIds.gclid;
     if (clickIds.gbraid) adIdentifiers.gbraid = clickIds.gbraid;
     if (clickIds.wbraid) adIdentifiers.wbraid = clickIds.wbraid;
+    if (clickIds.dclid) adIdentifiers.dclid = clickIds.dclid;
   }
 
   if (data.adIdentifiersGclid) adIdentifiers.gclid = data.adIdentifiersGclid;
   if (data.adIdentifiersGbraid) adIdentifiers.gbraid = data.adIdentifiersGbraid;
   if (data.adIdentifiersWbraid) adIdentifiers.wbraid = data.adIdentifiersWbraid;
+  if (data.adIdentifiersDclid) adIdentifiers.dclid = data.adIdentifiersDclid;
+  if (data.adIdentifiersMatchId) adIdentifiers.matchId = data.adIdentifiersMatchId;
+  if (data.adIdentifiersImpressionId) adIdentifiers.impressionId = data.adIdentifiersImpressionId;
+  if (getType(data.adIdentifiersEncryptedUserId) === 'array') {
+    adIdentifiers.encryptedUserId = data.adIdentifiersEncryptedUserId;
+  }
+  if (data.adIdentifiersMobileDeviceId) {
+    adIdentifiers.mobileDeviceId = data.adIdentifiersMobileDeviceId;
+  }
 
   if (isUIFieldTrue(data.autoMapAdIdentifiersSessionAttributes)) {
     const commonCookie = eventData.common_cookie || {};
@@ -1691,10 +1898,28 @@ function addEventDeviceInformation(data, eventData, conversionEvent) {
   if (isUIFieldTrue(data.autoMapEventDeviceInfo)) {
     if (eventData.user_agent) eventDeviceInfo.userAgent = eventData.user_agent;
     if (eventData.ip_override) eventDeviceInfo.ipAddress = eventData.ip_override;
+    if (eventData.screen_resolution && getType(eventData.screen_resolution) === 'string') {
+      const width = makeInteger(eventData.screen_resolution.split('x')[0]);
+      const height = makeInteger(eventData.screen_resolution.split('x')[1]);
+      if (isValidValue(width) && isValidValue(height)) {
+        eventDeviceInfo.screenWidth = width;
+        eventDeviceInfo.screenHeight = height;
+      }
+    }
   }
 
   if (data.eventDeviceInfoUserAgent) eventDeviceInfo.userAgent = data.eventDeviceInfoUserAgent;
   if (data.eventDeviceInfoIpAddress) eventDeviceInfo.ipAddress = data.eventDeviceInfoIpAddress;
+
+  if (data.eventDeviceInfoList) {
+    data.eventDeviceInfoList.forEach((d) => {
+      let value = d.value;
+      if (d.name === 'screenHeight' || d.name === 'screenWidth') {
+        value = isValidValue(d.value) ? makeInteger(d.value) : undefined;
+      }
+      eventDeviceInfo[d.name] = value;
+    });
+  }
 
   if (hasProps(eventDeviceInfo)) conversionEvent.eventDeviceInfo = eventDeviceInfo;
 
@@ -1770,16 +1995,26 @@ function addCartData(data, eventData, conversionEvent) {
     cartData.transactionDiscount = makeNumber(data.cartDataTransactionDiscount);
   }
 
+  if (data.cartDataCouponCodes) {
+    const itemizeCouponCode = (input) => {
+      const type = getType(input);
+      if (type === 'array') return input.filter((e) => e);
+      if (type === 'string' || type === 'number') return [input];
+      return;
+    };
+    const couponCodes = itemizeCouponCode(data.cartDataCouponCodes);
+    if (couponCodes && couponCodes.length) cartData.couponCodes = couponCodes;
+  }
+
   if (getType(data.cartDataItems) === 'array' && data.cartDataItems.length > 0) {
     const cartDataItems = data.cartDataItems
       .filter((i) => i.merchantProductId)
       .map((i) => {
-        const item = {};
-        item.merchantProductId = makeString(i.merchantProductId);
-        if (i.itemId) item.itemId = makeString(i.itemId);
-        if (i.quantity) item.quantity = makeString(i.quantity);
-        if (isValidValue(i.unitPrice)) item.unitPrice = makeNumber(i.unitPrice);
-        return item;
+        i.merchantProductId = makeString(i.merchantProductId);
+        if (i.itemId) i.itemId = makeString(i.itemId);
+        if (i.quantity) i.quantity = makeString(i.quantity);
+        if (isValidValue(i.unitPrice)) i.unitPrice = makeNumber(i.unitPrice);
+        return i;
       });
 
     if (cartDataItems.length > 0) cartData.items = cartDataItems;
@@ -1822,6 +2057,20 @@ function addCustomVariables(data, conversionEvent) {
   return conversionEvent;
 }
 
+function addEventLocation(data, conversionEvent) {
+  const eventLocation = {};
+
+  if (data.eventLocationList) {
+    data.eventLocationList.forEach((d) => {
+      eventLocation[d.name] = isValidValue(d.value) ? makeString(d.value) : undefined;
+    });
+  }
+
+  if (hasProps(eventLocation)) conversionEvent.eventLocation = eventLocation;
+
+  return conversionEvent;
+}
+
 function addExperimentalFields(data, conversionEvent) {
   const experimentalFields = [];
 
@@ -1849,6 +2098,7 @@ function addConversionEventsData(data, eventData, mappedData) {
     addUserProperties(data, conversionEvent);
     addCartData(data, eventData, conversionEvent);
     addCustomVariables(data, conversionEvent);
+    addEventLocation(data, conversionEvent);
     addExperimentalFields(data, conversionEvent);
 
     mappedData.events = [conversionEvent];
@@ -1989,7 +2239,8 @@ function getClickIds(eventData) {
     const clickIdNameMapping = {
       gclid: { server: 'FPGCLAW', js: '_gcl_aw' },
       gbraid: { server: 'FPGCLAG', js: '_gcl_ag' },
-      wbraid: { server: 'FPGCLGB', js: '_gcl_gb' }
+      wbraid: { server: 'FPGCLGB', js: '_gcl_gb' },
+      dclid: { server: 'FPGCLDC', js: '_gcl_dc' }
     };
     const serverCookieName = clickIdNameMapping[clickIdName].server;
     const jsCookieName = clickIdNameMapping[clickIdName].js;
@@ -2016,13 +2267,14 @@ function getClickIds(eventData) {
   return {
     gclid: getClickIdValueFromSources('gclid', eventData, urlSearchParams),
     gbraid: getClickIdValueFromSources('gbraid', eventData, urlSearchParams),
-    wbraid: getClickIdValueFromSources('wbraid', eventData, urlSearchParams)
+    wbraid: getClickIdValueFromSources('wbraid', eventData, urlSearchParams),
+    dclid: getClickIdValueFromSources('dclid', eventData, urlSearchParams)
   };
 }
 
-function generateRequestUrl(data, apiVersion) {
+function generateRequestUrl(data) {
   if (data.authFlow === 'own') {
-    return 'https://datamanager.googleapis.com/v' + apiVersion + '/events:ingest';
+    return 'https://datamanager.googleapis.com/v' + API_VERSION + '/events:ingest';
   }
 
   const containerIdentifier = getRequestHeader('x-gtm-identifier');
@@ -2039,7 +2291,7 @@ function generateRequestUrl(data, apiVersion) {
   );
 }
 
-function generateRequestOptions(data, apiVersion) {
+function generateRequestOptions(data) {
   const options = {
     method: 'POST',
     headers: {
@@ -2054,7 +2306,7 @@ function generateRequestOptions(data, apiVersion) {
     options.authorization = auth;
     if (data.xGoogUserProject) options.headers['x-goog-user-project'] = data.xGoogUserProject;
   } else if (data.authFlow === 'stape') {
-    options.headers['x-datamanager-api-version'] = apiVersion;
+    options.headers['x-datamanager-api-version'] = API_VERSION;
     options.timeout = 20000;
   }
 
@@ -2078,9 +2330,9 @@ function getDataForConversionEventsUpload(data, eventData) {
   return mappedData;
 }
 
-function sendRequest(data, mappedData, apiVersion) {
-  const requestUrl = generateRequestUrl(data, apiVersion);
-  const requestOptions = generateRequestOptions(data, apiVersion);
+function sendRequest(data, mappedData) {
+  const requestUrl = generateRequestUrl(data);
+  const requestOptions = generateRequestOptions(data);
   const requestBody = mappedData;
 
   return sendHttpRequest(requestUrl, requestOptions, JSON.stringify(requestBody))
@@ -2223,7 +2475,7 @@ function handleConversionEvent(data, eventData) {
     return true;
   }
 
-  sendRequest(data, mappedData, API_VERSION);
+  sendRequest(data, mappedData);
 }
 
 /*==============================================================================
@@ -2691,6 +2943,14 @@ ___SERVER_PERMISSIONS___
               },
               {
                 "type": 1,
+                "string": "FPGCLDC"
+              },
+              {
+                "type": 1,
+                "string": "_gcl_dc"
+              },
+              {
+                "type": 1,
                 "string": "_dm_session_attributes"
               }
             ]
@@ -2817,16 +3077,16 @@ scenarios:
   code: "let bigString = 'bigStringbigString';\nconst iterations = 5;\nfor (let i\
     \ = 0; i < iterations; i++) bigString += bigString + bigString;\nconst pageReferrer\
     \ = 'https://google.com/' + bigString;\n\nsetGetAllEventData({\n  page_location:\
-    \ 'https://example.com/?gad_source=1&gad_campaignid=123123&gclid=gclid',\n  page_referrer:\
-    \ pageReferrer\n});\n\nconst copyMockData = setAllMockDataByEventType('pageview');\n\
+    \ 'https://example.com/?gad_source=1&gad_campaignid=123123&gclid=gclid&dclid=dclid',\n\
+    \  page_referrer: pageReferrer\n});\n\nconst copyMockData = setAllMockDataByEventType('pageview');\n\
     \nrunCode(copyMockData);\n\n// landing_page_referrer will be removed to keep the\
     \ size below 4000 characters\nassertApi('setCookie').wasCalledWith(\n  '_dm_session_attributes',\n\
-    \  'eyJnYWRfc291cmNlIjoiMSIsImdhZF9jYW1wYWlnbmlkIjoiMTIzMTIzIiwic2Vzc2lvbl9zdGFydF90aW1lX3VzZWMiOiIxNzQ3OTQ1ODMwNDU2MDAwIiwibGFuZGluZ19wYWdlX3VybCI6Imh0dHBzOi8vZXhhbXBsZS5jb20vP2dhZF9zb3VyY2U9MSZnYWRfY2FtcGFpZ25pZD0xMjMxMjMmZ2NsaWQ9Z2NsaWQiLCJsYW5kaW5nX3BhZ2VfdXNlcl9hZ2VudCI6InVzZXJfYWdlbnQifQ',\
+    \  'eyJnYWRfc291cmNlIjoiMSIsImdhZF9jYW1wYWlnbmlkIjoiMTIzMTIzIiwic2Vzc2lvbl9zdGFydF90aW1lX3VzZWMiOiIxNzQ3OTQ1ODMwNDU2MDAwIiwibGFuZGluZ19wYWdlX3VybCI6Imh0dHBzOi8vZXhhbXBsZS5jb20vP2dhZF9zb3VyY2U9MSZnYWRfY2FtcGFpZ25pZD0xMjMxMjMmZ2NsaWQ9Z2NsaWQmZGNsaWQ9ZGNsaWQiLCJsYW5kaW5nX3BhZ2VfdXNlcl9hZ2VudCI6InVzZXJfYWdlbnQifQ',\
     \ \n  {\n    'max-age': 90 * 24 * 60 * 60,\n    domain: 'auto',\n    samesite:\
     \ 'none',\n    httpOnly: true,\n    secure: true,\n    path: '/'\n  }, \n  false\n\
     );\nassertApi('gtmOnSuccess').wasCalled();\nassertApi('gtmOnFailure').wasNotCalled();"
 - name: '[Page View] Session Attributes cookie is set if URL contains Ads parameters'
-  code: "setGetAllEventData({\n  page_location: 'https://example.com/?gad_source=1&gad_campaignid=123123&gclid=gclid',\n\
+  code: "setGetAllEventData({\n  page_location: 'https://example.com/?gad_source=1&gad_campaignid=123123&gclid=gclid&dclid=dclid',\n\
     \  page_referrer: 'https://google.com'\n});\n\n[\n  {\n    // mock: {} - it uses\
     \ the default values\n    expectedCookieOptions: {\n      'max-age': 90 * 24 *\
     \ 60 * 60,\n      domain: 'auto',\n      samesite: 'none',\n      httpOnly: true,\n\
@@ -2837,7 +3097,7 @@ scenarios:
     \      httpOnly: false,\n      secure: true,\n      path: '/'\n    }\n  }\n].forEach((scenario)\
     \ => {\n  const copyMockData = setAllMockDataByEventType('pageview', undefined,\
     \ scenario.mock);\n\n  runCode(copyMockData);\n  \n  assertApi('setCookie').wasCalledWith('_dm_session_attributes',\
-    \ 'eyJnYWRfc291cmNlIjoiMSIsImdhZF9jYW1wYWlnbmlkIjoiMTIzMTIzIiwic2Vzc2lvbl9zdGFydF90aW1lX3VzZWMiOiIxNzQ3OTQ1ODMwNDU2MDAwIiwibGFuZGluZ19wYWdlX3VybCI6Imh0dHBzOi8vZXhhbXBsZS5jb20vP2dhZF9zb3VyY2U9MSZnYWRfY2FtcGFpZ25pZD0xMjMxMjMmZ2NsaWQ9Z2NsaWQiLCJsYW5kaW5nX3BhZ2VfcmVmZXJyZXIiOiJodHRwczovL2dvb2dsZS5jb20iLCJsYW5kaW5nX3BhZ2VfdXNlcl9hZ2VudCI6InVzZXJfYWdlbnQifQ',\
+    \ 'eyJnYWRfc291cmNlIjoiMSIsImdhZF9jYW1wYWlnbmlkIjoiMTIzMTIzIiwic2Vzc2lvbl9zdGFydF90aW1lX3VzZWMiOiIxNzQ3OTQ1ODMwNDU2MDAwIiwibGFuZGluZ19wYWdlX3VybCI6Imh0dHBzOi8vZXhhbXBsZS5jb20vP2dhZF9zb3VyY2U9MSZnYWRfY2FtcGFpZ25pZD0xMjMxMjMmZ2NsaWQ9Z2NsaWQmZGNsaWQ9ZGNsaWQiLCJsYW5kaW5nX3BhZ2VfcmVmZXJyZXIiOiJodHRwczovL2dvb2dsZS5jb20iLCJsYW5kaW5nX3BhZ2VfdXNlcl9hZ2VudCI6InVzZXJfYWdlbnQifQ',\
     \ scenario.expectedCookieOptions, false);\n  assertApi('gtmOnSuccess').wasCalled();\n\
     \  assertApi('gtmOnFailure').wasNotCalled();\n});"
 - name: '[Conversion] Request must not be sent if validations fail'
@@ -3009,24 +3269,27 @@ scenarios:
     \  'currency',\n  'conversionValue',\n  'userDataEmailAddresses',\n  'userDataPhoneNumbers',\n\
     \  'addressGivenName',\n  'addressFamilyName',\n  'addressRegion',\n  'addressPostalCode',\n\
     \  'adIdentifiersSessionAttributes',\n  'eventDeviceInfoUserAgent',\n  'eventDeviceInfoIpAddress',\n\
-    \  'cartDataItems'\n].forEach((key) => Object.delete(copyMockData, key));\n\n\
-    setGetAllEventData();\n\nmock('getCookieValues', (cookieName) => {\n  if (cookieName\
-    \ === '_dm_session_attributes') {\n    return ['sessionAttributesCookie'];\n \
-    \ }\n  return [];\n});\n\nmock('sendHttpRequest', (requestUrl, requestOptions,\
-    \ requestBody) => {\n  const parsedRequestBody = JSON.parse(requestBody);\n  assertThat(parsedRequestBody).isEqualTo({\n\
-    \    validateOnly: false,\n    destinations: [\n      {\n        reference: '3',\n\
-    \        productDestinationId: '3',\n        operatingAccount: {\n          accountType:\
-    \ 'GOOGLE_ADS',\n          accountId: '1'\n        },\n        linkedAccount:\
-    \ { accountType: 'GOOGLE_ADS', accountId: '2' }\n      },\n      {\n        reference:\
-    \ '33',\n        productDestinationId: '33',\n        operatingAccount: {\n  \
-    \        accountType: 'GOOGLE_ADS',\n          accountId: '11'\n        },\n \
-    \       linkedAccount: { accountType: 'GOOGLE_ADS', accountId: '22' }\n      }\n\
-    \    ],\n    consent: {\n      adUserData: 'CONSENT_GRANTED',\n      adPersonalization:\
-    \ 'CONSENT_DENIED'\n    },\n    events: [\n      {\n        transactionId: 'transaction_id\
-    \ 123',\n        currency: 'BRL',\n        conversionValue: 123.45,\n        eventTimestamp:\
-    \ '2025-05-22T20:30:30+00:00',\n        lastUpdatedTimestamp: '2014-10-02T15:01:23Z',\n\
-    \        eventSource: 'WEB',\n        userData: {\n          userIdentifiers:\
-    \ [\n            {\n              emailAddress:\n                'ddffdce54594d729a13068951750239a1943c295a5f89349b5cf69744d4a1ba2'\n\
+    \  'cartDataItems',\n  'conversionCount',\n  'adIdentifiersDclid',\n  'adIdentifiersMatchId',\n\
+    \  'adIdentifiersImpressionId',\n  'adIdentifiersEncryptedUserId',\n  'adIdentifiersMobileDeviceId',\n\
+    \  'cartDataCouponCodes',\n  'eventLocationList',\n  'eventDeviceInfoList'\n].forEach((key)\
+    \ => Object.delete(copyMockData, key));\n\nsetGetAllEventData();\n\nmock('getCookieValues',\
+    \ (cookieName) => {\n  if (cookieName === '_dm_session_attributes') {\n    return\
+    \ ['sessionAttributesCookie'];\n  }\n  return [];\n});\n\nmock('sendHttpRequest',\
+    \ (requestUrl, requestOptions, requestBody) => {\n  const parsedRequestBody =\
+    \ JSON.parse(requestBody);\n  assertThat(parsedRequestBody).isEqualTo({\n    validateOnly:\
+    \ false,\n    destinations: [\n      {\n        reference: '3',\n        productDestinationId:\
+    \ '3',\n        operatingAccount: {\n          accountType: 'GOOGLE_ADS',\n  \
+    \        accountId: '1'\n        },\n        linkedAccount: { accountType: 'GOOGLE_ADS',\
+    \ accountId: '2' }\n      },\n      {\n        reference: '33',\n        productDestinationId:\
+    \ '33',\n        operatingAccount: {\n          accountType: 'GOOGLE_ADS',\n \
+    \         accountId: '11'\n        },\n        linkedAccount: { accountType: 'GOOGLE_ADS',\
+    \ accountId: '22' }\n      }\n    ],\n    consent: {\n      adUserData: 'CONSENT_GRANTED',\n\
+    \      adPersonalization: 'CONSENT_DENIED'\n    },\n    events: [\n      {\n \
+    \       transactionId: 'transaction_id 123',\n        currency: 'BRL',\n     \
+    \   conversionValue: 123.45,\n        eventTimestamp: '2025-05-22T20:30:30+00:00',\n\
+    \        lastUpdatedTimestamp: '2014-10-02T15:01:23Z',\n        eventSource: 'WEB',\n\
+    \        userData: {\n          userIdentifiers: [\n            {\n          \
+    \    emailAddress:\n                'ddffdce54594d729a13068951750239a1943c295a5f89349b5cf69744d4a1ba2'\n\
     \            },\n            {\n              emailAddress:\n                'afea90f78a2e604dc6cc5d7826ffdd2bfbab612a0c1222acf8df173319b7e809'\n\
     \            },\n            {\n              phoneNumber:\n                'c698c0b85d32cbcf5033ada58f34de87d4f7415efaf5a8d1c1e9e63393dcc85e'\n\
     \            },\n            {\n              address: {\n                givenName:\n\
@@ -3038,26 +3301,26 @@ scenarios:
     \          landingPageDeviceInfo: {\n            userAgent: 'Landing Page User\
     \ Agent',\n            ipAddress: '1.1.1.1'\n          },\n          sessionAttributes:\
     \ 'sessionAttributesCookie'\n        },\n        eventDeviceInfo: { userAgent:\
-    \ 'user_agent', ipAddress: 'ip_override' },\n        userProperties: { customerType:\
-    \ 'NEW', customerValueBucket: 'LOW' },\n        cartData: {\n          items:\
-    \ [\n            { itemId: 'SKU_12345', merchantProductId: 'SKU_12345', quantity:\
-    \ '3', unitPrice: 10.01 },\n            { itemId: 'SKU_12346', merchantProductId:\
-    \ 'SKU_12346', quantity: '2', unitPrice: 21.01 }\n          ],\n          merchantId:\
-    \ 'Merchant Center ID',\n          merchantFeedLabel: 'Merchant Center Feed Label',\n\
-    \          merchantFeedLanguageCode: 'Merchant Center Feed Language Code',\n \
-    \         transactionDiscount: 123\n        },\n        customVariables: [\n \
-    \         {\n            variable: 'TEST1',\n            value: 'ABC',\n     \
-    \       destinationReferences: ['REFERENCE']\n          },\n          { variable:\
-    \ 'TEST2', value: 'AAAAAAAA' },\n          {\n            variable: 'TEST3',\n\
-    \            value: '123ABC',\n            destinationReferences: ['REFERENCE',\
-    \ 'REFERENCE2']\n          }\n        ],\n        experimentalFields: [{ field:\
-    \ 'ABC', value: 'FOOBAR' }]\n      }\n    ],\n    encoding: 'HEX',\n    encryptionInfo:\
-    \ {\n      gcpWrappedKeyInfo: {\n        keyType: 'XCHACHA20_POLY1305',\n    \
-    \    wipProvider: '123',\n        kekUri: '123',\n        encryptedDek: '123'\n\
-    \      }\n    }\n  });\n\n  return Promise.create((resolve, reject) => {\n   \
-    \ resolve({ statusCode: 200 });\n  });  \n});\n\nrunCode(copyMockData);\n\ncallLater(()\
-    \ => {\n  assertApi('gtmOnSuccess').wasCalled();\n  assertApi('gtmOnFailure').wasNotCalled();\n\
-    });"
+    \ 'user_agent', ipAddress: 'ip_override', screenWidth: 1512, screenHeight: 982\
+    \ },\n        userProperties: { customerType: 'NEW', customerValueBucket: 'LOW'\
+    \ },\n        cartData: {\n          items: [\n            { itemId: 'SKU_12345',\
+    \ merchantProductId: 'SKU_12345', quantity: '3', unitPrice: 10.01 },\n       \
+    \     { itemId: 'SKU_12346', merchantProductId: 'SKU_12346', quantity: '2', unitPrice:\
+    \ 21.01 }\n          ],\n          merchantId: 'Merchant Center ID',\n       \
+    \   merchantFeedLabel: 'Merchant Center Feed Label',\n          merchantFeedLanguageCode:\
+    \ 'Merchant Center Feed Language Code',\n          transactionDiscount: 123\n\
+    \        },\n        customVariables: [\n          {\n            variable: 'TEST1',\n\
+    \            value: 'ABC',\n            destinationReferences: ['REFERENCE']\n\
+    \          },\n          { variable: 'TEST2', value: 'AAAAAAAA' },\n         \
+    \ {\n            variable: 'TEST3',\n            value: '123ABC',\n          \
+    \  destinationReferences: ['REFERENCE', 'REFERENCE2']\n          }\n        ],\n\
+    \        experimentalFields: [{ field: 'ABC', value: 'FOOBAR' }]\n      }\n  \
+    \  ],\n    encoding: 'HEX',\n    encryptionInfo: {\n      gcpWrappedKeyInfo: {\n\
+    \        keyType: 'XCHACHA20_POLY1305',\n        wipProvider: '123',\n       \
+    \ kekUri: '123',\n        encryptedDek: '123'\n      }\n    }\n  });\n\n  return\
+    \ Promise.create((resolve, reject) => {\n    resolve({ statusCode: 200 });\n \
+    \ });  \n});\n\nrunCode(copyMockData);\n\ncallLater(() => {\n  assertApi('gtmOnSuccess').wasCalled();\n\
+    \  assertApi('gtmOnFailure').wasNotCalled();\n});"
 - name: '[Conversion] [Single Event] [Data from auto-mapping - Click IDs] Request
     is successfully built and sent'
   code: "/*\n  Not all the scenarios are tested because when running all the tests\
@@ -3067,61 +3330,64 @@ scenarios:
     \ => {\n        switch (cookieName) {\n          case '_gcl_aw':\n          case\
     \ '_gcl_gb':\n            return ['GCL.1767112618.' + cookieName];\n         \
     \ case '_gcl_ag':\n             return ['2.1.k' + cookieName + '$i1767112627'];\n\
+    \          case '_gcl_dc':\n            return ['GCL.1767112618.' + cookieName];\n\
     \          default:\n            return [];\n        }\n      });\n    },\n  \
     \  expectedAdIdentifiers: {\n      gclid: '_gcl_aw',\n      gbraid: '_gcl_ag',\n\
-    \      wbraid: '_gcl_gb',\n    }\n  },\n  {\n    mock: () => {\n      mock('getCookieValues',\
+    \      wbraid: '_gcl_gb',\n      dclid: '_gcl_dc'\n    }\n  },\n  {\n    mock:\
+    \ () => {\n      mock('getCookieValues', (cookieName) => {\n        switch (cookieName)\
+    \ {\n          case '_gcl_aw':\n          case '_gcl_gb':\n            return\
+    \ ['GCL.1767112618.' + cookieName];\n          case '_gcl_ag':\n             return\
+    \ ['2.1.k' + cookieName + '$i1767112627'];\n          default:\n            return\
+    \ [];\n        }\n      });\n      \n      setGetAllEventData({\n        common_cookie:\
+    \ {\n          _gcl_aw: 'GCL.1767112618.common_cookie_gcl_aw',\n          _gcl_ag:\
+    \ '2.1.kcommon_cookie_gcl_ag$i1767112627',\n          _gcl_gb: 'GCL.1767112618.common_cookie_gcl_gb'\n\
+    \        }\n      });\n    },\n    expectedAdIdentifiers: {\n      gclid: 'common_cookie_gcl_aw',\n\
+    \      gbraid: 'common_cookie_gcl_ag',\n      wbraid: 'common_cookie_gcl_gb',\n\
+    \    }\n  },\n  {\n    mock: () => {\n      mock('getCookieValues', (cookieName)\
+    \ => {\n        switch (cookieName) {\n          case '_gcl_aw':\n          case\
+    \ '_gcl_gb':\n            return ['GCL.1767112618.' + cookieName];\n         \
+    \ case '_gcl_ag':\n             return ['2.1.k' + cookieName + '$i1767112627'];\n\
+    \          default:\n            return [];\n        }\n      });\n      \n  \
+    \    setGetAllEventData({\n        gcl_aw: 'GCL.1767112618.eventDatagcl_aw',\n\
+    \        gcl_ag: '2.1.keventDatagcl_ag$i1767112627',\n        gcl_gb: 'GCL.1767112618.eventDatagcl_gb',\n\
+    \        common_cookie: {\n          _gcl_aw: 'GCL.1767112618.common_cookie_gcl_aw',\n\
+    \          _gcl_ag: '2.1.kcommon_cookie_gcl_ag$i1767112627',\n          _gcl_gb:\
+    \ 'GCL.1767112618.common_cookie_gcl_gb'\n        }\n      });\n    },\n    expectedAdIdentifiers:\
+    \ {\n      gclid: 'eventDatagcl_aw',\n      gbraid: 'eventDatagcl_ag',\n     \
+    \ wbraid: 'eventDatagcl_gb',\n    }\n  },\n  {\n    mock: () => {\n      mock('getCookieValues',\
     \ (cookieName) => {\n        switch (cookieName) {\n          case '_gcl_aw':\n\
     \          case '_gcl_gb':\n            return ['GCL.1767112618.' + cookieName];\n\
     \          case '_gcl_ag':\n             return ['2.1.k' + cookieName + '$i1767112627'];\n\
     \          default:\n            return [];\n        }\n      });\n      \n  \
-    \    setGetAllEventData({\n        common_cookie: {\n          _gcl_aw: 'GCL.1767112618.common_cookie_gcl_aw',\n\
-    \          _gcl_ag: '2.1.kcommon_cookie_gcl_ag$i1767112627',\n          _gcl_gb:\
-    \ 'GCL.1767112618.common_cookie_gcl_gb'\n        }\n      });\n    },\n    expectedAdIdentifiers:\
-    \ {\n      gclid: 'common_cookie_gcl_aw',\n      gbraid: 'common_cookie_gcl_ag',\n\
-    \      wbraid: 'common_cookie_gcl_gb',\n    }\n  },\n  {\n    mock: () => {\n\
-    \      mock('getCookieValues', (cookieName) => {\n        switch (cookieName)\
-    \ {\n          case '_gcl_aw':\n          case '_gcl_gb':\n            return\
-    \ ['GCL.1767112618.' + cookieName];\n          case '_gcl_ag':\n             return\
-    \ ['2.1.k' + cookieName + '$i1767112627'];\n          default:\n            return\
-    \ [];\n        }\n      });\n      \n      setGetAllEventData({\n        gcl_aw:\
-    \ 'GCL.1767112618.eventDatagcl_aw',\n        gcl_ag: '2.1.keventDatagcl_ag$i1767112627',\n\
-    \        gcl_gb: 'GCL.1767112618.eventDatagcl_gb',\n        common_cookie: {\n\
+    \    setGetAllEventData({\n        gcl_aw: 'GCL.1767112618.eventDatagcl_aw',\n\
+    \        gcl_ag: '2.1.keventDatagcl_ag$i1767112627',\n        gcl_gb: 'GCL.1767112618.eventDatagcl_gb',\n\
+    \        _gcl_aw: 'GCL.1767112618.eventData_gcl_aw',\n        _gcl_ag: '2.1.keventData_gcl_ag$i1767112627',\n\
+    \        _gcl_gb: 'GCL.1767112618.eventData_gcl_gb',\n        common_cookie: {\n\
     \          _gcl_aw: 'GCL.1767112618.common_cookie_gcl_aw',\n          _gcl_ag:\
     \ '2.1.kcommon_cookie_gcl_ag$i1767112627',\n          _gcl_gb: 'GCL.1767112618.common_cookie_gcl_gb'\n\
-    \        }\n      });\n    },\n    expectedAdIdentifiers: {\n      gclid: 'eventDatagcl_aw',\n\
-    \      gbraid: 'eventDatagcl_ag',\n      wbraid: 'eventDatagcl_gb',\n    }\n \
-    \ },\n  {\n    mock: () => {\n      mock('getCookieValues', (cookieName) => {\n\
-    \        switch (cookieName) {\n          case '_gcl_aw':\n          case '_gcl_gb':\n\
-    \            return ['GCL.1767112618.' + cookieName];\n          case '_gcl_ag':\n\
-    \             return ['2.1.k' + cookieName + '$i1767112627'];\n          default:\n\
-    \            return [];\n        }\n      });\n      \n      setGetAllEventData({\n\
-    \        gcl_aw: 'GCL.1767112618.eventDatagcl_aw',\n        gcl_ag: '2.1.keventDatagcl_ag$i1767112627',\n\
-    \        gcl_gb: 'GCL.1767112618.eventDatagcl_gb',\n        _gcl_aw: 'GCL.1767112618.eventData_gcl_aw',\n\
-    \        _gcl_ag: '2.1.keventData_gcl_ag$i1767112627',\n        _gcl_gb: 'GCL.1767112618.eventData_gcl_gb',\n\
-    \        common_cookie: {\n          _gcl_aw: 'GCL.1767112618.common_cookie_gcl_aw',\n\
-    \          _gcl_ag: '2.1.kcommon_cookie_gcl_ag$i1767112627',\n          _gcl_gb:\
-    \ 'GCL.1767112618.common_cookie_gcl_gb'\n        }\n      });\n    },\n    expectedAdIdentifiers:\
-    \ {\n      gclid: 'eventData_gcl_aw',\n      gbraid: 'eventData_gcl_ag',\n   \
-    \   wbraid: 'eventData_gcl_gb',\n    }\n  },\n  \n  {\n    mock: () => {\n   \
-    \   mock('getCookieValues', (cookieName) => {\n        switch (cookieName) {\n\
-    \          case 'FPGCLAW':\n          case 'FPGCLAG':\n          case 'FPGCLGB':\n\
-    \          case '_gcl_ag':\n             return ['2.1.k' + cookieName + '$i1767112627'];\n\
-    \          case '_gcl_aw':\n          case '_gcl_gb':\n            return ['GCL.1767112618.'\
-    \ + cookieName];\n          default:\n            return [];\n        }\n    \
-    \  });\n      \n      setGetAllEventData({\n        gcl_aw: 'GCL.1767112618.eventDatagcl_aw',\n\
+    \        }\n      });\n    },\n    expectedAdIdentifiers: {\n      gclid: 'eventData_gcl_aw',\n\
+    \      gbraid: 'eventData_gcl_ag',\n      wbraid: 'eventData_gcl_gb',\n    }\n\
+    \  },\n  \n  {\n    mock: () => {\n      mock('getCookieValues', (cookieName)\
+    \ => {\n        switch (cookieName) {\n          case 'FPGCLAW':\n          case\
+    \ 'FPGCLAG':\n          case 'FPGCLGB':\n          case '_gcl_ag':\n         \
+    \    return ['2.1.k' + cookieName + '$i1767112627'];\n          case '_gcl_aw':\n\
+    \          case '_gcl_gb':\n            return ['GCL.1767112618.' + cookieName];\n\
+    \          default:\n            return [];\n        }\n      });\n      \n  \
+    \    setGetAllEventData({\n        gcl_aw: 'GCL.1767112618.eventDatagcl_aw',\n\
     \        gcl_ag: '2.1.keventDatagcl_ag$i1767112627',\n        gcl_gb: 'GCL.1767112618.eventDatagcl_gb',\n\
     \        _gcl_aw: 'GCL.1767112618.eventData_gcl_aw',\n        _gcl_ag: '2.1.keventData_gcl_ag$i1767112627',\n\
     \        _gcl_gb: 'GCL.1767112618.eventData_gcl_gb',\n        common_cookie: {\n\
     \          _gcl_aw: 'GCL.1767112618.common_cookie_gcl_aw',\n          _gcl_ag:\
     \ '2.1.kcommon_cookie_gcl_ag$i1767112627',\n          _gcl_gb: 'GCL.1767112618.common_cookie_gcl_gb'\n\
     \        }\n      });\n    },\n    expectedAdIdentifiers: {\n      gclid: 'FPGCLAW',\n\
-    \      gbraid: 'FPGCLAG',\n      wbraid: 'FPGCLGB',\n    }\n  },\n  {\n    mock:\
-    \ () => {\n      mock('getCookieValues', (cookieName) => {\n        switch (cookieName)\
-    \ {\n          case 'FPGCLAW':\n          case 'FPGCLAG':\n          case 'FPGCLGB':\n\
-    \          case '_gcl_ag':\n             return ['2.1.k' + cookieName + '$i1767112627'];\n\
-    \          case '_gcl_aw':\n          case '_gcl_gb':\n            return ['GCL.1767112618.'\
-    \ + cookieName];\n          default:\n            return [];\n        }\n    \
-    \  });\n      \n      setGetAllEventData({\n        gcl_aw: 'GCL.1767112618.eventDatagcl_aw',\n\
+    \      gbraid: 'FPGCLAG',\n      wbraid: 'FPGCLGB',\n      dclid: 'FPGCLDC'\n\
+    \    }\n  },\n  {\n    mock: () => {\n      mock('getCookieValues', (cookieName)\
+    \ => {\n        switch (cookieName) {\n          case 'FPGCLAW':\n          case\
+    \ 'FPGCLAG':\n          case 'FPGCLGB':\n          case '_gcl_ag':\n         \
+    \    return ['2.1.k' + cookieName + '$i1767112627'];\n          case '_gcl_aw':\n\
+    \          case '_gcl_gb':\n            return ['GCL.1767112618.' + cookieName];\n\
+    \          default:\n            return [];\n        }\n      });\n      \n  \
+    \    setGetAllEventData({\n        gcl_aw: 'GCL.1767112618.eventDatagcl_aw',\n\
     \        gcl_ag: '2.1.keventDatagcl_ag$i1767112627',\n        gcl_gb: 'GCL.1767112618.eventDatagcl_gb',\n\
     \        _gcl_aw: 'GCL.1767112618.eventData_gcl_aw',\n        _gcl_ag: '2.1.keventData_gcl_ag$i1767112627',\n\
     \        _gcl_gb: 'GCL.1767112618.eventData_gcl_gb',\n        common_cookie: {\n\
@@ -3165,14 +3431,14 @@ scenarios:
     \ 'GCL.1767112618.common_cookie_gcl_gb',\n          FPGCLAW: '2.1.kcommon_cookieFPGCLAW$i1767112627',\n\
     \          FPGCLAG: '2.1.kcommon_cookieFPGCLAG$i1767112627',\n          FPGCLGB:\
     \ '2.1.kcommon_cookieFPGCLGB$i1767112627'\n        }\n      });\n    },\n    expectedAdIdentifiers:\
-    \ {\n      gclid: 'gclidURL',\n      gbraid: 'gbraidURL',\n      wbraid: 'wbraidURL'\n\
-    \    }\n  },\n  {\n    mock: () => {\n      mock('getCookieValues', (cookieName)\
-    \ => {\n        switch (cookieName) {\n          case 'FPGCLAW':\n          case\
-    \ 'FPGCLAG':\n          case 'FPGCLGB':\n          case '_gcl_ag':\n         \
-    \    return ['2.1.k' + cookieName + '$i1767112627'];\n          case '_gcl_aw':\n\
-    \          case '_gcl_gb':\n            return ['GCL.1767112618.' + cookieName];\n\
-    \          default:\n            return [];\n        }\n      });\n      setGetAllEventData({\n\
-    \        page_location: 'https://example.com?gclid=gclidURL&gbraid=gbraidURL&wbraid=wbraidURL',\n\
+    \ {\n      gclid: 'gclidURL',\n      gbraid: 'gbraidURL',\n      wbraid: 'wbraidURL',\n\
+    \      dclid: undefined\n    }\n  },\n  {\n    mock: () => {\n      mock('getCookieValues',\
+    \ (cookieName) => {\n        switch (cookieName) {\n          case 'FPGCLAW':\n\
+    \          case 'FPGCLAG':\n          case 'FPGCLGB':\n          case '_gcl_ag':\n\
+    \             return ['2.1.k' + cookieName + '$i1767112627'];\n          case\
+    \ '_gcl_aw':\n          case '_gcl_gb':\n            return ['GCL.1767112618.'\
+    \ + cookieName];\n          default:\n            return [];\n        }\n    \
+    \  });\n      setGetAllEventData({\n        page_location: 'https://example.com?gclid=gclidURL&gbraid=gbraidURL&wbraid=wbraidURL',\n\
     \        gclid: 'gclid EventData',\n        gbraid: 'gbraid EventData',\n    \
     \    wbraid: 'wbraid EventData',\n        \n        gcl_aw: 'GCL.1767112618.eventDatagcl_aw',\n\
     \        gcl_ag: '2.1.keventDatagcl_ag$i1767112627',\n        gcl_gb: 'GCL.1767112618.eventDatagcl_gb',\n\
@@ -3189,44 +3455,49 @@ scenarios:
     \      mock('getCookieValues', (cookieName) => {\n        switch (cookieName)\
     \ {\n          case '_gcl_aw':\n          case '_gcl_gb':\n            return\
     \ ['GCL.1767112618.' + cookieName];\n          case '_gcl_ag':\n             return\
-    \ ['2.1.k' + cookieName + '$i1767112627'];\n          default:\n            return\
-    \ [];\n        }\n      });\n    },\n    expectedAdIdentifiers: {\n      gclid:\
-    \ '_gcl_aw',\n      gbraid: '_gcl_ag',\n      wbraid: '_gcl_gb',\n    }\n  },\n\
+    \ ['2.1.k' + cookieName + '$i1767112627'];\n          case '_gcl_dc':\n      \
+    \      return ['GCL.1767112618.' + cookieName];\n          default:\n        \
+    \    return [];\n        }\n      });\n    },\n    expectedAdIdentifiers: {\n\
+    \      gclid: '_gcl_aw',\n      gbraid: '_gcl_ag',\n      wbraid: '_gcl_gb',\n\
+    \      dclid: '_gcl_dc'\n    }\n  },\n  {\n    mock: () => {\n      mock('getCookieValues',\
+    \ (cookieName) => {\n        switch (cookieName) {\n          case 'FPGCLAW':\n\
+    \          case 'FPGCLAG':\n          case 'FPGCLGB':\n          case 'FPGCLDC':\n\
+    \          case '_gcl_ag':\n             return ['2.1.k' + cookieName + '$i1767112627'];\n\
+    \          case '_gcl_aw':\n          case '_gcl_gb':\n            return ['GCL.1767112618.'\
+    \ + cookieName];\n          default:\n            return [];\n        }\n    \
+    \  });\n    },\n    expectedAdIdentifiers: {\n      gclid: 'FPGCLAW',\n      gbraid:\
+    \ 'FPGCLAG',\n      wbraid: 'FPGCLGB',\n      dclid: 'FPGCLDC'\n    }\n  },\n\
     \  {\n    mock: () => {\n      mock('getCookieValues', (cookieName) => {\n   \
     \     switch (cookieName) {\n          case 'FPGCLAW':\n          case 'FPGCLAG':\n\
     \          case 'FPGCLGB':\n          case '_gcl_ag':\n             return ['2.1.k'\
     \ + cookieName + '$i1767112627'];\n          case '_gcl_aw':\n          case '_gcl_gb':\n\
     \            return ['GCL.1767112618.' + cookieName];\n          default:\n  \
-    \          return [];\n        }\n      });\n    },\n    expectedAdIdentifiers:\
-    \ {\n      gclid: 'FPGCLAW',\n      gbraid: 'FPGCLAG',\n      wbraid: 'FPGCLGB',\n\
+    \          return [];\n        }\n      });\n      setGetAllEventData({\n    \
+    \    page_location: 'https://example.com?gclid=gclidURL&gbraid=gbraidURL&wbraid=wbraidURL'\n\
+    \      });\n    },\n    expectedAdIdentifiers: {\n      gclid: 'gclidURL',\n \
+    \     gbraid: 'gbraidURL',\n      wbraid: 'wbraidURL',\n      dclid: undefined\n\
     \    }\n  },\n  {\n    mock: () => {\n      mock('getCookieValues', (cookieName)\
     \ => {\n        switch (cookieName) {\n          case 'FPGCLAW':\n          case\
     \ 'FPGCLAG':\n          case 'FPGCLGB':\n          case '_gcl_ag':\n         \
     \    return ['2.1.k' + cookieName + '$i1767112627'];\n          case '_gcl_aw':\n\
     \          case '_gcl_gb':\n            return ['GCL.1767112618.' + cookieName];\n\
     \          default:\n            return [];\n        }\n      });\n      setGetAllEventData({\n\
-    \        page_location: 'https://example.com?gclid=gclidURL&gbraid=gbraidURL&wbraid=wbraidURL'\n\
-    \      });\n    },\n    expectedAdIdentifiers: {\n      gclid: 'gclidURL',\n \
-    \     gbraid: 'gbraidURL',\n      wbraid: 'wbraidURL'\n    }\n  },\n  {\n    mock:\
-    \ () => {\n      mock('getCookieValues', (cookieName) => {\n        switch (cookieName)\
-    \ {\n          case 'FPGCLAW':\n          case 'FPGCLAG':\n          case 'FPGCLGB':\n\
-    \          case '_gcl_ag':\n             return ['2.1.k' + cookieName + '$i1767112627'];\n\
-    \          case '_gcl_aw':\n          case '_gcl_gb':\n            return ['GCL.1767112618.'\
-    \ + cookieName];\n          default:\n            return [];\n        }\n    \
-    \  });\n      setGetAllEventData({\n        page_location: 'https://example.com?gclid=gclidURL&gbraid=gbraidURL&wbraid=wbraidURL',\n\
+    \        page_location: 'https://example.com?gclid=gclidURL&gbraid=gbraidURL&wbraid=wbraidURL',\n\
     \        gclid: 'gclid EventData',\n        gbraid: 'gbraid EventData',\n    \
     \    wbraid: 'wbraid EventData'\n      });\n    },\n    expectedAdIdentifiers:\
     \ {\n      gclid: 'gclid EventData',\n      gbraid: 'gbraid EventData',\n    \
-    \  wbraid: 'wbraid EventData'\n    }\n  }\n].forEach((scenario) => {\n  const\
-    \ copyMockData = setAllMockDataByEventType('conversion', 'stape', {\n    conversionEventMode:\
-    \ 'single',\n    autoMapAdIdentifiersClickIds: true\n  });\n  \n  [\n    'adIdentifiersGclid',\n\
-    \    'adIdentifiersGbraid',\n    'adIdentifiersWbraid'\n  ].forEach((key) => Object.delete(copyMockData,\
-    \ key));\n  \n  scenario.mock();\n  \n  mock('sendHttpRequest', (requestUrl, requestOptions,\
+    \  wbraid: 'wbraid EventData',\n      dclid: undefined\n    }\n  }\n].forEach((scenario)\
+    \ => {\n  const copyMockData = setAllMockDataByEventType('conversion', 'stape',\
+    \ {\n    conversionEventMode: 'single',\n    autoMapAdIdentifiersClickIds: true\n\
+    \  });\n  \n  [\n    'adIdentifiersGclid',\n    'adIdentifiersGbraid',\n    'adIdentifiersWbraid',\n\
+    \    'adIdentifiersDclid'\n  ].forEach((key) => Object.delete(copyMockData, key));\n\
+    \  \n  scenario.mock();\n  \n  mock('sendHttpRequest', (requestUrl, requestOptions,\
     \ requestBody) => {\n    const parsedRequestBody = JSON.parse(requestBody);\n\
     \    assertThat(parsedRequestBody.events[0].adIdentifiers.gclid).isEqualTo(scenario.expectedAdIdentifiers.gclid);\n\
     \    assertThat(parsedRequestBody.events[0].adIdentifiers.gbraid).isEqualTo(scenario.expectedAdIdentifiers.gbraid);\n\
-    \    assertThat(parsedRequestBody.events[0].adIdentifiers.wbraid).isEqualTo(scenario.expectedAdIdentifiers.wbraid);\
-    \  \n  \n    return Promise.create((resolve, reject) => {\n      resolve({ statusCode:\
+    \    assertThat(parsedRequestBody.events[0].adIdentifiers.wbraid).isEqualTo(scenario.expectedAdIdentifiers.wbraid);\n\
+    \    assertThat(parsedRequestBody.events[0].adIdentifiers.dclid).isEqualTo(scenario.expectedAdIdentifiers.dclid);\n\
+    \  \n    return Promise.create((resolve, reject) => {\n      resolve({ statusCode:\
     \ 200 });\n    });  \n  });\n  \n  runCode(copyMockData);\n  \n  callLater(()\
     \ => {\n    assertApi('gtmOnSuccess').wasCalled();\n    assertApi('gtmOnFailure').wasNotCalled();\n\
     \  });\n  \n  cleanup();\n});\n\n"
@@ -3246,9 +3517,9 @@ scenarios:
     \      adPersonalization: 'CONSENT_DENIED'\n    },\n    events: [\n      {\n \
     \       transactionId: 'Transaction ID 123',\n        eventTimestamp: '2014-10-02T15:01:23Z',\n\
     \        lastUpdatedTimestamp: '2014-10-02T15:01:23Z',\n        currency: 'BRL',\n\
-    \        conversionValue: 123.45,\n        eventSource: 'WEB',\n        userData:\
-    \ {\n          userIdentifiers: [\n            {\n              emailAddress:\n\
-    \                '74790a65960d58724ba244c376e2bb6cbdd39f6c67d122760b319d51d11813a9'\n\
+    \        conversionValue: 123.45,\n        conversionCount: 2,\n        eventSource:\
+    \ 'WEB',\n        userData: {\n          userIdentifiers: [\n            {\n \
+    \             emailAddress:\n                '74790a65960d58724ba244c376e2bb6cbdd39f6c67d122760b319d51d11813a9'\n\
     \            },\n            {\n              phoneNumber:\n                '92effd108fc091e55b0239ffc94d867e649d45c28c3de6918ec1edcb0723602c'\n\
     \            },\n            {\n              address: {\n                givenName:\n\
     \                  '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08',\n\
@@ -3256,30 +3527,36 @@ scenarios:
     \                regionCode: 'US',\n                postalCode: '10001'\n    \
     \          }\n            }\n          ]\n        },\n        adIdentifiers: {\n\
     \          gclid: 'gclid',\n          gbraid: 'gbraid',\n          wbraid: 'wbraid',\n\
-    \          landingPageDeviceInfo: {\n            userAgent: 'Landing Page User\
-    \ Agent',\n            ipAddress: '1.1.1.1'\n          },\n          sessionAttributes:\
-    \ 'Session Attributes'\n        },\n        eventDeviceInfo: { userAgent: 'User\
-    \ Agent', ipAddress: '1.1.1.1' },\n        userProperties: { customerType: 'NEW',\
+    \          dclid: 'dclid',\n          matchId: 'matchId',\n          impressionId:\
+    \ 'impressionId',\n          encryptedUserId: [{ encryptedId: 'encryptedId', entityType:\
+    \ 'entityType', entityId: 'entityId', source: 'source' }],\n          mobileDeviceId:\
+    \ 'mobileDeviceId',\n          landingPageDeviceInfo: {\n            userAgent:\
+    \ 'Landing Page User Agent',\n            ipAddress: '1.1.1.1'\n          },\n\
+    \          sessionAttributes: 'Session Attributes'\n        },\n        eventDeviceInfo:\
+    \ { userAgent: 'User Agent', ipAddress: '1.1.1.1', deviceLanguage: 'en', screenWidth:\
+    \ 1920, screenHeight: 1080 },\n        userProperties: { customerType: 'NEW',\
     \ customerValueBucket: 'LOW' },\n        cartData: {\n          merchantId: 'Merchant\
     \ Center ID',\n          merchantFeedLabel: 'Merchant Center Feed Label',\n  \
     \        merchantFeedLanguageCode: 'Merchant Center Feed Language Code',\n   \
-    \       transactionDiscount: 123,\n          items: [\n            {\n       \
-    \       itemId: 'Product ID 1',\n              merchantProductId: 'Product ID\
-    \ 1',\n              quantity: '1',\n              unitPrice: 123\n          \
-    \  },\n            {\n              itemId: 'Product ID 2',\n              merchantProductId:\
-    \ 'Product ID 2',\n              quantity: '2',\n              unitPrice: 111\n\
-    \            }\n          ]\n        },\n        customVariables: [\n        \
-    \  {\n            variable: 'TEST1',\n            value: 'ABC',\n            destinationReferences:\
-    \ ['REFERENCE']\n          },\n          { variable: 'TEST2', value: 'AAAAAAAA'\
-    \ },\n          {\n            variable: 'TEST3',\n            value: '123ABC',\n\
-    \            destinationReferences: ['REFERENCE', 'REFERENCE2']\n          }\n\
-    \        ],\n        experimentalFields: [{ field: 'ABC', value: 'FOOBAR' }]\n\
-    \      }\n    ],\n    encoding: 'HEX',\n    encryptionInfo: {\n      gcpWrappedKeyInfo:\
-    \ {\n        keyType: 'XCHACHA20_POLY1305',\n        wipProvider: '123',\n   \
-    \     kekUri: '123',\n        encryptedDek: '123'\n      }\n    }\n  });\n\n \
-    \ return Promise.create((resolve, reject) => {\n    resolve({ statusCode: 200\
-    \ });\n  });  \n});\n\nrunCode(copyMockData);\n\ncallLater(() => {\n  assertApi('gtmOnSuccess').wasCalled();\n\
-    \  assertApi('gtmOnFailure').wasNotCalled();\n});"
+    \       transactionDiscount: 123,\n          couponCodes: ['PROMO10', 'SUMMER'],\n\
+    \          items: [\n            {\n              itemId: 'Product ID 1',\n  \
+    \            merchantProductId: 'Product ID 1',\n              quantity: '1',\n\
+    \              unitPrice: 123\n            },\n            {\n              itemId:\
+    \ 'Product ID 2',\n              merchantProductId: 'Product ID 2',\n        \
+    \      quantity: '2',\n              unitPrice: 111\n            }\n         \
+    \ ]\n        },\n        customVariables: [\n          {\n            variable:\
+    \ 'TEST1',\n            value: 'ABC',\n            destinationReferences: ['REFERENCE']\n\
+    \          },\n          { variable: 'TEST2', value: 'AAAAAAAA' },\n         \
+    \ {\n            variable: 'TEST3',\n            value: '123ABC',\n          \
+    \  destinationReferences: ['REFERENCE', 'REFERENCE2']\n          }\n        ],\n\
+    \        eventLocation: { country: 'US', region: 'CA' },\n        experimentalFields:\
+    \ [{ field: 'ABC', value: 'FOOBAR' }]\n      }\n    ],\n    encoding: 'HEX',\n\
+    \    encryptionInfo: {\n      gcpWrappedKeyInfo: {\n        keyType: 'XCHACHA20_POLY1305',\n\
+    \        wipProvider: '123',\n        kekUri: '123',\n        encryptedDek: '123'\n\
+    \      }\n    }\n  });\n\n  return Promise.create((resolve, reject) => {\n   \
+    \ resolve({ statusCode: 200 });\n  });  \n});\n\nrunCode(copyMockData);\n\ncallLater(()\
+    \ => {\n  assertApi('gtmOnSuccess').wasCalled();\n  assertApi('gtmOnFailure').wasNotCalled();\n\
+    });"
 - name: '[Conversion] [Multiple Events] [Data from UI fields] Request is successfully
     built and sent'
   code: "const copyMockData = setAllMockDataByEventType('conversion', 'stape', {\n\
@@ -3394,22 +3671,15 @@ setup: "const Promise = require('Promise');\nconst JSON = require('JSON');\ncons
   \ callLater = require('callLater');\n\nfunction assign() {\n  const target = arguments[0];\n\
   \  for (let i = 1; i < arguments.length; i++) {\n    for (let key in arguments[i])\
   \ {\n      target[key] = arguments[i][key];\n    }\n  }\n  return target;\n}\n\n\
-  const expectedDataManagerApiVersion = '1';\n\nconst expectedBigQuerySettings = {\n\
-  \  logBigQueryProjectId: 'logBigQueryProjectId',\n  logBigQueryDatasetId: 'logBigQueryDatasetId',\n\
-  \  logBigQueryTableId: 'logBigQueryTableId'\n};\n\nconst requiredConsoleKeys = ['Type',\
-  \ 'TraceId', 'Name'];\nconst requiredBqKeys = ['timestamp', 'type', 'trace_id',\
-  \ 'tag_name'];\nconst expectedBqOptions = { ignoreUnknownValues: true };\n\nconst\
-  \ mockData = {\n  logBigQueryProjectId: expectedBigQuerySettings.logBigQueryProjectId,\n\
-  \  logBigQueryDatasetId: expectedBigQuerySettings.logBigQueryDatasetId,\n  logBigQueryTableId:\
-  \ expectedBigQuerySettings.logBigQueryTableId\n};\n\nconst cleanup = () => {\n \
-  \ mock('getAllEventData', {});\n  mock('getCookieValues', []);\n};\n\nconst setAllMockDataByEventType\
-  \ = (eventType, authType, objToBeMerged) => {\n  const mockDataByAuthType = {\n\
-  \    stape: {\n      authFlow: 'stape',\n      stapeAuthDestinationsList: [\n  \
-  \      {\n          product: 'GOOGLE_ADS',\n          operatingAccountId: '1',\n\
-  \          linkedAccountId: '2',\n          productDestinationId: '3'\n        },\n\
-  \        {\n          product: 'GOOGLE_ADS',\n          operatingAccountId: '11',\n\
-  \          linkedAccountId: '22',\n          productDestinationId: '33'\n      \
-  \  }\n      ]\n    },\n    own: {\n      authFlow: 'own',\n      ownAuthDestinationsList:\
+  const expectedDataManagerApiVersion = '1';\n\nconst mockData = {};\n\nconst cleanup\
+  \ = () => {\n  mock('getAllEventData', {});\n  mock('getCookieValues', []);\n};\n\
+  \nconst setAllMockDataByEventType = (eventType, authType, objToBeMerged) => {\n\
+  \  const mockDataByAuthType = {\n    stape: {\n      authFlow: 'stape',\n      stapeAuthDestinationsList:\
+  \ [\n        {\n          product: 'GOOGLE_ADS',\n          operatingAccountId:\
+  \ '1',\n          linkedAccountId: '2',\n          productDestinationId: '3'\n \
+  \       },\n        {\n          product: 'GOOGLE_ADS',\n          operatingAccountId:\
+  \ '11',\n          linkedAccountId: '22',\n          productDestinationId: '33'\n\
+  \        }\n      ]\n    },\n    own: {\n      authFlow: 'own',\n      ownAuthDestinationsList:\
   \ [\n        {\n          product: 'GOOGLE_ADS',\n          operatingAccountId:\
   \ '1',\n          loginAccountId: '2',\n          productDestinationId: '3'\n  \
   \      },\n        {\n          product: 'GOOGLE_ADS',\n          operatingAccountId:\
@@ -3423,39 +3693,47 @@ setup: "const Promise = require('Promise');\nconst JSON = require('JSON');\ncons
   \      conversionEventMode: 'single',\n    \n      autoMapConversionInformation:\
   \ true,\n      transactionId: 'Transaction ID 123',\n      eventTimestamp: '2014-10-02T15:01:23Z',\n\
   \      lastUpdatedTimestamp: '2014-10-02T15:01:23Z',\n      currency: 'BRL',\n \
-  \     conversionValue: '123.45',\n      eventSource: 'WEB',\n    \n      autoMapUserData:\
-  \ true,\n      userDataEmailAddresses: 'google.google.google@gmail.com',\n     \
-  \ userDataPhoneNumbers: '55999999999',\n      addUserDataAddress: true,\n      userDataAddressGivenName:\
-  \ 'test',\n      userDataAddressFamilyName: 'test',\n      userDataAddressRegion:\
-  \ 'US',\n      userDataAddressPostalCode: '10001',\n    \n      autoMapAdIdentifiersClickIds:\
-  \ false,\n      adIdentifiersGclid: 'gclid',\n      adIdentifiersGbraid: 'gbraid',\n\
-  \      adIdentifiersWbraid: 'wbraid',\n      autoMapAdIdentifiersSessionAttributes:\
-  \ false,\n      adIdentifiersLandingPageDeviceInfoUserAgent: 'Landing Page User\
-  \ Agent',\n      adIdentifiersLandingPageDeviceInfoIpAddress: '1.1.1.1',\n     \
-  \ adIdentifiersSessionAttributes: 'Session Attributes',\n    \n      autoMapEventDeviceInfo:\
-  \ true,\n      eventDeviceInfoUserAgent: 'User Agent',\n      eventDeviceInfoIpAddress:\
-  \ '1.1.1.1',\n    \n      userPropertiesCustomerType: 'NEW',\n      userPropertiesCustomerValueBucket:\
-  \ 'LOW',\n    \n      autoMapCartData: true,\n      itemIdKey: 'item_id',\n    \
-  \  cartDataMerchantId: 'Merchant Center ID',\n      cartDataMerchantFeedLabel: 'Merchant\
-  \ Center Feed Label',\n      cartDataMerchantFeedLanguageCode: 'Merchant Center\
-  \ Feed Language Code',\n      cartDataTransactionDiscount: '123',\n      cartDataItems:\
-  \ [\n        { itemId: 'Product ID 1', merchantProductId: 'Product ID 1', quantity:\
-  \ '1', unitPrice: '123' },\n        { itemId: 'Product ID 2', merchantProductId:\
-  \ 'Product ID 2', quantity: '2', unitPrice: '111' }\n      ],\n    \n      customVariablesList:\
+  \     conversionValue: '123.45',\n      conversionCount: '2',\n      eventSource:\
+  \ 'WEB',\n    \n      autoMapUserData: true,\n      userDataEmailAddresses: 'google.google.google@gmail.com',\n\
+  \      userDataPhoneNumbers: '55999999999',\n      addUserDataAddress: true,\n \
+  \     userDataAddressGivenName: 'test',\n      userDataAddressFamilyName: 'test',\n\
+  \      userDataAddressRegion: 'US',\n      userDataAddressPostalCode: '10001',\n\
+  \    \n      autoMapAdIdentifiersClickIds: false,\n      adIdentifiersGclid: 'gclid',\n\
+  \      adIdentifiersGbraid: 'gbraid',\n      adIdentifiersWbraid: 'wbraid',\n  \
+  \    adIdentifiersDclid: 'dclid',\n      adIdentifiersMatchId: 'matchId',\n    \
+  \  adIdentifiersImpressionId: 'impressionId',\n      adIdentifiersEncryptedUserId:\
+  \ [{ encryptedId: 'encryptedId', entityType: 'entityType', entityId: 'entityId',\
+  \ source: 'source' }],\n      adIdentifiersMobileDeviceId: 'mobileDeviceId',\n \
+  \     autoMapAdIdentifiersSessionAttributes: false,\n      adIdentifiersLandingPageDeviceInfoUserAgent:\
+  \ 'Landing Page User Agent',\n      adIdentifiersLandingPageDeviceInfoIpAddress:\
+  \ '1.1.1.1',\n      adIdentifiersSessionAttributes: 'Session Attributes',\n    \n\
+  \      autoMapEventDeviceInfo: true,\n      eventDeviceInfoUserAgent: 'User Agent',\n\
+  \      eventDeviceInfoIpAddress: '1.1.1.1',\n    \n      userPropertiesCustomerType:\
+  \ 'NEW',\n      userPropertiesCustomerValueBucket: 'LOW',\n    \n      autoMapCartData:\
+  \ true,\n      itemIdKey: 'item_id',\n      cartDataMerchantId: 'Merchant Center\
+  \ ID',\n      cartDataMerchantFeedLabel: 'Merchant Center Feed Label',\n      cartDataMerchantFeedLanguageCode:\
+  \ 'Merchant Center Feed Language Code',\n      cartDataTransactionDiscount: '123',\n\
+  \      cartDataCouponCodes: ['PROMO10', 'SUMMER'],\n      cartDataItems: [\n   \
+  \     { itemId: 'Product ID 1', merchantProductId: 'Product ID 1', quantity: '1',\
+  \ unitPrice: '123' },\n        { itemId: 'Product ID 2', merchantProductId: 'Product\
+  \ ID 2', quantity: '2', unitPrice: '111' }\n      ],\n    \n      customVariablesList:\
   \ [\n        { name: 'TEST1', value: 'ABC', destinationReferences: 'REFERENCE' },\n\
   \        { name: 'TEST2', value: 'AAAAAAAA', destinationReferences: '' },\n    \
   \    { name: 'TEST3', value: '123ABC', destinationReferences: ['REFERENCE', 'REFERENCE2']\
   \ }\n      ],\n    \n      experimentalFieldsList: [{ name: 'ABC', value: 'FOOBAR'\
-  \ }],\n    \n      adStorageConsent: 'optional',\n      logType: 'debug',\n    \
-  \  bigQueryLogType: 'no'\n    },\n    pageview: {\n      eventType: 'pageview',\n\
-  \      \n      cookieExpiration: 90,\n      cookieDomain: 'auto',\n      cookieSameSite:\
-  \ 'none',\n      cookieHttpOnly: true,\n      adStorageConsent: 'optional'\n   \
-  \ }\n  };\n  \n  return assign(JSON.parse(JSON.stringify(mockData)), mockDataByEventType[eventType],\
-  \ mockDataByAuthType[authType] || {}, objToBeMerged || {});\n};\n\nconst setGetAllEventData\
-  \ = (objToBeMerged) => {\n  mock('getAllEventData', assign({\n    'x-ga-protocol_version':\
-  \ '2',\n    'x-ga-measurement_id': 'G-123ABC',\n    'x-ga-gtm_version': '45je55e1za200',\n\
-  \    'x-ga-page_id': 1747422523211,\n    'x-ga-gcd': '13l3l3l3l1l1',\n    'x-ga-npa':\
-  \ '0',\n    'x-ga-dma': '0',\n    'x-ga-mp2-tag_exp':\n      '101509157~103116025~103130498~103130500~103136993~103136995~103200001~103207802~103211513~103233427~103252644~103252646~103263073~103301114~103301116',\n\
+  \ }],\n      eventLocationList: [{name: 'country', value: 'US'}, {name: 'region',\
+  \ value: 'CA'}],\n      eventDeviceInfoList: [{name: 'deviceLanguage', value: 'en'},\
+  \ {name: 'screenWidth', value: '1920'}, {name: 'screenHeight', value: '1080'}],\n\
+  \    \n      adStorageConsent: 'optional',\n      logType: 'debug',\n      bigQueryLogType:\
+  \ 'no'\n    },\n    pageview: {\n      eventType: 'pageview',\n      \n      cookieExpiration:\
+  \ 90,\n      cookieDomain: 'auto',\n      cookieSameSite: 'none',\n      cookieHttpOnly:\
+  \ true,\n      adStorageConsent: 'optional'\n    }\n  };\n  \n  return assign(JSON.parse(JSON.stringify(mockData)),\
+  \ mockDataByEventType[eventType], mockDataByAuthType[authType] || {}, objToBeMerged\
+  \ || {});\n};\n\nconst setGetAllEventData = (objToBeMerged) => {\n  mock('getAllEventData',\
+  \ assign({\n    'x-ga-protocol_version': '2',\n    'x-ga-measurement_id': 'G-123ABC',\n\
+  \    'x-ga-gtm_version': '45je55e1za200',\n    'x-ga-page_id': 1747422523211,\n\
+  \    'x-ga-gcd': '13l3l3l3l1l1',\n    'x-ga-npa': '0',\n    'x-ga-dma': '0',\n \
+  \   'x-ga-mp2-tag_exp':\n      '101509157~103116025~103130498~103130500~103136993~103136995~103200001~103207802~103211513~103233427~103252644~103252646~103263073~103301114~103301116',\n\
   \    client_id: 'AUJctU7H7hBB/aMuhE4pKwGu5DWDdklg5abyyyn8i/I=.1747154479',\n   \
   \ 'x-ga-ecid': '1294673677',\n    language: 'en-us',\n    screen_resolution: '1512x982',\n\
   \    event_location: { country: 'BR', region: 'SP' },\n    event_id: '101509157~103116025~103130498',\n\
@@ -3558,8 +3836,15 @@ setup: "const Promise = require('Promise');\nconst JSON = require('JSON');\ncons
 
 ___NOTES___
 
+2026-06-05 - Change Notes:
+  - Add CM360, DV360, and SA360 (Floodlight) as a supported destination product type (`FLOODLIGHT_CONFIG`); add Floodlight-specific fields: `dclid`, `matchId`, `impressionId`, `encryptedUserId`, `mobileDeviceId` (ad identifiers) and `conversionCount` (conversion quantity for counting-based conversions); auto-map `dclid` from `_gcl_dc`/`FPGCLDC` cookies.
+  - Auto-map `screen_resolution` to `screenWidth`/`screenHeight` in event device info; add `eventDeviceInfoList` table for additional manual device info overrides.
+  - Add `couponCodes` to `cartData`, accepting a string/number (auto-wrapped in an array) or an array of coupon codes.
+  - Add `eventLocation` section via `eventLocationList` table, supporting store, city, region, and continent fields.
+  - Enable Session Attributes auto-mapping by default.
+
 2026-05-25 Change Notes:
- - Logging removal.
+  - Logging removal.
 
 2026-04-13 - Change Notes:
   - Auto-map items from eventData.ecommerce.items as a fallback when eventData.items is not present.

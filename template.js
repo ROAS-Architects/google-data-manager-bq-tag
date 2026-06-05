@@ -310,6 +310,10 @@ function addConversionInformation(data, eventData, conversionEvent) {
     conversionEvent.conversionValue = makeNumber(data.conversionValue);
   }
 
+  if (isValidValue(data.conversionCount)) {
+    conversionEvent.conversionCount = makeNumber(data.conversionCount);
+  }
+
   if (data.eventSource) conversionEvent.eventSource = data.eventSource;
 
   return conversionEvent;
@@ -396,11 +400,21 @@ function addAdIdentifiers(data, eventData, conversionEvent) {
     if (clickIds.gclid) adIdentifiers.gclid = clickIds.gclid;
     if (clickIds.gbraid) adIdentifiers.gbraid = clickIds.gbraid;
     if (clickIds.wbraid) adIdentifiers.wbraid = clickIds.wbraid;
+    if (clickIds.dclid) adIdentifiers.dclid = clickIds.dclid;
   }
 
   if (data.adIdentifiersGclid) adIdentifiers.gclid = data.adIdentifiersGclid;
   if (data.adIdentifiersGbraid) adIdentifiers.gbraid = data.adIdentifiersGbraid;
   if (data.adIdentifiersWbraid) adIdentifiers.wbraid = data.adIdentifiersWbraid;
+  if (data.adIdentifiersDclid) adIdentifiers.dclid = data.adIdentifiersDclid;
+  if (data.adIdentifiersMatchId) adIdentifiers.matchId = data.adIdentifiersMatchId;
+  if (data.adIdentifiersImpressionId) adIdentifiers.impressionId = data.adIdentifiersImpressionId;
+  if (getType(data.adIdentifiersEncryptedUserId) === 'array') {
+    adIdentifiers.encryptedUserId = data.adIdentifiersEncryptedUserId;
+  }
+  if (data.adIdentifiersMobileDeviceId) {
+    adIdentifiers.mobileDeviceId = data.adIdentifiersMobileDeviceId;
+  }
 
   if (isUIFieldTrue(data.autoMapAdIdentifiersSessionAttributes)) {
     const commonCookie = eventData.common_cookie || {};
@@ -437,10 +451,28 @@ function addEventDeviceInformation(data, eventData, conversionEvent) {
   if (isUIFieldTrue(data.autoMapEventDeviceInfo)) {
     if (eventData.user_agent) eventDeviceInfo.userAgent = eventData.user_agent;
     if (eventData.ip_override) eventDeviceInfo.ipAddress = eventData.ip_override;
+    if (eventData.screen_resolution && getType(eventData.screen_resolution) === 'string') {
+      const width = makeInteger(eventData.screen_resolution.split('x')[0]);
+      const height = makeInteger(eventData.screen_resolution.split('x')[1]);
+      if (isValidValue(width) && isValidValue(height)) {
+        eventDeviceInfo.screenWidth = width;
+        eventDeviceInfo.screenHeight = height;
+      }
+    }
   }
 
   if (data.eventDeviceInfoUserAgent) eventDeviceInfo.userAgent = data.eventDeviceInfoUserAgent;
   if (data.eventDeviceInfoIpAddress) eventDeviceInfo.ipAddress = data.eventDeviceInfoIpAddress;
+
+  if (data.eventDeviceInfoList) {
+    data.eventDeviceInfoList.forEach((d) => {
+      let value = d.value;
+      if (d.name === 'screenHeight' || d.name === 'screenWidth') {
+        value = isValidValue(d.value) ? makeInteger(d.value) : undefined;
+      }
+      eventDeviceInfo[d.name] = value;
+    });
+  }
 
   if (hasProps(eventDeviceInfo)) conversionEvent.eventDeviceInfo = eventDeviceInfo;
 
@@ -516,16 +548,26 @@ function addCartData(data, eventData, conversionEvent) {
     cartData.transactionDiscount = makeNumber(data.cartDataTransactionDiscount);
   }
 
+  if (data.cartDataCouponCodes) {
+    const itemizeCouponCode = (input) => {
+      const type = getType(input);
+      if (type === 'array') return input.filter((e) => e);
+      if (type === 'string' || type === 'number') return [input];
+      return;
+    };
+    const couponCodes = itemizeCouponCode(data.cartDataCouponCodes);
+    if (couponCodes && couponCodes.length) cartData.couponCodes = couponCodes;
+  }
+
   if (getType(data.cartDataItems) === 'array' && data.cartDataItems.length > 0) {
     const cartDataItems = data.cartDataItems
       .filter((i) => i.merchantProductId)
       .map((i) => {
-        const item = {};
-        item.merchantProductId = makeString(i.merchantProductId);
-        if (i.itemId) item.itemId = makeString(i.itemId);
-        if (i.quantity) item.quantity = makeString(i.quantity);
-        if (isValidValue(i.unitPrice)) item.unitPrice = makeNumber(i.unitPrice);
-        return item;
+        i.merchantProductId = makeString(i.merchantProductId);
+        if (i.itemId) i.itemId = makeString(i.itemId);
+        if (i.quantity) i.quantity = makeString(i.quantity);
+        if (isValidValue(i.unitPrice)) i.unitPrice = makeNumber(i.unitPrice);
+        return i;
       });
 
     if (cartDataItems.length > 0) cartData.items = cartDataItems;
@@ -568,6 +610,20 @@ function addCustomVariables(data, conversionEvent) {
   return conversionEvent;
 }
 
+function addEventLocation(data, conversionEvent) {
+  const eventLocation = {};
+
+  if (data.eventLocationList) {
+    data.eventLocationList.forEach((d) => {
+      eventLocation[d.name] = isValidValue(d.value) ? makeString(d.value) : undefined;
+    });
+  }
+
+  if (hasProps(eventLocation)) conversionEvent.eventLocation = eventLocation;
+
+  return conversionEvent;
+}
+
 function addExperimentalFields(data, conversionEvent) {
   const experimentalFields = [];
 
@@ -595,6 +651,7 @@ function addConversionEventsData(data, eventData, mappedData) {
     addUserProperties(data, conversionEvent);
     addCartData(data, eventData, conversionEvent);
     addCustomVariables(data, conversionEvent);
+    addEventLocation(data, conversionEvent);
     addExperimentalFields(data, conversionEvent);
 
     mappedData.events = [conversionEvent];
@@ -735,7 +792,8 @@ function getClickIds(eventData) {
     const clickIdNameMapping = {
       gclid: { server: 'FPGCLAW', js: '_gcl_aw' },
       gbraid: { server: 'FPGCLAG', js: '_gcl_ag' },
-      wbraid: { server: 'FPGCLGB', js: '_gcl_gb' }
+      wbraid: { server: 'FPGCLGB', js: '_gcl_gb' },
+      dclid: { server: 'FPGCLDC', js: '_gcl_dc' }
     };
     const serverCookieName = clickIdNameMapping[clickIdName].server;
     const jsCookieName = clickIdNameMapping[clickIdName].js;
@@ -762,13 +820,14 @@ function getClickIds(eventData) {
   return {
     gclid: getClickIdValueFromSources('gclid', eventData, urlSearchParams),
     gbraid: getClickIdValueFromSources('gbraid', eventData, urlSearchParams),
-    wbraid: getClickIdValueFromSources('wbraid', eventData, urlSearchParams)
+    wbraid: getClickIdValueFromSources('wbraid', eventData, urlSearchParams),
+    dclid: getClickIdValueFromSources('dclid', eventData, urlSearchParams)
   };
 }
 
-function generateRequestUrl(data, apiVersion) {
+function generateRequestUrl(data) {
   if (data.authFlow === 'own') {
-    return 'https://datamanager.googleapis.com/v' + apiVersion + '/events:ingest';
+    return 'https://datamanager.googleapis.com/v' + API_VERSION + '/events:ingest';
   }
 
   const containerIdentifier = getRequestHeader('x-gtm-identifier');
@@ -785,7 +844,7 @@ function generateRequestUrl(data, apiVersion) {
   );
 }
 
-function generateRequestOptions(data, apiVersion) {
+function generateRequestOptions(data) {
   const options = {
     method: 'POST',
     headers: {
@@ -800,7 +859,7 @@ function generateRequestOptions(data, apiVersion) {
     options.authorization = auth;
     if (data.xGoogUserProject) options.headers['x-goog-user-project'] = data.xGoogUserProject;
   } else if (data.authFlow === 'stape') {
-    options.headers['x-datamanager-api-version'] = apiVersion;
+    options.headers['x-datamanager-api-version'] = API_VERSION;
     options.timeout = 20000;
   }
 
@@ -824,9 +883,9 @@ function getDataForConversionEventsUpload(data, eventData) {
   return mappedData;
 }
 
-function sendRequest(data, mappedData, apiVersion) {
-  const requestUrl = generateRequestUrl(data, apiVersion);
-  const requestOptions = generateRequestOptions(data, apiVersion);
+function sendRequest(data, mappedData) {
+  const requestUrl = generateRequestUrl(data);
+  const requestOptions = generateRequestOptions(data);
   const requestBody = mappedData;
 
   return sendHttpRequest(requestUrl, requestOptions, JSON.stringify(requestBody))
@@ -969,7 +1028,7 @@ function handleConversionEvent(data, eventData) {
     return true;
   }
 
-  sendRequest(data, mappedData, API_VERSION);
+  sendRequest(data, mappedData);
 }
 
 /*==============================================================================
