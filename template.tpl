@@ -2141,7 +2141,7 @@ function normalizeEmailAddress(email) {
 
   const emailParts = email.split('@');
   if (emailParts[1] === 'gmail.com' || emailParts[1] === 'googlemail.com') {
-    return emailParts[0].split('.').join('') + '@' + emailParts[1];
+    emailParts[0] = emailParts[0].split('.').join('').split('+')[0];
   }
   return emailParts.join('@');
 }
@@ -3836,6 +3836,9 @@ setup: "const Promise = require('Promise');\nconst JSON = require('JSON');\ncons
 
 ___NOTES___
 
+2026-06-16 - Change Notes:
+  - Improve email address normalization for 'googlemail.com' and 'google.com' domains.
+  
 2026-06-05 - Change Notes:
   - Add CM360, DV360, and SA360 (Floodlight) as a supported destination product type (`FLOODLIGHT_CONFIG`); add Floodlight-specific fields: `dclid`, `matchId`, `impressionId`, `encryptedUserId`, `mobileDeviceId` (ad identifiers) and `conversionCount` (conversion quantity for counting-based conversions); auto-map `dclid` from `_gcl_dc`/`FPGCLDC` cookies.
   - Auto-map `screen_resolution` to `screenWidth`/`screenHeight` in event device info; add `eventDeviceInfoList` table for additional manual device info overrides.
