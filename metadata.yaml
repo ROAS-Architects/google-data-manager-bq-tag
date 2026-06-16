@@ -1,6 +1,8 @@
 homepage: 'https://stape.io/'
 documentation: 'https://github.com/stape-io/google-conversion-events-tag'
 versions:
+  - sha: 3e5cd25357af8e69d52b6bfdba2af59fce6fb2c2
+    changeNotes: Improved email address normalization for googlemail.com and google.com domains.
   - sha: a039c9d5bbda67e8229d88580164ca04e5012638
     changeNotes: Added support for Floodlight conversions when using Own Google Credentials as auth method.
   - sha: 330f7cce337612eb5872838c040f6f6e63dd0e7f
