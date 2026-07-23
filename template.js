@@ -133,8 +133,8 @@ function handlePageViewEvent(data, eventData) {
 }
 
 function addDestinationsData(data, mappedData) {
-  const normalizeIds = (id) => {
-    return replaceAll(makeString(id), '[^0-9]', '');
+  const normalizeIds = (id, isGADestinationId) => {
+    return !isGADestinationId ? replaceAll(makeString(id), '[^0-9]', '') : makeString(id).trim();
   };
 
   const destinations = [];
@@ -142,7 +142,10 @@ function addDestinationsData(data, mappedData) {
     data.stapeAuthDestinationsList || data.ownAuthDestinationsList; // Mutually exclusive.
 
   accountsAndDestinationsFromUI.forEach((row) => {
-    const productDestinationId = normalizeIds(row.productDestinationId);
+    const productDestinationId = normalizeIds(
+      row.productDestinationId,
+      row.product === 'GOOGLE_ANALYTICS_PROPERTY'
+    );
     const destination = {
       reference: productDestinationId,
       productDestinationId: productDestinationId,
@@ -294,6 +297,8 @@ function addConversionInformation(data, eventData, conversionEvent) {
     if (isValidValue(conversionValue)) conversionEvent.conversionValue = conversionValue;
   }
 
+  if (data.eventSource) conversionEvent.eventSource = data.eventSource;
+
   if (data.transactionId) conversionEvent.transactionId = makeString(data.transactionId);
 
   if (data.eventTimestamp) {
@@ -314,7 +319,12 @@ function addConversionInformation(data, eventData, conversionEvent) {
     conversionEvent.conversionCount = makeNumber(data.conversionCount);
   }
 
-  if (data.eventSource) conversionEvent.eventSource = data.eventSource;
+  if (data.googleAnalyticsRequiredDataList) {
+    data.googleAnalyticsRequiredDataList.forEach((d) => {
+      if (!isValidValue(d.value)) return;
+      conversionEvent[d.name] = makeString(d.value);
+    });
+  }
 
   return conversionEvent;
 }
@@ -490,6 +500,22 @@ function addUserProperties(data, conversionEvent) {
     userProperties.customerValueBucket = data.userPropertiesCustomerValueBucket;
   }
 
+  if (data.userPropertiesList) {
+    const additionalUserProperties = [];
+
+    data.userPropertiesList.forEach((d) => {
+      if (!isValidValue(d.name) || !isValidValue(d.value)) return;
+      additionalUserProperties.push({
+        propertyName: makeString(d.name),
+        value: makeString(d.value)
+      });
+    });
+
+    if (additionalUserProperties.length > 0) {
+      userProperties.additionalUserProperties = additionalUserProperties;
+    }
+  }
+
   if (hasProps(userProperties)) {
     conversionEvent.userProperties = userProperties;
   }
@@ -511,22 +537,52 @@ function getItems(eventData) {
   return;
 }
 
-function addCartData(data, eventData, conversionEvent) {
+function addAdditionalItemFields(data, item, sourceItem, excludeKeys, allowCustomVariables) {
+  if (!data.addAdditionalItemParameters) return;
+
+  const additionalItemParameters =
+    getType(item.additionalItemParameters) === 'array' ? item.additionalItemParameters : [];
+  const customVariables =
+    allowCustomVariables && getType(item.customVariables) === 'array' ? item.customVariables : [];
+
+  Object.keys(sourceItem).forEach((key) => {
+    if (excludeKeys.indexOf(key) !== -1 || !isValidValue(sourceItem[key])) return;
+    const value = makeString(sourceItem[key]);
+    additionalItemParameters.push({ parameterName: key, value: value });
+    if (allowCustomVariables) customVariables.push({ variable: key, value: value });
+  });
+
+  if (additionalItemParameters.length > 0) item.additionalItemParameters = additionalItemParameters;
+  if (allowCustomVariables && customVariables.length > 0) item.customVariables = customVariables;
+}
+
+function addCartData(data, eventData, conversionEvent, destinations) {
   const cartData = {};
+  // Per https://developers.google.com/data-manager/api/devguides/events/send-events#google-ads-store-sales,
+  // items[].customVariables is only documented for Google Ads Store Sales conversions.
+  const isGoogleAdsStoreSales =
+    conversionEvent.eventSource === 'IN_STORE' && hasDestination(destinations, 'GOOGLE_ADS');
 
   if (isUIFieldTrue(data.autoMapCartData)) {
     const items = getItems(eventData);
+
     if (getType(items) === 'array' && items.length > 0) {
       const itemIdKey = data.itemIdKey ? data.itemIdKey : 'item_id';
       const cartDataItems = items
         .filter((i) => i[itemIdKey])
         .map((i) => {
           const item = {};
-          const itemId = makeString(i[itemIdKey]);
-          item.merchantProductId = itemId;
-          item.itemId = itemId;
+          item.itemId = makeString(i[itemIdKey]);
+          item.merchantProductId = item.itemId; // Some destinations require merchantProductId to be present in order to process the cart data.
           if (i.quantity) item.quantity = makeString(i.quantity);
           if (isValidValue(i.price)) item.unitPrice = makeNumber(i.price);
+          addAdditionalItemFields(
+            data,
+            item,
+            i,
+            [itemIdKey, 'quantity', 'price'],
+            isGoogleAdsStoreSales
+          );
           return item;
         });
 
@@ -561,13 +617,46 @@ function addCartData(data, eventData, conversionEvent) {
 
   if (getType(data.cartDataItems) === 'array' && data.cartDataItems.length > 0) {
     const cartDataItems = data.cartDataItems
-      .filter((i) => i.merchantProductId)
+      .filter((i) => i.itemId || i.merchantProductId)
       .map((i) => {
-        i.merchantProductId = makeString(i.merchantProductId);
-        if (i.itemId) i.itemId = makeString(i.itemId);
-        if (i.quantity) i.quantity = makeString(i.quantity);
-        if (isValidValue(i.unitPrice)) i.unitPrice = makeNumber(i.unitPrice);
-        return i;
+        const item = {};
+        item.itemId = makeString(i.itemId || i.merchantProductId);
+        item.merchantProductId = makeString(i.merchantProductId || i.itemId); // Some destinations require merchantProductId to be present in order to process the cart data.
+        if (i.quantity) item.quantity = makeString(i.quantity);
+        if (isValidValue(i.unitPrice)) item.unitPrice = makeNumber(i.unitPrice);
+        if (i.merchantId) item.merchantId = makeString(i.merchantId);
+        if (i.merchantFeedLabel) item.merchantFeedLabel = makeString(i.merchantFeedLabel);
+        if (i.merchantFeedLanguageCode) {
+          item.merchantFeedLanguageCode = makeString(i.merchantFeedLanguageCode);
+        }
+        if (isValidValue(i.conversionValue)) item.conversionValue = makeNumber(i.conversionValue);
+        // Preserve additionalItemParameters/customVariables if the user already supplied them
+        // directly as Item-schema-conformant arrays, per the field's documented behavior.
+        if (getType(i.additionalItemParameters) === 'array') {
+          item.additionalItemParameters = i.additionalItemParameters;
+        }
+        if (isGoogleAdsStoreSales && getType(i.customVariables) === 'array') {
+          item.customVariables = i.customVariables;
+        }
+        addAdditionalItemFields(
+          data,
+          item,
+          i,
+          [
+            'merchantProductId',
+            'itemId',
+            'quantity',
+            'unitPrice',
+            'merchantId',
+            'merchantFeedLabel',
+            'merchantFeedLanguageCode',
+            'conversionValue',
+            'additionalItemParameters',
+            'customVariables'
+          ],
+          isGoogleAdsStoreSales
+        );
+        return item;
       });
 
     if (cartDataItems.length > 0) cartData.items = cartDataItems;
@@ -624,17 +713,21 @@ function addEventLocation(data, conversionEvent) {
   return conversionEvent;
 }
 
-function addExperimentalFields(data, conversionEvent) {
-  const experimentalFields = [];
+function addAdditionalEventParameters(data, conversionEvent) {
+  if (data.additionalEventParametersList) {
+    const additionalEventParameters = [];
 
-  if (data.experimentalFieldsList) {
-    data.experimentalFieldsList.forEach((d) => {
-      if (!isValidValue(d.value)) return;
-
-      experimentalFields.push({ field: d.name, value: makeString(d.value) });
+    data.additionalEventParametersList.forEach((d) => {
+      if (!isValidValue(d.name) || !isValidValue(d.value)) return;
+      additionalEventParameters.push({
+        parameterName: makeString(d.name),
+        value: makeString(d.value)
+      });
     });
 
-    if (experimentalFields.length > 0) conversionEvent.experimentalFields = experimentalFields;
+    if (additionalEventParameters.length > 0) {
+      conversionEvent.additionalEventParameters = additionalEventParameters;
+    }
   }
 
   return conversionEvent;
@@ -649,10 +742,10 @@ function addConversionEventsData(data, eventData, mappedData) {
     addAdIdentifiers(data, eventData, conversionEvent);
     addEventDeviceInformation(data, eventData, conversionEvent);
     addUserProperties(data, conversionEvent);
-    addCartData(data, eventData, conversionEvent);
+    addCartData(data, eventData, conversionEvent, mappedData.destinations);
     addCustomVariables(data, conversionEvent);
     addEventLocation(data, conversionEvent);
-    addExperimentalFields(data, conversionEvent);
+    addAdditionalEventParameters(data, conversionEvent);
 
     mappedData.events = [conversionEvent];
   } else if (
@@ -908,6 +1001,24 @@ function validateMappedData(mappedData) {
     return 'At least 1 Conversion Event must be specified.';
   }
 
+  const destinations = mappedData.destinations;
+  const hasGoogleAnalytics = hasDestination(destinations, 'GOOGLE_ANALYTICS_PROPERTY');
+  const hasGoogleAds = hasDestination(destinations, 'GOOGLE_ADS');
+  const hasFloodlight = hasDestination(destinations, 'FLOODLIGHT_CONFIG');
+
+  if (hasGoogleAnalytics) {
+    const isGA4DataInvalid = conversionEvents.some((event) => {
+      if (!event.eventName) return true;
+      return (
+        !(event.eventSource === 'WEB' && event.clientId) &&
+        !(event.eventSource === 'APP' && event.appInstanceId)
+      );
+    });
+    if (isGA4DataInvalid) {
+      return 'When Google Analytics Property is a destination, "eventName" is required, and at least "clientId" (Web Stream) or "appInstanceId" (App Stream) must be specified.';
+    }
+  }
+
   const isUserDataAbsent = (event) => {
     return (
       getType(event.userData) !== 'object' ||
@@ -943,11 +1054,35 @@ function validateMappedData(mappedData) {
       })
     );
   };
-  const doesNotHaveMatchData = conversionEvents.some((event) => {
-    return isUserDataAbsent(event) && isAdIdentifiersAbsent(event);
-  });
-  if (doesNotHaveMatchData) {
-    return 'At least 1 Ad Identifier or User Data must be specified.';
+
+  if (hasGoogleAds || hasFloodlight) {
+    // Per https://developers.google.com/data-manager/api/devguides/events/send-events#google-ads,
+    // eventDeviceInfo.ipAddress is a valid standalone identifier for Google Ads (except IN_STORE).
+    const doesNotHaveMatchData = conversionEvents.some((event) => {
+      const hasIpAddressIdentifier =
+        hasGoogleAds &&
+        event.eventSource !== 'IN_STORE' &&
+        event.eventDeviceInfo &&
+        event.eventDeviceInfo.ipAddress;
+      return isUserDataAbsent(event) && isAdIdentifiersAbsent(event) && !hasIpAddressIdentifier;
+    });
+    if (doesNotHaveMatchData) {
+      return 'At least 1 Ad Identifier or User Data must be specified.';
+    }
+  }
+
+  if (hasGoogleAds) {
+    const isInStoreDataMissing = conversionEvents.some((event) => {
+      if (event.eventSource !== 'IN_STORE') return false;
+      return (
+        !(event.eventLocation && event.eventLocation.storeId) ||
+        !event.currency ||
+        !isValidValue(event.conversionValue)
+      );
+    });
+    if (isInStoreDataMissing) {
+      return 'eventLocation.storeId, currency and conversionValue are required for "IN_STORE" events.';
+    }
   }
 
   const rfc3339Regex = '^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}.+';
@@ -984,7 +1119,6 @@ function validateMappedData(mappedData) {
     return 'Each item in cartData.items must have a merchantProductId.';
   }
 
-  const destinations = mappedData.destinations;
   const destinationsLengthLimit = 10;
   if (destinations.length > destinationsLengthLimit) {
     return 'Destinations list length must be at most ' + destinationsLengthLimit + '.';
@@ -1062,6 +1196,13 @@ function enc(data) {
 
 function hasProps(obj) {
   return getType(obj) === 'object' && Object.keys(obj).length > 0;
+}
+
+function hasDestination(destinations, productType) {
+  return (
+    getType(destinations) === 'array' &&
+    destinations.some((d) => d.operatingAccount && d.operatingAccount.accountType === productType)
+  );
 }
 
 function isSHA256Base64Hashed(value) {

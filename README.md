@@ -9,6 +9,7 @@ The tag is designed to handle both single and multiple conversion event uploads 
 1.  Choose the authentication method:
     *  **Stape Google Connection (recommended)**: sign in to the Data Manager API Connection via the Stape admin. This is the easiest way to set up the authentication. [How-to](https://stape.io/solutions/data-manager-api-connection).
     *  **Own Google Credentials**: a [Service Account impersonation](https://developers.google.com/data-manager/api/devguides/quickstart/set-up-access?credential_type=service_account) is the simplest way to handle the authentication when using the **Own Google Credentials** method.
+        > ℹ️ **CM, DV and SA 360 (Floodlight)** and **Google Analytics (GA4)** destinations are only available with the **Own Google Credentials** authentication method.
 
         To configure it correctly, you must:
        1) Enable the Data Manager API in a GCP Project.
@@ -18,7 +19,7 @@ The tag is designed to handle both single and multiple conversion event uploads 
        5) Connect the Service Account to the container using the `JSON Key` file:
           - If hosting on Stape, [use the **Service Account power-up**](https://stape.io/blog/how-to-connect-google-service-account-to-stape).
           - If NOT hosting on Stape, follow [these instructions](https://developers.google.com/tag-platform/tag-manager/server-side/manual-setup-guide#optional_include_google_cloud_credentials).
-       6) Grant the Service Account access to the product you're interacting with (Google Ads, CM360 etc.).
+       6) Grant the Service Account access to the product you're interacting with (Google Ads account, CM360 account, Google Analytics property etc.).
 
 2.  Add the **Google Data Manager API Conversion Events Tag** to your server container in GTM from the [GTM Template Gallery](https://tagmanager.google.com/gallery/#/owners/stape-io/templates/google-conversion-events-tag).
 3.  Choose the **Event Type**: `Conversion` or `Pageview`.
@@ -51,16 +52,19 @@ This mode sends the conversion event.
 
 #### Destination Accounts and Conversion Events
 This is where you define which advertising accounts and specific conversion actions will receive the data.
--   **Product**: The Google product to send data to. Currently supports **Google Ads** and **CM, DV and SA 360 (Floodlight)** (the latter, only for the `Own Google Credentials` authentication method).
+-   **Product**: The Google product to send data to. Currently supports **Google Ads**, **CM, DV and SA 360 (Floodlight)**, and **Google Analytics (GA4)** (the latter two, only for the `Own Google Credentials` authentication method).
 -   **Operating Customer ID**: The Account ID (without hyphens) of the account that will receive the conversion events.
     -   **Google Ads**: this is your Google Ads Account ID (without hyphens).
     -   **CM360**: this is the [Advertiser ID](https://support.google.com/campaignmanager/answer/11568119?hl=en).
+    -   **Google Analytics**: this is the [Property ID](https://developers.google.com/analytics/devguides/reporting/data/v1/property-id#google_analytics).
 -   **Customer ID**: The Account ID (without hyphens) of the account used for authorization when making the API request.
     -   **Google Ads**: if your credentials belong to an MCC account that manages the Operating Account, set this to the MCC Account ID. If your credentials belong directly to the Operating Account, you can leave this field empty.
     -   **CM360**: this is also the [Advertiser ID](https://support.google.com/campaignmanager/answer/11568119?hl=en). If your credentials are for a Manager Account that manages the Operating Account, set this to the Manager Account ID.
+    -   **Google Analytics**: this is also the [Property ID](https://developers.google.com/analytics/devguides/reporting/data/v1/property-id#google_analytics), and you can leave it blank.
 -   **Conversion Event ID**: The ID of the specific conversion action to receive data.
     -   **Google Ads**: navigate to *Google Ads account > Goals > Conversions > Summary* and click on the desired Conversion Action. The ID is the value of the `ctId` query parameter in your browser's URL. [Learn more](https://developers.google.com/data-manager/api/devguides/concepts/destinations#ads-event).
     -   **CM360 (Floodlight)**: this is the **Floodlight Activity ID**. Find it on the *Activities* page — the ID is the number shown next to the activity name in the Activity name column. [Learn more](https://developers.google.com/data-manager/api/devguides/concepts/destinations#floodlight-event).
+    -   **Google Analytics**: this is the [Measurement ID](https://support.google.com/analytics/answer/12270356) (for web streams) or the [Firebase App ID](https://developers.google.com/data-manager/api/devguides/concepts/destinations#ga-event) (for app streams).
 
 > ❗ **CM360 service account permissions**: the service account used for authentication must have a user role with the **Insert offline conversions** permission granted in CM360. [Learn more](https://developers.google.com/data-manager/api/devguides/concepts/destinations#cm3-credentials).
 
@@ -75,8 +79,10 @@ You can send data in two ways:
 
 #### Conversion Information
 This section contains the core details of the conversion.
--   **Parameters**: Includes `Transaction/Order ID`, `Event Timestamp`, `Currency`, and `Conversion Value`.
+-   **Parameters**: Includes `Event Source`, `Transaction/Order ID`, `Event Timestamp`, `Currency`, and `Conversion Value`.
+    -   **Event Source**: a signal for where the event happened originally (`WEB`, `APP`, `IN_STORE`, `PHONE`, or `OTHER`). GA4 events only support `WEB` and `APP`.
     -   **Auto-mapping**: If enabled, the tag will attempt to automatically populate these fields from the incoming event data (e.g., `transaction_id`, `currency`, `value`).
+-   **Google Analytics Required Data** (`Own Google Credentials` only): a table to set fields required when Google Analytics (GA4) is a destination — `Event Name` (required), `User ID`, `Client ID` (required for web streams), and `App Instance ID` (required for app streams).
 
 ---
 
@@ -90,10 +96,13 @@ This section is crucial for matching the conversion to a user. You can provide m
 
 #### Ad Identifiers
 This section allows you to send click identifiers for attribution. It's as important as the User Data parameters for matching the conversion to a user.
--   **Click IDs**: `gclid`, `gbraid`, `wbraid` and `dclid`.
+-   **Click IDs**: `gclid`, `gbraid`, `wbraid` and `dclid` (for Floodlight). `gclid` can also be used for Google Analytics (GA4) events sent as an additional data source. [Learn more](https://developers.google.com/data-manager/api/devguides/events/analytics/online).
     -   **Auto-mapping**: If enabled, the tag will automatically pull Click IDs from, in this order, Event Data > URL Parameter > Server Cookie > JavaScript Cookie.
+-   **Other Floodlight-specific Identifiers** (`Own Google Credentials` only): `Match ID`, `Impression ID`, and `Encrypted User ID`.
 -   **Landing Page Parameters and Session Attributes**: `Landing Page User Agent`, `Landing Page IP Address` and `Session Attributes`
     -   **Auto-mapping**: If enabled, the tag will automatically pull Session Attributes from, in this order: `session_attributes` Event Data value > `_dm_session_attributes` Common Cookie value > `_dm_session_attributes` cookie set by the Pageview event of this tag.
+
+> Note: for **Google Ads** and **Floodlight** destinations, at least one Ad Identifier or User Data value must be specified. For **Google Ads**, the Device Information `IP Address` (below) also counts as a valid identifier, except for `IN_STORE` events.
 
 ---
 
@@ -106,6 +115,7 @@ You can include device details for the conversion event.
 #### User Properties
 This section provides more context about the customer.
 -   **Parameters**: `Customer Type` (New, Returning, or Re-engaged) and `Customer Value Bucket` (Low, Medium, or High).
+-   **Google Analytics User Properties** (`Own Google Credentials` only): a table to send additional [user properties](https://developers.google.com/analytics/devguides/collection/protocol/ga4/user-properties) as `User Property Name`/`User Property Value` pairs.
 
 ---
 
@@ -113,8 +123,9 @@ This section provides more context about the customer.
 This section allows for sending product-level details for e-commerce transactions.
 -   **Parameters**: `Merchant Center ID`, `Feed Label`, `Feed Language Code`, `Transaction Discount`, and a list of `Items` with their `Item ID`, `Merchant Product ID`, `Item Quantity`, and `Price`.
     -   **Auto-mapping**: If enabled, the tag will automatically pull `Items` from Event Data.
+-   **Add other Item Parameters**: If enabled, any item property that isn't `Item ID`, `Merchant Product ID`, `Item Quantity`, or `Price` is also sent per item as `additionalItemParameters` (used by Google Analytics) and `customVariables` (used by Google Ads and Floodlight).
 
-> Note: it's **required** to send at least the **Merchant Product ID** for each item.
+> Note: it's **required** to send at least the **Item ID** or the **Merchant Product ID** for each item.
 
 ---
 
@@ -203,6 +214,13 @@ console.log('-------------------------------------------------------------------
 
 11. Use the **Custom Variable ID** in the `Variable ID` field of the tag **Custom Variables** section.
 </details>
+
+---
+
+#### Google Analytics Event Parameters
+Available only for the `Own Google Credentials` authentication method.
+This section lets you send any [GA4 event parameters](https://developers.google.com/data-manager/api/reference/analytics/recommended-events) that aren't captured by the other fields (e.g., `tax`, `shipping`).
+-   **Parameters**: A list of `Field Name` and `Field Value` pairs.
 
 ---
 
