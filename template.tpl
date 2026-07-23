@@ -26,7 +26,7 @@ ___INFO___
     "displayName": "stape.io",
     "thumbnail": "data:image/png;base64,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0cHn7nMA0BAg5GftLrRu6vHHPpqQnPnKEx/9fBMm8Xr30ZTk9Uev9x5NTyJQ4uciUJrX/TTPLInXqSOPDaJi+tnfHURGfB7BYbIBwH4ECPlZuwvZNGESmmlJa77w5ZQWn08AMApPQicva3cBAHpNgJCXtbsAAL0mQMjH2l0AgN4TIORh7S4AAEmAkIu1uwAAJAFCLtbuAgCQBAgAAJCRAAEAALIRIAAAQDYCBAAAyEaAAAAA2QgQAAAgGwECAABkI0AAAIBsBAgAAJCNAAEAALIRIAAAQDYCBAAAyEaAAAAA2QgQAAAgGwECAABkI0AAAIBsBAgAAJCNAAEAALIRIAAAQDYCBAAAyEaAAAAA2QgQAAAgGwECAABkI0AAAIBsBAgAAJCNAAEAALIRIAAAQDYCBAAAyEaAAAAA2QgQAAAgGwECAABkI0AAAIBsBAgAAJCNAAEAALIRIAAAQDYCBAAAyEaAAAAA2QgQAAAgGwECAABkI0AAAIBsBAgAAJCNAAEAALI5kiCHb/1+Ajrmic8nABiVACGPX/utBAAAjmABAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAsnnsv37xf3iYAABaMPUX/08C2IsJCAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANgIEAADIRoAAAADZCBAAACAbAQIAAGQjQAAAgGwECAAAkI0AAQAAshEgAABANv8JvWIRK7gKXX8AAAAASUVORK5CYII\u003d"
   },
-  "description": "Tag that sends conversion events to Google\u0027s platforms (Google Ads, Campaign Manager 360, Search Ads 360, and Display \u0026 Video 360) using the Data Manager API.",
+  "description": "Tag that sends conversion events to Google\u0027s platforms (Google Analytics, Google Ads, Campaign Manager 360, Search Ads 360, and Display \u0026 Video 360) using the Data Manager API.",
   "containerContexts": [
     "SERVER"
   ]
@@ -52,7 +52,7 @@ ___TEMPLATE_PARAMETERS___
     ],
     "simpleValueType": true,
     "defaultValue": "conversion",
-    "help": "\u003cb\u003eConversion\u003c/b\u003e\n\u003cbr/\u003e\nSends the conversion event.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003ePageview\u003c/b\u003e \n\u003cbr/\u003e\nSets the the \u003ci\u003e_dm_session_attributes\u003c/i\u003e cookie containing a base64 JSON encoded string with the \u003ci\u003eSession Attributes\u003c/i\u003e values for conversion event attribution and modeling.\n\u003cbr/\u003e\nDefault mappings: \n\u003cul\u003e \n\u003cli\u003eSession Attribute \u003ci\u003egad_source\u003c/i\u003e: \u003ci\u003egad_source\u003c/i\u003e URL Parameter value \u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003egad_campaignid\u003c/i\u003e: \u003ci\u003egad_campaignid\u003c/i\u003e URL Parameter value\u003c/li\u003e \u003cli\u003eSession Attribute \u003ci\u003elanding_page_url\u003c/i\u003e: \u003ci\u003epage_location\u003c/i\u003e Event Data value\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_referrer\u003c/i\u003e: \u003ci\u003epage_referrer\u003c/i\u003e Event Data value\u003c/li\u003e\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_user_agent\u003c/i\u003e: \u003ci\u003euser_agent\u003c/i\u003e Event Data value\u003c/li\u003e\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003esession_start_time_usec\u003c/i\u003e: current timestamp of the time when the Pageview tag set the cookie\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e Learn more: \u003ca href\u003d\"https://support.google.com/google-ads/answer/16194756?hl\u003den\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://ads-developers.googleblog.com/2025/08/maximize-performance-of-your-google-ads.html\"\u003e[2]\u003c/a\u003e."
+    "help": "\u003cb\u003eConversion\u003c/b\u003e\n\u003cbr/\u003e\nSends the conversion event.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003ePageview\u003c/b\u003e \n\u003cbr/\u003e\nSets the the \u003ci\u003e_dm_session_attributes\u003c/i\u003e cookie containing a base64 JSON encoded string with the \u003ci\u003eSession Attributes\u003c/i\u003e values for conversion event attribution and modeling. Useful for Floodlight and Google Ads conversions.\n\u003cbr/\u003e\nDefault mappings: \n\u003cul\u003e \n\u003cli\u003eSession Attribute \u003ci\u003egad_source\u003c/i\u003e: \u003ci\u003egad_source\u003c/i\u003e URL Parameter value \u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003egad_campaignid\u003c/i\u003e: \u003ci\u003egad_campaignid\u003c/i\u003e URL Parameter value\u003c/li\u003e \u003cli\u003eSession Attribute \u003ci\u003elanding_page_url\u003c/i\u003e: \u003ci\u003epage_location\u003c/i\u003e Event Data value\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_referrer\u003c/i\u003e: \u003ci\u003epage_referrer\u003c/i\u003e Event Data value\u003c/li\u003e\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_user_agent\u003c/i\u003e: \u003ci\u003euser_agent\u003c/i\u003e Event Data value\u003c/li\u003e\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003esession_start_time_usec\u003c/i\u003e: current timestamp of the time when the Pageview tag set the cookie\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e Learn more: \u003ca href\u003d\"https://support.google.com/google-ads/answer/16194756?hl\u003den\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://ads-developers.googleblog.com/2025/08/maximize-performance-of-your-google-ads.html\"\u003e[2]\u003c/a\u003e."
   },
   {
     "type": "GROUP",
@@ -287,6 +287,10 @@ ___TEMPLATE_PARAMETERS___
                   {
                     "value": "FLOODLIGHT_CONFIG",
                     "displayValue": "CM, DV and SA 360 (Floodlight)"
+                  },
+                  {
+                    "value": "GOOGLE_ANALYTICS_PROPERTY",
+                    "displayValue": "Google Analytics"
                   }
                 ]
               },
@@ -325,7 +329,11 @@ ___TEMPLATE_PARAMETERS___
                     "type": "NON_EMPTY"
                   },
                   {
-                    "type": "POSITIVE_NUMBER"
+                    "type": "REGEX",
+                    "args": [
+                      "\\d+|[A-Z]+-[A-Z0-9]+"
+                    ],
+                    "errorMessage": "This value must be an integer (for Google Ads and Floodlights), a Measurement ID (for Google Analytics web streams) or a Firebase App ID (for Google Analytics app streams)."
                   }
                 ]
               }
@@ -350,7 +358,7 @@ ___TEMPLATE_PARAMETERS___
               }
             ],
             "newRowButtonText": "Add Conversion Event",
-            "help": "\u003cb\u003eProduct\u003c/b\u003e: The Product the Conversion belongs to.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eOperating Customer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e (without hyphens) of the account (Google Ads account, CM360 account etc.) that will receive the conversion events. For CM360, it\u0027s the same as the \u003ca href\u003d\"https://support.google.com/campaignmanager/answer/11568119?hl\u003den\"\u003e\u003ci\u003eAdvertiser ID\u003c/i\u003e\u003c/a\u003e. \n\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eCustomer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e of the account (Google Ads account, CM360 account etc.) used for authorization (without hyphens) when making the API request. For CM360, it\u0027s the same as the \u003ca href\u003d\"https://support.google.com/campaignmanager/answer/11568119?hl\u003den\"\u003e\u003ci\u003eAdvertiser ID\u003c/i\u003e\u003c/a\u003e.\n\u003cbr/\u003e\nIf your credentials are for access to a \u003ci\u003eManager Account\u003c/i\u003e that has the \u003ci\u003eOperating Account\u003c/i\u003e as one of its subaccounts, set the \u003ci\u003eCustomer ID\u003c/i\u003e to the ID of the \u003ci\u003eManager Account\u003c/i\u003e.\n\u003cbr/\u003e\nIf your credentials are for the account that is the \u003ci\u003eOperating Account\u003c/i\u003e, you don\u0027t need to set \u003ci\u003eCustomer ID\u003c/i\u003e.\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/quickstart/send-events?persona\u003dadvertiser#prepare_a_destination\"\u003e[2]\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eConversion Event ID\u003c/b\u003e: The ID of the conversion you want to interact with.\n\u003cbr/\u003e\nFor \u003cb\u003eGoogle Ads\u003c/b\u003e, you can find it by going to the \u003ci\u003eGoogle Ads account \u003e Goals \u003e Conversions \u003e Summary \u003e Access the desired Conversion Action\u003c/i\u003e. After you click on the Conversion Action, the ID is on the \u003cb\u003ectId\u003c/b\u003e URL query parameter on your browser. \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#ads-event\"\u003eLearn more\u003c/a\u003e\n\u003cbr/\u003e\nFor \u003cb\u003eCM, DV and SA 360\u003c/b\u003e, it\u0027s the Floodlight Activity ID. You can find it by going to the \u003ci\u003eActivities\u003c/i\u003e page. The ID is the number next to the name in the Activity name column. \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#floodlight-event\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e"
+            "help": "\u003cb\u003eProduct\u003c/b\u003e: The Product the Conversion belongs to.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eOperating Customer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e (without hyphens) of the account (Google Analytics property, Google Ads account, CM360 account etc.) that will receive the conversion events. \n\u003cbr/\u003e\nFor CM360, it\u0027s the \u003ca href\u003d\"https://support.google.com/campaignmanager/answer/11568119?hl\u003den\"\u003e\u003ci\u003eAdvertiser ID\u003c/i\u003e\u003c/a\u003e.\n\u003cbr/\u003e\nFor Google Analytics, it\u0027s the \u003ca href\u003d\"https://developers.google.com/analytics/devguides/reporting/data/v1/property-id#google_analytics\"\u003eProperty ID\u003c/a\u003e.\n\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eCustomer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e of the account (Google Analytics property, Google Ads account, CM360 account etc.) used for authorization (without hyphens) when making the API request. \n\u003cbr/\u003e\nFor CM360, it\u0027s the \u003ca href\u003d\"https://support.google.com/campaignmanager/answer/11568119?hl\u003den\"\u003e\u003ci\u003eAdvertiser ID\u003c/i\u003e\u003c/a\u003e.\n\u003cbr/\u003e\nFor Google Analytics, it\u0027s the \u003ca href\u003d\"https://developers.google.com/analytics/devguides/reporting/data/v1/property-id#google_analytics\"\u003eProperty ID\u003c/a\u003e (you can leave it blank).\n\u003cbr/\u003e\nFor ads products:\n\u003cul\u003e\n\u003cli\u003eIf your credentials are for access to a \u003ci\u003eManager Account\u003c/i\u003e that has the \u003ci\u003eOperating Account\u003c/i\u003e as one of its subaccounts, set the \u003ci\u003eCustomer ID\u003c/i\u003e to the ID of the \u003ci\u003eManager Account\u003c/i\u003e.\u003c/li\u003e\n\u003cli\u003eIf your credentials are for the account that is the \u003ci\u003eOperating Account\u003c/i\u003e, you don\u0027t need to set \u003ci\u003eCustomer ID\u003c/i\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/quickstart/send-events?persona\u003dadvertiser#prepare_a_destination\"\u003e[2]\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eConversion Event ID\u003c/b\u003e: The ID of the conversion you want to interact with.\n\u003cbr/\u003e\nFor \u003cb\u003eGoogle Ads\u003c/b\u003e, you can find it by going to the \u003ci\u003eGoogle Ads account \u003e Goals \u003e Conversions \u003e Summary \u003e Access the desired Conversion Action\u003c/i\u003e. After you click on the Conversion Action, the ID is on the \u003cb\u003ectId\u003c/b\u003e URL query parameter on your browser. \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#ads-event\"\u003eLearn more\u003c/a\u003e\n\u003cbr/\u003e\nFor \u003cb\u003eCM, DV and SA 360\u003c/b\u003e, it\u0027s the Floodlight Activity ID. You can find it by going to the \u003ci\u003eActivities\u003c/i\u003e page. The ID is the number next to the name in the Activity name column. \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#floodlight-event\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\nFor \u003cb\u003eGoogle Analytics\u003c/b\u003e, it\u0027s the \u003ca href\u003d\"https://support.google.com/analytics/answer/12270356\"\u003eMeasurement ID\u003c/a\u003e (for web streams) or the \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#ga-event\"\u003eFirebase App ID\u003c/a\u003e (for app streams).\n\u003cbr/\u003e"
           }
         ]
       },
@@ -645,13 +653,13 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "\u003cb\u003eRequired.\u003c/b\u003e\n\u003cbr/\u003e\u003cbr/\u003e\nA signal for where the event happened originally (web, app, in-store, etc.).",
-                "notSetText": "(not set)",
+                "help": "\u003cb\u003eRequired.\u003c/b\u003e\n\u003cbr/\u003e\u003cbr/\u003e\nA signal for where the event happened originally (web, app, in-store, etc.).\n\u003cbr/\u003e\nGA4 events support only \u003ci\u003eWEB\u003c/i\u003e and \u003ci\u003eAPP\u003c/i\u003e.",
                 "valueValidators": [
                   {
                     "type": "NON_EMPTY"
                   }
-                ]
+                ],
+                "defaultValue": "WEB"
               },
               {
                 "type": "TEXT",
@@ -693,7 +701,79 @@ ___TEMPLATE_PARAMETERS___
                 "name": "conversionCount",
                 "displayName": "Conversion Quantity",
                 "simpleValueType": true,
-                "help": "For Floodlight.\n\u003cbr/\u003e\nThe conversion quantity or the number of items associated with the event, for counting-based conversions. Must be at least 1 for the conversion to count towards certain metrics (such as Total Conversions)."
+                "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe conversion quantity or the number of items associated with the event, for counting-based conversions. Must be at least 1 for the conversion to count towards certain metrics (such as Total Conversions).",
+                "enablingConditions": [
+                  {
+                    "paramName": "authFlow",
+                    "paramValue": "own",
+                    "type": "EQUALS"
+                  }
+                ]
+              },
+              {
+                "type": "GROUP",
+                "name": "googleAnalyticsConversionInformationGroup",
+                "displayName": "Google Analytics Required Data",
+                "groupStyle": "NO_ZIPPY",
+                "subParams": [
+                  {
+                    "type": "SIMPLE_TABLE",
+                    "name": "googleAnalyticsRequiredDataList",
+                    "displayName": "Google Analytics Required Data",
+                    "simpleTableColumns": [
+                      {
+                        "defaultValue": "",
+                        "displayName": "Name",
+                        "name": "name",
+                        "type": "SELECT",
+                        "isUnique": true,
+                        "valueValidators": [
+                          {
+                            "type": "NON_EMPTY"
+                          }
+                        ],
+                        "selectItems": [
+                          {
+                            "value": "eventName",
+                            "displayValue": "Event Name"
+                          },
+                          {
+                            "value": "userId",
+                            "displayValue": "User ID"
+                          },
+                          {
+                            "value": "clientId",
+                            "displayValue": "Client ID (for web streams)"
+                          },
+                          {
+                            "value": "appInstanceId",
+                            "displayValue": "App Instance ID (for app streams)"
+                          }
+                        ]
+                      },
+                      {
+                        "defaultValue": "",
+                        "displayName": "Value",
+                        "name": "value",
+                        "type": "TEXT",
+                        "valueValidators": [
+                          {
+                            "type": "NON_EMPTY"
+                          }
+                        ]
+                      }
+                    ],
+                    "newRowButtonText": "Add Parameter",
+                    "help": "\u003cb\u003eEvent Name\u003c/b\u003e\n\u003cb\u003eRequired\u003c/b\u003e if GA4 is a destination.\u003cbr/\u003eThe GA4 event name limitations and requirements apply. Learn more: \u003ca href\u003d\"https://support.google.com/analytics/answer/9267744\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://support.google.com/analytics/answer/13316687\"\u003e[2]\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eUser ID\u003c/b\u003e\n\u003cbr/\u003e\nThe unique identifier for a user. \u003ca href\u003d\"https://support.google.com/analytics/answer/9213390\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eClient ID\u003c/b\u003e\n\u003cbr/\u003e\n\u003cb\u003eRequired\u003c/b\u003e if GA4 is a destination and a web stream will receive the event. \u003ca href\u003d\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/index.md?client_type\u003dgtag#payload_post_body\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eApp Instance ID\u003c/b\u003e\n\u003cbr/\u003e\n\u003cb\u003eRequired\u003c/b\u003e if GA4 is a destination and an app stream will receive the event. \u003ca href\u003d\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/index.md?client_type\u003dfirebase#payload_post_body\"\u003eLearn more\u003c/a\u003e."
+                  }
+                ],
+                "enablingConditions": [
+                  {
+                    "paramName": "authFlow",
+                    "paramValue": "own",
+                    "type": "EQUALS"
+                  }
+                ]
               }
             ]
           },
@@ -838,7 +918,7 @@ ___TEMPLATE_PARAMETERS___
                 "name": "adIdentifiersGclid",
                 "displayName": "gclid",
                 "simpleValueType": true,
-                "help": "The Google Click ID (\u003ci\u003egclid\u003c/i\u003e) associated with this event."
+                "help": "The Google Click ID (\u003ci\u003egclid\u003c/i\u003e) associated with this event.\n\u003cbr/\u003e\nIt can also be used in GA4 if sending an event with a Transaction ID as an additional data source. \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/events/analytics/online\"Learn more\u003c/a\u003e."
               },
               {
                 "type": "TEXT",
@@ -855,32 +935,47 @@ ___TEMPLATE_PARAMETERS___
                 "help": "The click identifier for clicks associated with web events and originating from iOS devices starting with iOS14."
               },
               {
-                "type": "TEXT",
-                "name": "adIdentifiersDclid",
-                "displayName": "dclid",
-                "simpleValueType": true,
-                "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Display Click ID (for Floodlight conversions) associated with this event."
-              },
-              {
-                "type": "TEXT",
-                "name": "adIdentifiersMatchId",
-                "displayName": "Match ID",
-                "simpleValueType": true,
-                "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Match ID field used to join this event with a previous event."
-              },
-              {
-                "type": "TEXT",
-                "name": "adIdentifiersImpressionId",
-                "displayName": "Impression ID",
-                "simpleValueType": true,
-                "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Impression ID associated with this event."
-              },
-              {
-                "type": "TEXT",
-                "name": "adIdentifiersEncryptedUserId",
-                "displayName": "Encrypted User ID",
-                "simpleValueType": true,
-                "help": "For Floodlight conversions.\n\u003cbr/\u003e\nAn array of objects containing an user identifier issued to be used for attribution.\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#adidentifiers\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#encrypteduserid\"\u003e[2]\u003c/a\u003e."
+                "type": "GROUP",
+                "name": "floodlightAdIdentifiersGroup",
+                "displayName": "",
+                "groupStyle": "NO_ZIPPY",
+                "subParams": [
+                  {
+                    "type": "TEXT",
+                    "name": "adIdentifiersDclid",
+                    "displayName": "dclid",
+                    "simpleValueType": true,
+                    "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Display Click ID (for Floodlight conversions) associated with this event."
+                  },
+                  {
+                    "type": "TEXT",
+                    "name": "adIdentifiersMatchId",
+                    "displayName": "Match ID",
+                    "simpleValueType": true,
+                    "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Match ID field used to join this event with a previous event."
+                  },
+                  {
+                    "type": "TEXT",
+                    "name": "adIdentifiersImpressionId",
+                    "displayName": "Impression ID",
+                    "simpleValueType": true,
+                    "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Impression ID associated with this event."
+                  },
+                  {
+                    "type": "TEXT",
+                    "name": "adIdentifiersEncryptedUserId",
+                    "displayName": "Encrypted User ID",
+                    "simpleValueType": true,
+                    "help": "For Floodlight conversions.\n\u003cbr/\u003e\nAn array of objects containing an user identifier issued to be used for attribution.\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#adidentifiers\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#encrypteduserid\"\u003e[2]\u003c/a\u003e."
+                  }
+                ],
+                "enablingConditions": [
+                  {
+                    "paramName": "authFlow",
+                    "paramValue": "own",
+                    "type": "EQUALS"
+                  }
+                ]
               },
               {
                 "type": "TEXT",
@@ -1097,6 +1192,53 @@ ___TEMPLATE_PARAMETERS___
                 "simpleValueType": true,
                 "help": "The advertiser-assessed value of the customer.",
                 "notSetText": "(not set)"
+              },
+              {
+                "type": "GROUP",
+                "name": "googleAnalyticsUserPropertiesGroup",
+                "displayName": "Google Analytics User Properties",
+                "groupStyle": "NO_ZIPPY",
+                "subParams": [
+                  {
+                    "type": "SIMPLE_TABLE",
+                    "name": "userPropertiesList",
+                    "displayName": "User Properties",
+                    "simpleTableColumns": [
+                      {
+                        "defaultValue": "",
+                        "displayName": "User Property Name",
+                        "name": "name",
+                        "type": "TEXT",
+                        "isUnique": true,
+                        "valueValidators": [
+                          {
+                            "type": "NON_EMPTY"
+                          }
+                        ]
+                      },
+                      {
+                        "defaultValue": "",
+                        "displayName": "User Property Value",
+                        "name": "value",
+                        "type": "TEXT",
+                        "valueValidators": [
+                          {
+                            "type": "NON_EMPTY"
+                          }
+                        ]
+                      }
+                    ],
+                    "newRowButtonText": "Add User Property",
+                    "help": "\u003ca href\u003d\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/user-properties\"\u003eLearn more\u003c/a\u003e."
+                  }
+                ],
+                "enablingConditions": [
+                  {
+                    "paramName": "authFlow",
+                    "paramValue": "own",
+                    "type": "EQUALS"
+                  }
+                ]
               }
             ]
           },
@@ -1122,7 +1264,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n\u003cbr/\u003e\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eItems: \u003ci\u003eeventData.items\u003c/i\u003e and \u003ci\u003eeventData.ecommerce.items\u003c/i\u003e. It only auto-maps items that have an \u003ci\u003eItem ID\u003ci\u003e. Auto-mapped properties: \u003ci\u003eitemId\u003c/i\u003e, \u003ci\u003emerchantProductId\u003c/i\u003e (same as Item ID), \u003ci\u003equantity\u003c/i\u003e and \u003ci\u003eunitPrice\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eCoupon Codes: \u003ci\u003eeventData.coupon\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n\u003cbr/\u003e\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eItems: \u003ci\u003eeventData.items\u003c/i\u003e and \u003ci\u003eeventData.ecommerce.items\u003c/i\u003e. It only auto-maps items that have an \u003ci\u003eItem ID\u003c/i\u003e. Auto-mapped properties: \u003ci\u003eitemId\u003c/i\u003e, \u003ci\u003emerchantProductId\u003c/i\u003e (same as Item ID), \u003ci\u003equantity\u003c/i\u003e and \u003ci\u003eunitPrice\u003c/i\u003e. If the \u003ci\u003eAdd other Item Parameters\u003c/i\u003e checkbox below is enabled, any other item property is also mapped to \u003ci\u003eadditionalItemParameters\u003c/i\u003e for GA4 (and to \u003ci\u003ecustomVariables\u003c/i\u003e for Google Ads Store Sales conversions).\u003c/li\u003e\n\u003cli\u003eCoupon Codes: \u003ci\u003eeventData.coupon\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e",
                 "defaultValue": true,
                 "subParams": [
                   {
@@ -1177,11 +1319,19 @@ ___TEMPLATE_PARAMETERS___
                 "help": "The coupon codes that were applied to the cart. Cart-level and item-level coupon codes are independent.\n\u003cbr/\u003e\nSpecify a single coupon code, or an array of coupon codes."
               },
               {
+                "type": "CHECKBOX",
+                "name": "addAdditionalItemParameters",
+                "checkboxText": "Add other Item Parameters in Additional Item Parameters (for GA4) and Custom Variables (for Google Ads Store Sales only).",
+                "simpleValueType": true,
+                "help": "If enabled, any item property that is not \u003ci\u003emerchantProductId\u003c/i\u003e, \u003ci\u003eitemId\u003c/i\u003e, \u003ci\u003equantity\u003c/i\u003e or \u003ci\u003eunitPrice\u003c/i\u003e will also be added, per item, to \u003ci\u003eadditionalItemParameters\u003c/i\u003e (used by Google Analytics) and \u003ci\u003ecustomVariables\u003c/i\u003e (used by Google Ads and Floodlight).",
+                "defaultValue": false
+              },
+              {
                 "type": "TEXT",
                 "name": "cartDataItems",
                 "displayName": "Items",
                 "simpleValueType": true,
-                "help": "The array of items associated with the event.\n\u003cbr/\u003e\nEach item in the array is an object that must follow the \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#item\"\u003eItem\u003c/a\u003e object guidelines and supported properties.\n\u003cbr/\u003e\nIf an item does not have the \u003ci\u003emerchantProductId\u003c/i\u003e property, it won\u0027t be included in the array."
+                "help": "The array of items associated with the event.\n\u003cbr/\u003e\nEach item in the array is an object that must follow the \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#item\"\u003eItem\u003c/a\u003e object guidelines and supported properties.\n\u003cbr/\u003e\u003cbr/\u003e\nSupported properties: \n\u003cul\u003e\n\u003cli\u003e\u003ci\u003eitemId\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003emerchantProductId\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003equantity\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eunitPrice\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003emerchantId\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003emerchantFeedLabel\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003emerchantFeedLanguageCode\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003econversionValue\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eadditionalItemParameters\u003c/i\u003e (for GA4) and \u003ci\u003ecustomVariables\u003c/i\u003e (the latter, only for Google Ads Store Sales conversions)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\nIf an item has neither an \u003ci\u003eitemId\u003c/i\u003e nor a \u003ci\u003emerchantProductId\u003c/i\u003e property, it won\u0027t be included in the array."
               }
             ]
           },
@@ -1191,11 +1341,6 @@ ___TEMPLATE_PARAMETERS___
             "displayName": "Custom Variables",
             "groupStyle": "ZIPPY_OPEN_ON_PARAM",
             "subParams": [
-              {
-                "type": "LABEL",
-                "name": "customVariablesGroupLabel",
-                "displayName": "\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#customvariable\"\u003eLearn more\u003c/a\u003e about Custom Variables.\n\u003cbr/\u003e\n\u003ca href\u003d\"https://github.com/stape-io/google-conversion-events-tag?tab\u003dreadme-ov-file#how-to-obtain-the-variable-id\"\u003eLearn more\u003c/a\u003e about how to obtain the \u003ci\u003eCustom Variable ID\u003c/i\u003e.\n\u003cbr/\u003e\nIn the optional \u003ci\u003eDestination References\u003c/i\u003e column, you may leave it blank, or specify either a single reference or an array of references.\n\u003cbr/\u003e\u003cbr/\u003e"
-              },
               {
                 "type": "SIMPLE_TABLE",
                 "name": "customVariablesList",
@@ -1234,7 +1379,9 @@ ___TEMPLATE_PARAMETERS___
                     "type": "TEXT"
                   }
                 ],
-                "newRowButtonText": "Add Custom Variable"
+                "newRowButtonText": "Add Custom Variable",
+                "help": "\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#customvariable\"\u003eLearn more\u003c/a\u003e about Custom Variables.\n\u003cbr/\u003e\n\u003ca href\u003d\"https://github.com/stape-io/google-conversion-events-tag?tab\u003dreadme-ov-file#how-to-obtain-the-variable-id\"\u003eLearn more\u003c/a\u003e about how to obtain the \u003ci\u003eCustom Variable ID\u003c/i\u003e.\n\u003cbr/\u003e\nIn the optional \u003ci\u003eDestination References\u003c/i\u003e column, you may leave it blank, or specify either a single reference or an array of references.",
+                "displayName": "Custom Variables"
               }
             ]
           },
@@ -1299,26 +1446,21 @@ ___TEMPLATE_PARAMETERS___
                     ]
                   }
                 ],
-                "help": "The location where the event occurred. \n\u003cbr/\u003e\nUseful for Store Sales conversions for Google Ads.\n\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#eventlocation\"\u003eLearn more\u003c/a\u003e.",
+                "help": "The location where the event occurred. \n\u003cbr/\u003e\nUseful for Store Sales conversions for Google Ads, or for adding geographical information to a Google Analytics event.\n\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#eventlocation\"\u003eLearn more\u003c/a\u003e.",
                 "newRowButtonText": "Add Property"
               }
             ]
           },
           {
             "type": "GROUP",
-            "name": "experimentalFieldsGroup",
-            "displayName": "Experimental Fields",
+            "name": "additionalEventParametersGroup",
+            "displayName": "Google Analytics Event Parameters",
             "groupStyle": "ZIPPY_OPEN_ON_PARAM",
             "subParams": [
               {
-                "type": "LABEL",
-                "name": "experimentalFieldsGroupLabel",
-                "displayName": "\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#experimentalfield\"\u003eLearn more\u003c/a\u003e about Experimental Fields.\n\u003cbr/\u003e\u003cbr/\u003e"
-              },
-              {
                 "type": "SIMPLE_TABLE",
-                "name": "experimentalFieldsList",
-                "displayName": "",
+                "name": "additionalEventParametersList",
+                "displayName": "Google Analytics Event Parameters",
                 "simpleTableColumns": [
                   {
                     "defaultValue": "",
@@ -1344,7 +1486,15 @@ ___TEMPLATE_PARAMETERS___
                     ]
                   }
                 ],
-                "newRowButtonText": "Add Field"
+                "newRowButtonText": "Add Parameter",
+                "help": "Populate this list with any Google Analytics event parameters that aren\u0027t captured in the other fields. The parameters can include \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/analytics/recommended-events\"\u003eadditional recommended parameters\u003c/a\u003e for the event or any other parameters you want to capture.\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/events/send-events#add_analytics_info\"\u003e[1]\u003c/a\u003e, \u003ca href\u003d\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events\"\u003e[2]\u003c/a\u003e and \u003ca href\u003d\"https://support.google.com/analytics/answer/9267744?hl\u003den\"\u003e[3]\u003c/a\u003e."
+              }
+            ],
+            "enablingConditions": [
+              {
+                "paramName": "authFlow",
+                "paramValue": "own",
+                "type": "EQUALS"
               }
             ]
           }
@@ -1580,8 +1730,8 @@ function handlePageViewEvent(data, eventData) {
 }
 
 function addDestinationsData(data, mappedData) {
-  const normalizeIds = (id) => {
-    return replaceAll(makeString(id), '[^0-9]', '');
+  const normalizeIds = (id, isGADestinationId) => {
+    return !isGADestinationId ? replaceAll(makeString(id), '[^0-9]', '') : makeString(id).trim();
   };
 
   const destinations = [];
@@ -1589,7 +1739,10 @@ function addDestinationsData(data, mappedData) {
     data.stapeAuthDestinationsList || data.ownAuthDestinationsList; // Mutually exclusive.
 
   accountsAndDestinationsFromUI.forEach((row) => {
-    const productDestinationId = normalizeIds(row.productDestinationId);
+    const productDestinationId = normalizeIds(
+      row.productDestinationId,
+      row.product === 'GOOGLE_ANALYTICS_PROPERTY'
+    );
     const destination = {
       reference: productDestinationId,
       productDestinationId: productDestinationId,
@@ -1741,6 +1894,8 @@ function addConversionInformation(data, eventData, conversionEvent) {
     if (isValidValue(conversionValue)) conversionEvent.conversionValue = conversionValue;
   }
 
+  if (data.eventSource) conversionEvent.eventSource = data.eventSource;
+
   if (data.transactionId) conversionEvent.transactionId = makeString(data.transactionId);
 
   if (data.eventTimestamp) {
@@ -1761,7 +1916,12 @@ function addConversionInformation(data, eventData, conversionEvent) {
     conversionEvent.conversionCount = makeNumber(data.conversionCount);
   }
 
-  if (data.eventSource) conversionEvent.eventSource = data.eventSource;
+  if (data.googleAnalyticsRequiredDataList) {
+    data.googleAnalyticsRequiredDataList.forEach((d) => {
+      if (!isValidValue(d.value)) return;
+      conversionEvent[d.name] = makeString(d.value);
+    });
+  }
 
   return conversionEvent;
 }
@@ -1937,6 +2097,22 @@ function addUserProperties(data, conversionEvent) {
     userProperties.customerValueBucket = data.userPropertiesCustomerValueBucket;
   }
 
+  if (data.userPropertiesList) {
+    const additionalUserProperties = [];
+
+    data.userPropertiesList.forEach((d) => {
+      if (!isValidValue(d.name) || !isValidValue(d.value)) return;
+      additionalUserProperties.push({
+        propertyName: makeString(d.name),
+        value: makeString(d.value)
+      });
+    });
+
+    if (additionalUserProperties.length > 0) {
+      userProperties.additionalUserProperties = additionalUserProperties;
+    }
+  }
+
   if (hasProps(userProperties)) {
     conversionEvent.userProperties = userProperties;
   }
@@ -1958,22 +2134,52 @@ function getItems(eventData) {
   return;
 }
 
-function addCartData(data, eventData, conversionEvent) {
+function addAdditionalItemFields(data, item, sourceItem, excludeKeys, allowCustomVariables) {
+  if (!data.addAdditionalItemParameters) return;
+
+  const additionalItemParameters =
+    getType(item.additionalItemParameters) === 'array' ? item.additionalItemParameters : [];
+  const customVariables =
+    allowCustomVariables && getType(item.customVariables) === 'array' ? item.customVariables : [];
+
+  Object.keys(sourceItem).forEach((key) => {
+    if (excludeKeys.indexOf(key) !== -1 || !isValidValue(sourceItem[key])) return;
+    const value = makeString(sourceItem[key]);
+    additionalItemParameters.push({ parameterName: key, value: value });
+    if (allowCustomVariables) customVariables.push({ variable: key, value: value });
+  });
+
+  if (additionalItemParameters.length > 0) item.additionalItemParameters = additionalItemParameters;
+  if (allowCustomVariables && customVariables.length > 0) item.customVariables = customVariables;
+}
+
+function addCartData(data, eventData, conversionEvent, destinations) {
   const cartData = {};
+  // Per https://developers.google.com/data-manager/api/devguides/events/send-events#google-ads-store-sales,
+  // items[].customVariables is only documented for Google Ads Store Sales conversions.
+  const isGoogleAdsStoreSales =
+    conversionEvent.eventSource === 'IN_STORE' && hasDestination(destinations, 'GOOGLE_ADS');
 
   if (isUIFieldTrue(data.autoMapCartData)) {
     const items = getItems(eventData);
+
     if (getType(items) === 'array' && items.length > 0) {
       const itemIdKey = data.itemIdKey ? data.itemIdKey : 'item_id';
       const cartDataItems = items
         .filter((i) => i[itemIdKey])
         .map((i) => {
           const item = {};
-          const itemId = makeString(i[itemIdKey]);
-          item.merchantProductId = itemId;
-          item.itemId = itemId;
+          item.itemId = makeString(i[itemIdKey]);
+          item.merchantProductId = item.itemId; // Some destinations require merchantProductId to be present in order to process the cart data.
           if (i.quantity) item.quantity = makeString(i.quantity);
           if (isValidValue(i.price)) item.unitPrice = makeNumber(i.price);
+          addAdditionalItemFields(
+            data,
+            item,
+            i,
+            [itemIdKey, 'quantity', 'price'],
+            isGoogleAdsStoreSales
+          );
           return item;
         });
 
@@ -2008,13 +2214,46 @@ function addCartData(data, eventData, conversionEvent) {
 
   if (getType(data.cartDataItems) === 'array' && data.cartDataItems.length > 0) {
     const cartDataItems = data.cartDataItems
-      .filter((i) => i.merchantProductId)
+      .filter((i) => i.itemId || i.merchantProductId)
       .map((i) => {
-        i.merchantProductId = makeString(i.merchantProductId);
-        if (i.itemId) i.itemId = makeString(i.itemId);
-        if (i.quantity) i.quantity = makeString(i.quantity);
-        if (isValidValue(i.unitPrice)) i.unitPrice = makeNumber(i.unitPrice);
-        return i;
+        const item = {};
+        item.itemId = makeString(i.itemId || i.merchantProductId);
+        item.merchantProductId = makeString(i.merchantProductId || i.itemId); // Some destinations require merchantProductId to be present in order to process the cart data.
+        if (i.quantity) item.quantity = makeString(i.quantity);
+        if (isValidValue(i.unitPrice)) item.unitPrice = makeNumber(i.unitPrice);
+        if (i.merchantId) item.merchantId = makeString(i.merchantId);
+        if (i.merchantFeedLabel) item.merchantFeedLabel = makeString(i.merchantFeedLabel);
+        if (i.merchantFeedLanguageCode) {
+          item.merchantFeedLanguageCode = makeString(i.merchantFeedLanguageCode);
+        }
+        if (isValidValue(i.conversionValue)) item.conversionValue = makeNumber(i.conversionValue);
+        // Preserve additionalItemParameters/customVariables if the user already supplied them
+        // directly as Item-schema-conformant arrays, per the field's documented behavior.
+        if (getType(i.additionalItemParameters) === 'array') {
+          item.additionalItemParameters = i.additionalItemParameters;
+        }
+        if (isGoogleAdsStoreSales && getType(i.customVariables) === 'array') {
+          item.customVariables = i.customVariables;
+        }
+        addAdditionalItemFields(
+          data,
+          item,
+          i,
+          [
+            'merchantProductId',
+            'itemId',
+            'quantity',
+            'unitPrice',
+            'merchantId',
+            'merchantFeedLabel',
+            'merchantFeedLanguageCode',
+            'conversionValue',
+            'additionalItemParameters',
+            'customVariables'
+          ],
+          isGoogleAdsStoreSales
+        );
+        return item;
       });
 
     if (cartDataItems.length > 0) cartData.items = cartDataItems;
@@ -2071,17 +2310,21 @@ function addEventLocation(data, conversionEvent) {
   return conversionEvent;
 }
 
-function addExperimentalFields(data, conversionEvent) {
-  const experimentalFields = [];
+function addAdditionalEventParameters(data, conversionEvent) {
+  if (data.additionalEventParametersList) {
+    const additionalEventParameters = [];
 
-  if (data.experimentalFieldsList) {
-    data.experimentalFieldsList.forEach((d) => {
-      if (!isValidValue(d.value)) return;
-
-      experimentalFields.push({ field: d.name, value: makeString(d.value) });
+    data.additionalEventParametersList.forEach((d) => {
+      if (!isValidValue(d.name) || !isValidValue(d.value)) return;
+      additionalEventParameters.push({
+        parameterName: makeString(d.name),
+        value: makeString(d.value)
+      });
     });
 
-    if (experimentalFields.length > 0) conversionEvent.experimentalFields = experimentalFields;
+    if (additionalEventParameters.length > 0) {
+      conversionEvent.additionalEventParameters = additionalEventParameters;
+    }
   }
 
   return conversionEvent;
@@ -2096,10 +2339,10 @@ function addConversionEventsData(data, eventData, mappedData) {
     addAdIdentifiers(data, eventData, conversionEvent);
     addEventDeviceInformation(data, eventData, conversionEvent);
     addUserProperties(data, conversionEvent);
-    addCartData(data, eventData, conversionEvent);
+    addCartData(data, eventData, conversionEvent, mappedData.destinations);
     addCustomVariables(data, conversionEvent);
     addEventLocation(data, conversionEvent);
-    addExperimentalFields(data, conversionEvent);
+    addAdditionalEventParameters(data, conversionEvent);
 
     mappedData.events = [conversionEvent];
   } else if (
@@ -2355,6 +2598,24 @@ function validateMappedData(mappedData) {
     return 'At least 1 Conversion Event must be specified.';
   }
 
+  const destinations = mappedData.destinations;
+  const hasGoogleAnalytics = hasDestination(destinations, 'GOOGLE_ANALYTICS_PROPERTY');
+  const hasGoogleAds = hasDestination(destinations, 'GOOGLE_ADS');
+  const hasFloodlight = hasDestination(destinations, 'FLOODLIGHT_CONFIG');
+
+  if (hasGoogleAnalytics) {
+    const isGA4DataInvalid = conversionEvents.some((event) => {
+      if (!event.eventName) return true;
+      return (
+        !(event.eventSource === 'WEB' && event.clientId) &&
+        !(event.eventSource === 'APP' && event.appInstanceId)
+      );
+    });
+    if (isGA4DataInvalid) {
+      return 'When Google Analytics Property is a destination, "eventName" is required, and at least "clientId" (Web Stream) or "appInstanceId" (App Stream) must be specified.';
+    }
+  }
+
   const isUserDataAbsent = (event) => {
     return (
       getType(event.userData) !== 'object' ||
@@ -2390,11 +2651,35 @@ function validateMappedData(mappedData) {
       })
     );
   };
-  const doesNotHaveMatchData = conversionEvents.some((event) => {
-    return isUserDataAbsent(event) && isAdIdentifiersAbsent(event);
-  });
-  if (doesNotHaveMatchData) {
-    return 'At least 1 Ad Identifier or User Data must be specified.';
+
+  if (hasGoogleAds || hasFloodlight) {
+    // Per https://developers.google.com/data-manager/api/devguides/events/send-events#google-ads,
+    // eventDeviceInfo.ipAddress is a valid standalone identifier for Google Ads (except IN_STORE).
+    const doesNotHaveMatchData = conversionEvents.some((event) => {
+      const hasIpAddressIdentifier =
+        hasGoogleAds &&
+        event.eventSource !== 'IN_STORE' &&
+        event.eventDeviceInfo &&
+        event.eventDeviceInfo.ipAddress;
+      return isUserDataAbsent(event) && isAdIdentifiersAbsent(event) && !hasIpAddressIdentifier;
+    });
+    if (doesNotHaveMatchData) {
+      return 'At least 1 Ad Identifier or User Data must be specified.';
+    }
+  }
+
+  if (hasGoogleAds) {
+    const isInStoreDataMissing = conversionEvents.some((event) => {
+      if (event.eventSource !== 'IN_STORE') return false;
+      return (
+        !(event.eventLocation && event.eventLocation.storeId) ||
+        !event.currency ||
+        !isValidValue(event.conversionValue)
+      );
+    });
+    if (isInStoreDataMissing) {
+      return 'eventLocation.storeId, currency and conversionValue are required for "IN_STORE" events.';
+    }
   }
 
   const rfc3339Regex = '^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}.+';
@@ -2431,7 +2716,6 @@ function validateMappedData(mappedData) {
     return 'Each item in cartData.items must have a merchantProductId.';
   }
 
-  const destinations = mappedData.destinations;
   const destinationsLengthLimit = 10;
   if (destinations.length > destinationsLengthLimit) {
     return 'Destinations list length must be at most ' + destinationsLengthLimit + '.';
@@ -2509,6 +2793,13 @@ function enc(data) {
 
 function hasProps(obj) {
   return getType(obj) === 'object' && Object.keys(obj).length > 0;
+}
+
+function hasDestination(destinations, productType) {
+  return (
+    getType(destinations) === 'array' &&
+    destinations.some((d) => d.operatingAccount && d.operatingAccount.accountType === productType)
+  );
 }
 
 function isSHA256Base64Hashed(value) {
@@ -3111,106 +3402,113 @@ scenarios:
     \  */\n  {\n    description: 'No Ad Identifiers and User Data - both are explicitly\
     \ undefined',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
     \ 'multiple',\n      conversionEvents: [\n        assign({}, conversionEventBaseMock,\
-    \ {\n          userData: undefined,\n          adIdentifiers: undefined\n    \
-    \    })\n      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers and User\
-    \ Data - userData is an empty object',\n    auth: 'stape',\n    mockData: {\n\
-    \      conversionEventMode: 'multiple',\n      conversionEvents: [\n        assign({},\
-    \ conversionEventBaseMock, {\n          userData: {},\n          adIdentifiers:\
+    \ {\n          eventDeviceInfo: undefined,\n          userData: undefined,\n \
+    \         adIdentifiers: undefined\n        })\n      ]\n    }\n  },\n  {\n  \
+    \  description: 'No Ad Identifiers and User Data - userData is an empty object',\n\
+    \    auth: 'stape',\n    mockData: {\n      conversionEventMode: 'multiple',\n\
+    \      conversionEvents: [\n        assign({}, conversionEventBaseMock, {\n  \
+    \        eventDeviceInfo: undefined,\n          userData: {},\n          adIdentifiers:\
     \ undefined\n        })\n      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers\
     \ and User Data - userIdentifiers is undefined',\n    auth: 'stape',\n    mockData:\
     \ {\n      conversionEventMode: 'multiple',\n      conversionEvents: [\n     \
-    \   assign({}, conversionEventBaseMock, {\n          userData: { userIdentifiers:\
-    \ undefined },\n          adIdentifiers: undefined\n        })\n      ]\n    }\n\
-    \  },\n  {\n    description: 'No Ad Identifiers and User Data - userIdentifiers\
-    \ is an empty array',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
-    \ 'multiple',\n      conversionEvents: [\n        assign({}, conversionEventBaseMock,\
-    \ {\n          userData: { userIdentifiers: [] },\n          adIdentifiers: undefined\n\
-    \        })\n      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers and\
-    \ User Data - userIdentifiers contains an invalid string element',\n    auth:\
+    \   assign({}, conversionEventBaseMock, {\n          eventDeviceInfo: undefined,\n\
+    \          userData: { userIdentifiers: undefined },\n          adIdentifiers:\
+    \ undefined\n        })\n      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers\
+    \ and User Data - userIdentifiers is an empty array',\n    auth: 'stape',\n  \
+    \  mockData: {\n      conversionEventMode: 'multiple',\n      conversionEvents:\
+    \ [\n        assign({}, conversionEventBaseMock, {\n          eventDeviceInfo:\
+    \ undefined,\n          userData: { userIdentifiers: [] },\n          adIdentifiers:\
+    \ undefined\n        })\n      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers\
+    \ and User Data - userIdentifiers contains an invalid string element',\n    auth:\
     \ 'stape',\n    mockData: {\n      conversionEventMode: 'multiple',\n      conversionEvents:\
-    \ [\n        assign({}, conversionEventBaseMock, {\n          userData: { userIdentifiers:\
-    \ ['test'] },\n          adIdentifiers: undefined\n        })\n      ]\n    }\n\
-    \  },\n  {\n    description: 'No Ad Identifiers and User Data - userIdentifiers\
-    \ contains an empty object',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
-    \ 'multiple',\n      conversionEvents: [\n        assign({}, conversionEventBaseMock,\
-    \ {\n          userData: { userIdentifiers: [{}] },\n          adIdentifiers:\
+    \ [\n        assign({}, conversionEventBaseMock, {\n          eventDeviceInfo:\
+    \ undefined,\n          userData: { userIdentifiers: ['test'] },\n          adIdentifiers:\
+    \ undefined\n        })\n      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers\
+    \ and User Data - userIdentifiers contains an empty object',\n    auth: 'stape',\n\
+    \    mockData: {\n      conversionEventMode: 'multiple',\n      conversionEvents:\
+    \ [\n        assign({}, conversionEventBaseMock, {\n          eventDeviceInfo:\
+    \ undefined,\n          userData: { userIdentifiers: [{}] },\n          adIdentifiers:\
     \ undefined\n        })\n      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers\
     \ and User Data - emailAddress inside userIdentifiers is undefined',\n    auth:\
     \ 'stape',\n    mockData: {\n      conversionEventMode: 'multiple',\n      conversionEvents:\
-    \ [\n        assign({}, conversionEventBaseMock, {\n          userData: { userIdentifiers:\
-    \ [{ emailAddress: undefined }] },\n          adIdentifiers: undefined\n     \
-    \   })\n      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers and User\
-    \ Data - address inside userIdentifiers is undefined',\n    auth: 'stape',\n \
-    \   mockData: {\n      conversionEventMode: 'multiple',\n      conversionEvents:\
-    \ [\n        assign({}, conversionEventBaseMock, {\n          userData: { userIdentifiers:\
+    \ [\n        assign({}, conversionEventBaseMock, {\n          eventDeviceInfo:\
+    \ undefined,\n          userData: { userIdentifiers: [{ emailAddress: undefined\
+    \ }] },\n          adIdentifiers: undefined\n        })\n      ]\n    }\n  },\n\
+    \  {\n    description: 'No Ad Identifiers and User Data - address inside userIdentifiers\
+    \ is undefined',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
+    \ 'multiple',\n      conversionEvents: [\n        assign({}, conversionEventBaseMock,\
+    \ {\n          eventDeviceInfo: undefined,\n          userData: { userIdentifiers:\
     \ [{ address: undefined }] },\n          adIdentifiers: undefined\n        })\n\
     \      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers and User Data\
     \ - address inside userIdentifiers is an empty object',\n    auth: 'stape',\n\
     \    mockData: {\n      conversionEventMode: 'multiple',\n      conversionEvents:\
-    \ [\n        assign({}, conversionEventBaseMock, {\n          userData: { userIdentifiers:\
-    \ [{ address: {} }] },\n          adIdentifiers: undefined\n        })\n     \
-    \ ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers and User Data - givenName\
-    \ inside address is undefined',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
+    \ [\n        assign({}, conversionEventBaseMock, {\n          eventDeviceInfo:\
+    \ undefined,\n          userData: { userIdentifiers: [{ address: {} }] },\n  \
+    \        adIdentifiers: undefined\n        })\n      ]\n    }\n  },\n  {\n   \
+    \ description: 'No Ad Identifiers and User Data - givenName inside address is\
+    \ undefined',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
     \ 'multiple',\n      conversionEvents: [\n        assign({}, conversionEventBaseMock,\
-    \ {\n          userData: { userIdentifiers: [{ address: { givenName: undefined\
-    \ } }] },\n          adIdentifiers: undefined\n        })\n      ]\n    }\n  },\n\
-    \  {\n    description: 'No Ad Identifiers and User Data - adIdentifiers is an\
-    \ empty object',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
-    \ 'multiple',\n      conversionEvents: [\n        assign({}, conversionEventBaseMock,\
-    \ {\n          userData: undefined,\n          adIdentifiers: {}\n        })\n\
-    \      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers and User Data\
-    \ - all adIdentifier fields are strictly undefined',\n    auth: 'stape',\n   \
-    \ mockData: {\n      conversionEventMode: 'multiple',\n      conversionEvents:\
-    \ [\n        assign({}, conversionEventBaseMock, {\n          userData: undefined,\n\
-    \          adIdentifiers: {\n             gclid: undefined,\n             gbraid:\
-    \ undefined,\n             wbraid: undefined,\n             sessionAttributes:\
-    \ undefined,\n             landingPageDeviceInfo: undefined\n           }\n  \
-    \      })\n      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers and\
-    \ User Data - landingPageDeviceInfo is an empty object',\n    auth: 'stape',\n\
-    \    mockData: {\n      conversionEventMode: 'multiple',\n      conversionEvents:\
-    \ [\n        assign({}, conversionEventBaseMock, {\n          userData: undefined,\n\
-    \          adIdentifiers: {\n             gclid: undefined,\n             gbraid:\
-    \ undefined,\n             wbraid: undefined,\n             sessionAttributes:\
-    \ undefined,\n             landingPageDeviceInfo: {}\n           }\n        })\n\
-    \      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers and User Data\
-    \ - properties inside landingPageDeviceInfo are undefined',\n    auth: 'stape',\n\
-    \    mockData: {\n      conversionEventMode: 'multiple',\n      conversionEvents:\
-    \ [\n        assign({}, conversionEventBaseMock, {\n          userData: undefined,\n\
-    \          adIdentifiers: {\n             gclid: undefined,\n             gbraid:\
-    \ undefined,\n             wbraid: undefined,\n             sessionAttributes:\
-    \ undefined,\n             landingPageDeviceInfo: {\n               userAgent:\
-    \ undefined,\n               ipAddress: undefined\n             }\n          \
-    \ }\n        })\n      ]\n    }\n  },\n  {\n    description: 'Invalid Timestamp\
-    \ format - eventTimestamp missing offset (Z or +/-)',\n    auth: 'stape',\n  \
-    \  mockData: {\n      conversionEventMode: 'single',\n      eventTimestamp: '2014-10-02T15:01:23'\n\
-    \    }\n  },\n  {\n    description: 'Invalid Timestamp format - eventTimestamp\
-    \ is negative integer',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
-    \ 'single',\n      eventTimestamp: -123123\n    }\n  },\n  {\n    description:\
-    \ 'Invalid Timestamp format - eventTimestamp is object',\n    auth: 'stape',\n\
-    \    mockData: {\n      conversionEventMode: 'single',\n      eventTimestamp:\
-    \ {}\n    }\n  },\n  {\n    description: 'Invalid Timestamp format - lastUpdatedTimestamp\
-    \ is \"undefinedZ\"',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
-    \ 'single',\n      lastUpdatedTimestamp: 'undefinedZ'\n    }\n  },\n  {\n    description:\
-    \ 'Invalid Transaction ID - single character',\n    auth: 'stape',\n    mockData:\
-    \ {\n      conversionEventMode: 'single',\n      transactionId: 'a'\n    }\n \
-    \ },\n  /* Commented out because one more test will make all the test suite timeout.\n\
-    \  {\n    description: 'Invalid Transaction ID - \"123\"',\n    auth: 'stape',\n\
-    \    mockData: {\n      conversionEventMode: 'single',\n      transactionId: '123'\n\
-    \    }\n  },\n  {\n    description: 'Invalid Transaction ID - \"1234\"',\n   \
+    \ {\n          eventDeviceInfo: undefined,\n          userData: { userIdentifiers:\
+    \ [{ address: { givenName: undefined } }] },\n          adIdentifiers: undefined\n\
+    \        })\n      ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers and\
+    \ User Data - adIdentifiers is an empty object',\n    auth: 'stape',\n    mockData:\
+    \ {\n      conversionEventMode: 'multiple',\n      conversionEvents: [\n     \
+    \   assign({}, conversionEventBaseMock, {\n          eventDeviceInfo: undefined,\n\
+    \          userData: undefined,\n          adIdentifiers: {}\n        })\n   \
+    \   ]\n    }\n  },\n  {\n    description: 'No Ad Identifiers and User Data - all\
+    \ adIdentifier fields are strictly undefined',\n    auth: 'stape',\n    mockData:\
+    \ {\n      conversionEventMode: 'multiple',\n      conversionEvents: [\n     \
+    \   assign({}, conversionEventBaseMock, {\n          eventDeviceInfo: undefined,\n\
+    \          userData: undefined,\n          adIdentifiers: {\n             gclid:\
+    \ undefined,\n             gbraid: undefined,\n             wbraid: undefined,\n\
+    \             sessionAttributes: undefined,\n             landingPageDeviceInfo:\
+    \ undefined\n           }\n        })\n      ]\n    }\n  },\n  {\n    description:\
+    \ 'No Ad Identifiers and User Data - landingPageDeviceInfo is an empty object',\n\
+    \    auth: 'stape',\n    mockData: {\n      conversionEventMode: 'multiple',\n\
+    \      conversionEvents: [\n        assign({}, conversionEventBaseMock, {\n  \
+    \        eventDeviceInfo: undefined,\n          userData: undefined,\n       \
+    \   adIdentifiers: {\n             gclid: undefined,\n             gbraid: undefined,\n\
+    \             wbraid: undefined,\n             sessionAttributes: undefined,\n\
+    \             landingPageDeviceInfo: {}\n           }\n        })\n      ]\n \
+    \   }\n  },\n  {\n    description: 'No Ad Identifiers and User Data - properties\
+    \ inside landingPageDeviceInfo are undefined',\n    auth: 'stape',\n    mockData:\
+    \ {\n      conversionEventMode: 'multiple',\n      conversionEvents: [\n     \
+    \   assign({}, conversionEventBaseMock, {\n          eventDeviceInfo: undefined,\n\
+    \          userData: undefined,\n          adIdentifiers: {\n             gclid:\
+    \ undefined,\n             gbraid: undefined,\n             wbraid: undefined,\n\
+    \             sessionAttributes: undefined,\n             landingPageDeviceInfo:\
+    \ {\n               userAgent: undefined,\n               ipAddress: undefined\n\
+    \             }\n           }\n        })\n      ]\n    }\n  },\n  {\n    description:\
+    \ 'Invalid Timestamp format - eventTimestamp missing offset (Z or +/-)',\n   \
     \ auth: 'stape',\n    mockData: {\n      conversionEventMode: 'single',\n    \
-    \  transactionId: '1234'\n    }\n  },\n  */\n  {\n    description: 'Invalid Transaction\
-    \ ID - \"null\"',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
-    \ 'single',\n      transactionId: 'null'\n    }\n  },\n  {\n    description: 'Invalid\
-    \ Transaction ID - \"undefined\"',\n    auth: 'stape',\n    mockData: {\n    \
-    \  conversionEventMode: 'single',\n      transactionId: 'undefined'\n    }\n \
-    \ },\n  /* Commented out because one more test will make all the test suite timeout.\n\
-    \  {\n    description: 'Invalid Transaction ID - \"none\"',\n    auth: 'stape',\n\
-    \    mockData: {\n      conversionEventMode: 'single',\n      transactionId: 'none'\n\
-    \    }\n  },\n\n  {\n    description: 'Invalid Transaction ID - \"transactionId\"\
-    ',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode: 'single',\n\
-    \      transactionId: 'transactionId'\n    }\n  },\n  {\n    description: 'Invalid\
-    \ Transaction ID - \"transaction_id\"',\n    auth: 'stape',\n    mockData: {\n\
-    \      conversionEventMode: 'single',\n      transactionId: 'transaction_id'\n\
+    \  eventTimestamp: '2014-10-02T15:01:23'\n    }\n  },\n  {\n    description: 'Invalid\
+    \ Timestamp format - eventTimestamp is negative integer',\n    auth: 'stape',\n\
+    \    mockData: {\n      conversionEventMode: 'single',\n      eventTimestamp:\
+    \ -123123\n    }\n  },\n  {\n    description: 'Invalid Timestamp format - eventTimestamp\
+    \ is object',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
+    \ 'single',\n      eventTimestamp: {}\n    }\n  },\n  {\n    description: 'Invalid\
+    \ Timestamp format - lastUpdatedTimestamp is \"undefinedZ\"',\n    auth: 'stape',\n\
+    \    mockData: {\n      conversionEventMode: 'single',\n      lastUpdatedTimestamp:\
+    \ 'undefinedZ'\n    }\n  },\n  {\n    description: 'Invalid Transaction ID - single\
+    \ character',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
+    \ 'single',\n      transactionId: 'a'\n    }\n  },\n  /* Commented out because\
+    \ one more test will make all the test suite timeout.\n  {\n    description: 'Invalid\
+    \ Transaction ID - \"123\"',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
+    \ 'single',\n      transactionId: '123'\n    }\n  },\n  {\n    description: 'Invalid\
+    \ Transaction ID - \"1234\"',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
+    \ 'single',\n      transactionId: '1234'\n    }\n  },\n  */\n  {\n    description:\
+    \ 'Invalid Transaction ID - \"null\"',\n    auth: 'stape',\n    mockData: {\n\
+    \      conversionEventMode: 'single',\n      transactionId: 'null'\n    }\n  },\n\
+    \  {\n    description: 'Invalid Transaction ID - \"undefined\"',\n    auth: 'stape',\n\
+    \    mockData: {\n      conversionEventMode: 'single',\n      transactionId: 'undefined'\n\
+    \    }\n  },\n  /* Commented out because one more test will make all the test\
+    \ suite timeout.\n  {\n    description: 'Invalid Transaction ID - \"none\"',\n\
+    \    auth: 'stape',\n    mockData: {\n      conversionEventMode: 'single',\n \
+    \     transactionId: 'none'\n    }\n  },\n\n  {\n    description: 'Invalid Transaction\
+    \ ID - \"transactionId\"',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
+    \ 'single',\n      transactionId: 'transactionId'\n    }\n  },\n  {\n    description:\
+    \ 'Invalid Transaction ID - \"transaction_id\"',\n    auth: 'stape',\n    mockData:\
+    \ {\n      conversionEventMode: 'single',\n      transactionId: 'transaction_id'\n\
     \    }\n  },\n  */\n  {\n    description: 'Invalid Transaction ID - single character\
     \ in multiple event mode',\n    auth: 'stape',\n    mockData: {\n      conversionEventMode:\
     \ 'multiple',\n      conversionEvents: [\n        assign({}, conversionEventBaseMock,\
@@ -3314,12 +3612,12 @@ scenarios:
     \          },\n          { variable: 'TEST2', value: 'AAAAAAAA' },\n         \
     \ {\n            variable: 'TEST3',\n            value: '123ABC',\n          \
     \  destinationReferences: ['REFERENCE', 'REFERENCE2']\n          }\n        ],\n\
-    \        experimentalFields: [{ field: 'ABC', value: 'FOOBAR' }]\n      }\n  \
-    \  ],\n    encoding: 'HEX',\n    encryptionInfo: {\n      gcpWrappedKeyInfo: {\n\
-    \        keyType: 'XCHACHA20_POLY1305',\n        wipProvider: '123',\n       \
-    \ kekUri: '123',\n        encryptedDek: '123'\n      }\n    }\n  });\n\n  return\
-    \ Promise.create((resolve, reject) => {\n    resolve({ statusCode: 200 });\n \
-    \ });  \n});\n\nrunCode(copyMockData);\n\ncallLater(() => {\n  assertApi('gtmOnSuccess').wasCalled();\n\
+    \        additionalEventParameters: [{ parameterName: 'ABC', value: 'FOOBAR' }]\n\
+    \      }\n    ],\n    encoding: 'HEX',\n    encryptionInfo: {\n      gcpWrappedKeyInfo:\
+    \ {\n        keyType: 'XCHACHA20_POLY1305',\n        wipProvider: '123',\n   \
+    \     kekUri: '123',\n        encryptedDek: '123'\n      }\n    }\n  });\n\n \
+    \ return Promise.create((resolve, reject) => {\n    resolve({ statusCode: 200\
+    \ });\n  });  \n});\n\nrunCode(copyMockData);\n\ncallLater(() => {\n  assertApi('gtmOnSuccess').wasCalled();\n\
     \  assertApi('gtmOnFailure').wasNotCalled();\n});"
 - name: '[Conversion] [Single Event] [Data from auto-mapping - Click IDs] Request
     is successfully built and sent'
@@ -3549,13 +3847,13 @@ scenarios:
     \          },\n          { variable: 'TEST2', value: 'AAAAAAAA' },\n         \
     \ {\n            variable: 'TEST3',\n            value: '123ABC',\n          \
     \  destinationReferences: ['REFERENCE', 'REFERENCE2']\n          }\n        ],\n\
-    \        eventLocation: { country: 'US', region: 'CA' },\n        experimentalFields:\
-    \ [{ field: 'ABC', value: 'FOOBAR' }]\n      }\n    ],\n    encoding: 'HEX',\n\
-    \    encryptionInfo: {\n      gcpWrappedKeyInfo: {\n        keyType: 'XCHACHA20_POLY1305',\n\
-    \        wipProvider: '123',\n        kekUri: '123',\n        encryptedDek: '123'\n\
-    \      }\n    }\n  });\n\n  return Promise.create((resolve, reject) => {\n   \
-    \ resolve({ statusCode: 200 });\n  });  \n});\n\nrunCode(copyMockData);\n\ncallLater(()\
-    \ => {\n  assertApi('gtmOnSuccess').wasCalled();\n  assertApi('gtmOnFailure').wasNotCalled();\n\
+    \        eventLocation: { country: 'US', region: 'CA' },\n        additionalEventParameters:\
+    \ [{ parameterName: 'ABC', value: 'FOOBAR' }]\n      }\n    ],\n    encoding:\
+    \ 'HEX',\n    encryptionInfo: {\n      gcpWrappedKeyInfo: {\n        keyType:\
+    \ 'XCHACHA20_POLY1305',\n        wipProvider: '123',\n        kekUri: '123',\n\
+    \        encryptedDek: '123'\n      }\n    }\n  });\n\n  return Promise.create((resolve,\
+    \ reject) => {\n    resolve({ statusCode: 200 });\n  });  \n});\n\nrunCode(copyMockData);\n\
+    \ncallLater(() => {\n  assertApi('gtmOnSuccess').wasCalled();\n  assertApi('gtmOnFailure').wasNotCalled();\n\
     });"
 - name: '[Conversion] [Multiple Events] [Data from UI fields] Request is successfully
     built and sent'
@@ -3720,20 +4018,20 @@ setup: "const Promise = require('Promise');\nconst JSON = require('JSON');\ncons
   \ [\n        { name: 'TEST1', value: 'ABC', destinationReferences: 'REFERENCE' },\n\
   \        { name: 'TEST2', value: 'AAAAAAAA', destinationReferences: '' },\n    \
   \    { name: 'TEST3', value: '123ABC', destinationReferences: ['REFERENCE', 'REFERENCE2']\
-  \ }\n      ],\n    \n      experimentalFieldsList: [{ name: 'ABC', value: 'FOOBAR'\
-  \ }],\n      eventLocationList: [{name: 'country', value: 'US'}, {name: 'region',\
-  \ value: 'CA'}],\n      eventDeviceInfoList: [{name: 'deviceLanguage', value: 'en'},\
-  \ {name: 'screenWidth', value: '1920'}, {name: 'screenHeight', value: '1080'}],\n\
-  \    \n      adStorageConsent: 'optional',\n      logType: 'debug',\n      bigQueryLogType:\
-  \ 'no'\n    },\n    pageview: {\n      eventType: 'pageview',\n      \n      cookieExpiration:\
-  \ 90,\n      cookieDomain: 'auto',\n      cookieSameSite: 'none',\n      cookieHttpOnly:\
-  \ true,\n      adStorageConsent: 'optional'\n    }\n  };\n  \n  return assign(JSON.parse(JSON.stringify(mockData)),\
-  \ mockDataByEventType[eventType], mockDataByAuthType[authType] || {}, objToBeMerged\
-  \ || {});\n};\n\nconst setGetAllEventData = (objToBeMerged) => {\n  mock('getAllEventData',\
-  \ assign({\n    'x-ga-protocol_version': '2',\n    'x-ga-measurement_id': 'G-123ABC',\n\
-  \    'x-ga-gtm_version': '45je55e1za200',\n    'x-ga-page_id': 1747422523211,\n\
-  \    'x-ga-gcd': '13l3l3l3l1l1',\n    'x-ga-npa': '0',\n    'x-ga-dma': '0',\n \
-  \   'x-ga-mp2-tag_exp':\n      '101509157~103116025~103130498~103130500~103136993~103136995~103200001~103207802~103211513~103233427~103252644~103252646~103263073~103301114~103301116',\n\
+  \ }\n      ],\n    \n      additionalEventParametersList: [{ name: 'ABC', value:\
+  \ 'FOOBAR' }],\n      eventLocationList: [{name: 'country', value: 'US'}, {name:\
+  \ 'region', value: 'CA'}],\n      eventDeviceInfoList: [{name: 'deviceLanguage',\
+  \ value: 'en'}, {name: 'screenWidth', value: '1920'}, {name: 'screenHeight', value:\
+  \ '1080'}],\n    \n      adStorageConsent: 'optional',\n      logType: 'debug',\n\
+  \      bigQueryLogType: 'no'\n    },\n    pageview: {\n      eventType: 'pageview',\n\
+  \      \n      cookieExpiration: 90,\n      cookieDomain: 'auto',\n      cookieSameSite:\
+  \ 'none',\n      cookieHttpOnly: true,\n      adStorageConsent: 'optional'\n   \
+  \ }\n  };\n  \n  return assign(JSON.parse(JSON.stringify(mockData)), mockDataByEventType[eventType],\
+  \ mockDataByAuthType[authType] || {}, objToBeMerged || {});\n};\n\nconst setGetAllEventData\
+  \ = (objToBeMerged) => {\n  mock('getAllEventData', assign({\n    'x-ga-protocol_version':\
+  \ '2',\n    'x-ga-measurement_id': 'G-123ABC',\n    'x-ga-gtm_version': '45je55e1za200',\n\
+  \    'x-ga-page_id': 1747422523211,\n    'x-ga-gcd': '13l3l3l3l1l1',\n    'x-ga-npa':\
+  \ '0',\n    'x-ga-dma': '0',\n    'x-ga-mp2-tag_exp':\n      '101509157~103116025~103130498~103130500~103136993~103136995~103200001~103207802~103211513~103233427~103252644~103252646~103263073~103301114~103301116',\n\
   \    client_id: 'AUJctU7H7hBB/aMuhE4pKwGu5DWDdklg5abyyyn8i/I=.1747154479',\n   \
   \ 'x-ga-ecid': '1294673677',\n    language: 'en-us',\n    screen_resolution: '1512x982',\n\
   \    event_location: { country: 'BR', region: 'SP' },\n    event_id: '101509157~103116025~103130498',\n\
@@ -3836,9 +4134,16 @@ setup: "const Promise = require('Promise');\nconst JSON = require('JSON');\ncons
 
 ___NOTES___
 
+2026-07-21 - Change Notes:
+  - ⚠️ Removed Experimental Fields group. Verify your implementation.
+  - Add `additionalEventParameters` (GA4 event parameters) and `userProperties.additionalUserProperties` (GA4 user properties) support.
+  - Add `items[].additionalItemParameters` (GA4) and `items[].customVariables` (Ads/Floodlight) support, toggled via a new "Add other Item Parameters" checkbox; manually specified cart items also now preserve `merchantId`, `merchantFeedLabel`, `merchantFeedLanguageCode`, `conversionValue`, and pre-built `additionalItemParameters`/`customVariables`.
+  - Add GA4 required fields (`eventName`, `userId`, `clientId`, `appInstanceId`) via a new "Google Analytics Required Data" table.
+  - Add destination-aware validation: required fields for Google Analytics Property and Google Ads Store Sales (`IN_STORE`) destinations; scope the Ad Identifier/User Data requirement to Google Ads/Floodlight destinations, accepting `eventDeviceInfo.ipAddress` as a valid identifier for Google Ads.
+
 2026-06-16 - Change Notes:
   - Improve email address normalization for 'googlemail.com' and 'google.com' domains.
-  
+
 2026-06-05 - Change Notes:
   - Add CM360, DV360, and SA360 (Floodlight) as a supported destination product type (`FLOODLIGHT_CONFIG`); add Floodlight-specific fields: `dclid`, `matchId`, `impressionId`, `encryptedUserId`, `mobileDeviceId` (ad identifiers) and `conversionCount` (conversion quantity for counting-based conversions); auto-map `dclid` from `_gcl_dc`/`FPGCLDC` cookies.
   - Auto-map `screen_resolution` to `screenWidth`/`screenHeight` in event device info; add `eventDeviceInfoList` table for additional manual device info overrides.
