@@ -1,7 +1,7 @@
 homepage: 'https://roasarchitects.com/?utm_source=gtm-gallery&utm_medium=referral&utm_campaign=google-data-manager-bq'
 documentation: 'https://github.com/ROAS-Architects/google-conversion-events-tag'
 versions:
-  - sha: PENDING
+  - sha: 168b94c42df733db72de21b1d3449af52d648bda
     changeNotes: >-
       Restored the BigQuery request/response logging removed upstream. The Stape
       container API key is now masked in logged URLs. Failure diagnostics land in
