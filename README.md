@@ -1,8 +1,182 @@
-# Google Data Manager API Conversion Events Tag for Google Tag Manager Server-Side
+# Google Data Manager API Conversion Events Tag for GTM Server Side, with BigQuery logging
 
-The **Google Data Manager API Conversion Events Tag** for Google Tag Manager Server-Side allows you to send conversion events directly to Google's advertising platforms (like Google Ads) using the [Data Manager API](https://developers.google.com/data-manager/api). This server-to-server integration ensures robust and accurate tracking of conversions, independent of client-side restrictions.
+A fork of
+[`stape-io/google-conversion-events-tag`](https://github.com/stape-io/google-conversion-events-tag),
+maintained by [ROAS Architects](https://roasarchitects.com), that keeps the
+template's BigQuery logging in place.
 
-The tag is designed to handle both single and multiple conversion event uploads in a single request, with comprehensive support for user data, consent information, ad identifiers, and custom variables.
+Everything else is upstream's. The tag sends conversion events to Google Ads,
+Campaign Manager 360, Search Ads 360, Display & Video 360 and Google Analytics
+through the [Data Manager API](https://developers.google.com/data-manager/api),
+exactly as it does upstream. This fork adds one thing: every request it sends
+and every response it gets back are written to a BigQuery table you own.
+
+## Why we forked this
+
+Stape's template is good work, and it is Apache 2.0, which is why a fork like
+this is possible at all. Between 2026-05-26 and 2026-07-01 they removed the
+logging from their server-side tag fleet as part of a wider refactor. For this
+template that is commit
+[`330f7cc`](https://github.com/stape-io/google-conversion-events-tag/commit/330f7cc),
+which took out the BigQuery path and the console path together. The template
+ships with no logging at all today. For something that has to run in anybody's
+container, dropping a path most installs never switch on is a fair call.
+
+We need it, for a reason specific to how we work rather than a criticism of that
+decision. A server-side tag fails quietly. There is no browser console to check
+and no user to complain. On 2026-07-22 this exact tag returned HTTP 403 on every
+offline conversion upload for twenty-six hours, and we found out a day late,
+because it was the only tag in that container with no log table behind it. Its
+siblings, still logging, we could simply query.
+
+So this fork restores the logging by reverting that one commit, on top of
+upstream's current tip. The GA4-events, Floodlight and email-normalization work
+Stape shipped after the removal is all still here.
+
+## What gets logged
+
+This is the part upstream never wrote down, and the reason we keep the fork
+rather than a private patch. If you install this template, you should be able to
+read what lands in your table without reading the source.
+
+### The table
+
+Create it once, in a dataset the container can write to:
+
+```sql
+CREATE TABLE `your_project.your_dataset.your_table` (
+  timestamp            INT64,
+  tag_name             STRING,
+  type                 STRING,
+  trace_id             STRING,
+  event_name           STRING,
+  request_method       STRING,
+  request_url          STRING,
+  request_body         STRING,
+  response_status_code INT64,
+  response_headers     STRING,
+  response_body        STRING
+);
+```
+
+| Column | What goes in it |
+| --- | --- |
+| `timestamp` | Milliseconds since epoch, taken when the row is built, not when the request was sent |
+| `tag_name` | Always `GoogleConversionEvent` for this template. Sibling tags write their own name, so one table can hold a whole container |
+| `type` | `Request`, `Response`, or `Message` |
+| `trace_id` | The container's `trace-id` request header, which joins a request row to its response row and to rows other tags wrote for the same event. **Only if your host sets that header.** Stape-hosted containers do; a self-hosted container behind your own proxy generally does not, and the column is then NULL for every tag, not just this one |
+| `event_name` | Always `ConversionEvent` |
+| `request_method` | Always `POST` |
+| `request_url` | The ingest endpoint. Under the Stape auth flow this carries your container API key as a path segment, and we mask it to first four and last four characters, so you can tell two keys apart without holding either. Under Own Google Credentials it is Google's endpoint and carries nothing sensitive |
+| `request_body` | The full `events:ingest` payload, as JSON |
+| `response_status_code` | The API's HTTP status. Empty when the request never completed |
+| `response_headers` | The API's response headers, as JSON |
+| `response_body` | The API's response body. On a failed or timed-out request this instead holds the failure text, since there is no response to record |
+
+> **The masking is our change, not upstream's behaviour.** The logging we
+> restored recorded the endpoint verbatim, and under the Stape auth flow that
+> endpoint contains a live credential. See below.
+
+### When rows are written
+
+Three log points:
+
+1. **Request**, immediately before the call to the Data Manager API.
+2. **Response**, when the call comes back, whatever the status. A 403 is a
+   `Response` row with `response_status_code = 403` and Google's error in
+   `response_body`. This is the row that makes a broken upload visible.
+3. **Message**, when the request fails or times out, and when the tag refuses to
+   send because required fields are missing or a session-attributes cookie is
+   too large. The reason is in `response_body`.
+
+### Things worth knowing before you rely on it
+
+- **Logging is off unless you turn it on.** Set *BigQuery logging* to `Always`
+  and fill in the project, dataset and table. There is no debug-only mode for
+  BigQuery, unlike console logging.
+- **BigQuery logging and console logging are independent.** Setting one does
+  nothing to the other.
+- **Optimistic mode suppresses nothing, but it does hide the outcome.** With
+  *Use Optimistic Scenario* on, the tag still logs the response, but it calls
+  `gtmOnSuccess()` before the reply arrives, so the container reports success
+  whatever the API said. Leave it off if the tag's status should mean anything.
+- **A tag that exits early logs nothing.** Consent denied produces no rows at
+  all. An empty table means "nothing was sent", which is not the same as
+  "nothing was received".
+- **Rows are inserted with `ignoreUnknownValues`.** A column missing from your
+  table does not raise an error, it silently drops that field. If a column looks
+  permanently empty, check the table schema before you check the code.
+- **Inserts are streamed.** Freshly written rows sit in the streaming buffer, so
+  a query with a partition filter can miss the last few minutes.
+
+## Enabling it
+
+In the tag's *Logs Settings*:
+
+| Field | Value |
+| --- | --- |
+| BigQuery logging | `Always` |
+| BigQuery project ID | your GCP project |
+| BigQuery dataset ID | your dataset |
+| BigQuery table ID | your table |
+
+The container needs write access to that table. On Stape-hosted containers this
+is wired for you. Self-hosted, the sandboxed BigQuery API resolves application
+default credentials, so the container's own service account needs
+`bigquery.tables.updateData` on the table. Streaming inserts do not need the
+BigQuery Job User role.
+
+## Three changes we made while restoring it
+
+All three are visible in the diff against the last upstream version that carried
+logging.
+
+1. **Failure text is written to `response_body`.** The original failure path put
+   its diagnostics in fields called `Message` and `Reason`. Neither has a
+   column, so with `ignoreUnknownValues` a timeout landed a row with the
+   diagnostics gone and every response field empty. Folding the text into
+   `response_body` keeps it, and `response_body` is empty on exactly that path.
+2. **The container API key in `request_url` is masked.** Under the Stape auth
+   flow the endpoint is
+   `https://{identifier}.{domain}/stape-api/{key}/v2/data-manager/events/ingest`,
+   so the key is a path segment. The original logging recorded that endpoint as
+   it was built, so restoring it unchanged would have put a live credential in
+   every Request row, and in any console output pasted into a support thread. We
+   mask it to `abcd...WXYZ`, keeping four characters at each end so two keys are
+   still distinguishable, and mask anything twelve characters or shorter whole.
+   Masking happens once, in `log()`, so it covers every destination and any log
+   point added later. The request itself is unchanged and still carries the real
+   key.
+3. **Values that are already strings are not stringified again.**
+   `sendHttpRequest` hands back `result.body` as a string, and stringifying it a
+   second time wraps it in escaped quotes, which stops `JSON_VALUE()` from
+   parsing rows that parse fine for other tags writing to the same table.
+
+## How this fork tracks upstream
+
+- `upstream-mirror` is a plain mirror of `stape-io/google-conversion-events-tag`.
+  We never commit to it.
+- `main` is `upstream-mirror` plus the restored logging. So
+  `git diff upstream-mirror..main` is the whole of what we changed, and is the
+  only fork documentation there is. The template sits on `main` because the
+  Community Gallery requires every resource to be on that branch.
+- Following an upstream release: fetch upstream, fast-forward `upstream-mirror`,
+  then rebase `main` onto it. We sync when we want something upstream has
+  shipped, not on a schedule.
+- CI checks that `template.tpl`'s embedded JS still matches `template.js`, that
+  the logging is still there, and that the masking still masks. It is the one
+  way a rebase can quietly undo the entire point of this repo.
+
+If you do not query your tag logs, install upstream's template. It is the same
+tag, with less to configure. This fork is for people who want the send path on
+the record.
+
+---
+
+# Upstream documentation
+
+Everything below describes the tag itself, and is upstream's, unchanged apart
+from the two footer sections.
 
 ## How to use the Google Data Manager API Conversion Events Tag
 
@@ -21,7 +195,7 @@ The tag is designed to handle both single and multiple conversion event uploads 
           - If NOT hosting on Stape, follow [these instructions](https://developers.google.com/tag-platform/tag-manager/server-side/manual-setup-guide#optional_include_google_cloud_credentials).
        6) Grant the Service Account access to the product you're interacting with (Google Ads account, CM360 account, Google Analytics property etc.).
 
-2.  Add the **Google Data Manager API Conversion Events Tag** to your server container in GTM from the [GTM Template Gallery](https://tagmanager.google.com/gallery/#/owners/stape-io/templates/google-conversion-events-tag).
+2.  Add the tag to your server container in GTM. This fork is **Google Data Manager + BQ** in the Community Template Gallery, under ROAS Architects; upstream's original is [Google Data Manager API Conversion Events](https://tagmanager.google.com/gallery/#/owners/stape-io/templates/google-conversion-events-tag), under stape-io.
 3.  Choose the **Event Type**: `Conversion` or `Pageview`.
     1.  `Pageview`
     2.  `Conversion`
@@ -241,7 +415,9 @@ This section lets you send any [GA4 event parameters](https://developers.google.
 * Session Attributes: [[1]](https://support.google.com/google-ads/answer/16194756?hl=en) and [[2]](https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#AdIdentifiers)
 
 ## Open Source
-The **Google Data Manager API Conversion Events Tag for GTM Server-Side** is developed and maintained by the [Stape Team](https://stape.io/) under the Apache 2.0 license.
 
-### GTM Gallery Status
-🟢 [Listed](https://tagmanager.google.com/gallery/#/owners/stape-io/templates/google-conversion-events-tag)
+The **Google Data Manager API Conversion Events Tag for GTM Server-Side** is
+developed and maintained by the [Stape Team](https://stape.io/) under the Apache
+2.0 license. This fork is maintained by
+[ROAS Architects](https://roasarchitects.com) under the same license, and is not
+affiliated with or endorsed by Stape.

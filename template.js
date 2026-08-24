@@ -1377,12 +1377,44 @@ function isConsentGivenOrNotRequired(data, eventData) {
   return xGaGcs[2] === '1';
 }
 
+function redactUrlSecrets(url) {
+  // The Stape auth flow puts the container API key in the URL path:
+  // https://{identifier}.{domain}/stape-api/{key}/v2/data-manager/events/ingest
+  // Logged verbatim it turns a log table, and any pasted console output, into a
+  // credential store. The Google endpoint the 'own' auth flow uses carries
+  // nothing sensitive, so it comes back untouched.
+  const marker = '/stape-api/';
+  const parts = url.split(marker);
+  if (parts.length < 2) return url;
+
+  const rest = parts[1];
+  const end = rest.indexOf('/');
+  const value = end === -1 ? rest : rest.substring(0, end);
+  const tail = end === -1 ? '' : rest.substring(end);
+
+  return parts[0] + marker + maskSecret(value) + tail;
+}
+
+function maskSecret(value) {
+  // Keep enough to tell two credentials apart, never enough to use one. Short
+  // values are masked whole: 8 shown characters of a 12-character secret is not
+  // a redaction.
+  if (value.length <= 12) return '[redacted]';
+  return value.substring(0, 4) + '...' + value.substring(value.length - 4);
+}
+
 function log(rawDataToLog) {
   const logDestinationsHandlers = {};
   if (determinateIsLoggingEnabled()) logDestinationsHandlers.console = logConsole;
   if (determinateIsLoggingEnabledForBigQuery()) logDestinationsHandlers.bigQuery = logToBigQuery;
 
   rawDataToLog.TraceId = getRequestHeader('trace-id');
+
+  // Under the Stape auth flow the request URL carries the container API key as
+  // a path segment. Mask it everywhere we log, console included.
+  if (getType(rawDataToLog.RequestUrl) === 'string') {
+    rawDataToLog.RequestUrl = redactUrlSecrets(rawDataToLog.RequestUrl);
+  }
 
   const keyMappings = {
     // No transformation for Console is needed.
@@ -1412,6 +1444,17 @@ function log(rawDataToLog) {
         const mappedKey = mapping[key] || key;
         dataToLog[mappedKey] = rawDataToLog[key];
       }
+
+      // BigQuery is inserted with ignoreUnknownValues, so any key without a
+      // column is dropped silently. Message and Reason have no column, and on
+      // the failure path they are the only diagnostics there are. Fold them
+      // into response_body, which is empty exactly when a request failed.
+      if (getType(dataToLog.response_body) === 'undefined') {
+        const notes = [];
+        if (rawDataToLog.Message) notes.push(rawDataToLog.Message);
+        if (rawDataToLog.Reason) notes.push(rawDataToLog.Reason);
+        if (notes.length) dataToLog.response_body = notes.join(' ');
+      }
     }
 
     handler(dataToLog);
@@ -1431,8 +1474,13 @@ function logToBigQuery(dataToLog) {
 
   dataToLog.timestamp = getTimestampMillis();
 
+  // Stringify only what is not already a string. sendHttpRequest returns
+  // result.body as a string, so an unconditional stringify double-encodes it
+  // and JSON_VALUE() stops parsing rows that parse fine for sibling tags.
   ['request_body', 'response_headers', 'response_body'].forEach((p) => {
-    dataToLog[p] = JSON.stringify(dataToLog[p]);
+    if (getType(dataToLog[p]) !== 'string') {
+      dataToLog[p] = JSON.stringify(dataToLog[p]);
+    }
   });
 
   BigQuery.insert(connectionInfo, [dataToLog], { ignoreUnknownValues: true });

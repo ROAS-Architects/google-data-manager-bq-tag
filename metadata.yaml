@@ -1,6 +1,13 @@
-homepage: 'https://stape.io/'
-documentation: 'https://github.com/stape-io/google-conversion-events-tag'
+homepage: 'https://roasarchitects.com/?utm_source=gtm-gallery&utm_medium=referral&utm_campaign=google-data-manager-bq'
+documentation: 'https://github.com/ROAS-Architects/google-conversion-events-tag'
 versions:
+  - sha: PENDING
+    changeNotes: >-
+      Restored the BigQuery request/response logging removed upstream. The Stape
+      container API key is now masked in logged URLs. Failure diagnostics land in
+      response_body instead of being dropped, and values that are already strings
+      are no longer stringified twice. Schema and log points documented in the
+      README.
   - sha: ee54d375668412ca58aebfd4776dacf9f7a2fe73
     changeNotes: 'Added support for sending Google Analytics (GA4) events when using Own Google Credentials as auth method. BREAKING CHANGE: removed the Experimental Fields section.'
   - sha: 3e5cd25357af8e69d52b6bfdba2af59fce6fb2c2

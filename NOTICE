@@ -1,0 +1,16 @@
+Google Data Manager + BQ
+Copyright 2026 ROAS Architects
+
+This product is a derivative work of the Google Data Manager API Conversion
+Events tag for Google Tag Manager Server Side, developed by Stape.
+
+    Copyright 2025 Stape
+    https://github.com/stape-io/google-conversion-events-tag
+    https://stape.io/
+
+The original is licensed under the Apache License, Version 2.0, and this
+derivative is distributed under the same licence. ROAS Architects is not
+affiliated with or endorsed by Stape.
+
+Changes made by ROAS Architects are described in README.md and are visible as
+the diff between the `upstream-mirror` and `main` branches of this repository.
