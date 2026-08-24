@@ -115,16 +115,45 @@ In the tag's *Logs Settings*:
 
 | Field | Value |
 | --- | --- |
-| BigQuery logging | `Always` |
-| BigQuery project ID | your GCP project |
-| BigQuery dataset ID | your dataset |
-| BigQuery table ID | your table |
+| BigQuery logging | `Log to BigQuery` |
+| BigQuery Table | `project.dataset.table` |
+
+Write the table as `dataset.table` to take the project from the container's
+`GOOGLE_CLOUD_PROJECT` environment variable, which on Google Cloud is already
+set to the project's ID.
+
+Upstream's logging used three separate boxes for project, dataset and table.
+One box does the same job, and it has to, for the reason in the next section.
 
 The container needs write access to that table. On Stape-hosted containers this
 is wired for you. Self-hosted, the sandboxed BigQuery API resolves application
 default credentials, so the container's own service account needs
 `bigquery.tables.updateData` on the table. Streaming inserts do not need the
 BigQuery Job User role.
+
+## The 100-field limit, and what we spent to get under it
+
+Google caps a custom template at **100 fields**, counting groups and labels
+alongside inputs. Over that, the Tag Manager API refuses to create the template
+at all: *"You have reached the maximum number of fields allowed."* Upstream's
+current tip sits at exactly 100. Restoring the logging the way it was written
+would have cost 6 more, and nobody could have installed the result.
+
+So the logging is built to be cheap, and we bought the rest:
+
+- **Two fields, not six.** A `Log to BigQuery` switch and one `BigQuery Table`
+  box holding `project.dataset.table`. Upstream's version wrapped three separate
+  boxes in two nested groups, and in this template a group costs a field like
+  anything else.
+- **Three labels folded into help text.** `help` is a property of a field, not a
+  field of its own, so the guidance on request-level consent, on user-data
+  identifiers, and on the address fields now sits under the first input of each
+  section instead of above it. Not a word of it was dropped.
+
+That leaves the template at **99 fields**, and CI fails if a rebase pushes it
+over. There is more room if we ever need it: ten groups in this template wrap
+exactly one child, and each is a spare field. We would rather leave them alone,
+because every one is a conflict on the next upstream rebase.
 
 ## Three changes we made while restoring it
 
@@ -163,9 +192,12 @@ logging.
 - Following an upstream release: fetch upstream, fast-forward `upstream-mirror`,
   then rebase `main` onto it. We sync when we want something upstream has
   shipped, not on a schedule.
+- After editing `template.js`, run `python3 scripts/sync-tpl.py` to copy it into
+  `template.tpl`. GTM only ever runs the embedded copy.
 - CI checks that `template.tpl`'s embedded JS still matches `template.js`, that
-  the logging is still there, and that the masking still masks. It is the one
-  way a rebase can quietly undo the entire point of this repo.
+  the logging is still there, that the masking still masks, that the table
+  parsing still parses, and that the template is still under 100 fields. Those
+  are the ways a rebase can quietly undo the entire point of this repo.
 
 If you do not query your tag logs, install upstream's template. It is the same
 tag, with less to configure. This fork is for people who want the send path on

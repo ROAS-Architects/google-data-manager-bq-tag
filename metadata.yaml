@@ -3,11 +3,13 @@ documentation: 'https://github.com/ROAS-Architects/google-conversion-events-tag'
 versions:
   - sha: 168b94c42df733db72de21b1d3449af52d648bda
     changeNotes: >-
-      Restored the BigQuery request/response logging removed upstream. The Stape
-      container API key is now masked in logged URLs. Failure diagnostics land in
-      response_body instead of being dropped, and values that are already strings
-      are no longer stringified twice. Schema and log points documented in the
-      README.
+      Restored the BigQuery request/response logging removed upstream, in two
+      fields rather than six, because Google caps a custom template at 100 fields
+      and the tag sits on that cap. The BigQuery target is written as
+      project.dataset.table. The Stape container API key is now masked in logged
+      URLs. Failure diagnostics land in response_body instead of being dropped,
+      and values that are already strings are no longer stringified twice. Schema
+      and log points documented in the README.
   - sha: ee54d375668412ca58aebfd4776dacf9f7a2fe73
     changeNotes: 'Added support for sending Google Analytics (GA4) events when using Own Google Credentials as auth method. BREAKING CHANGE: removed the Experimental Fields section.'
   - sha: 3e5cd25357af8e69d52b6bfdba2af59fce6fb2c2

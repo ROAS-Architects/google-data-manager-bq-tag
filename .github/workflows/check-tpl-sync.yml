@@ -11,3 +11,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: python3 scripts/check-tpl-sync.py
       - run: node scripts/test-redact.js
+      - run: node scripts/test-bq-target.js

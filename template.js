@@ -1465,12 +1465,30 @@ function logConsole(dataToLog) {
   logToConsole(JSON.stringify(dataToLog));
 }
 
+function getBigQueryConnectionInfo() {
+  // One field instead of upstream's three. Google caps a custom template at 100
+  // fields and this template already sits on that cap, so the whole target is
+  // written as 'project.dataset.table'. Two parts means the project comes from
+  // the container's GOOGLE_CLOUD_PROJECT, which is what an omitted projectId did
+  // before.
+  const parts = (data.logBigQueryTable || '').split('.');
+
+  if (parts.length === 3) {
+    return { projectId: parts[0], datasetId: parts[1], tableId: parts[2] };
+  }
+
+  if (parts.length === 2) {
+    return { datasetId: parts[0], tableId: parts[1] };
+  }
+
+  return undefined;
+}
+
 function logToBigQuery(dataToLog) {
-  const connectionInfo = {
-    projectId: data.logBigQueryProjectId,
-    datasetId: data.logBigQueryDatasetId,
-    tableId: data.logBigQueryTableId
-  };
+  const connectionInfo = getBigQueryConnectionInfo();
+  // A malformed table is the one thing here that can throw, and a logging call
+  // must never take the tag down with it.
+  if (!connectionInfo) return;
 
   dataToLog.timestamp = getTimestampMillis();
 

@@ -6,6 +6,7 @@ is reviewable and diffable. A desynced pair is the standard way one of these
 repos ships a fix that never reaches anybody.
 """
 import io
+import json
 import re
 import sys
 
@@ -32,4 +33,32 @@ for needed, where, label in (
             'The BigQuery logging this fork exists for is gone.' % (needed, label)
         )
 
-print('check-tpl-sync: ok')
+# Google caps a custom template at 100 fields, counting groups and labels, and
+# upstream sits on that cap. Over it, templates.create returns "You have reached
+# the maximum number of fields allowed" and nobody can install the template. An
+# upstream release that adds a field is the way this breaks.
+FIELD_LIMIT = 100
+
+m = re.search(r'^___TEMPLATE_PARAMETERS___\n\n(\[.*?\n\])\n', tpl, re.S | re.M)
+if not m:
+    sys.exit('check-tpl-sync: no ___TEMPLATE_PARAMETERS___ section in template.tpl')
+
+
+def count_fields(items):
+    total = 0
+    for item in items:
+        total += 1
+        sub = item.get('subParams')
+        if isinstance(sub, list):
+            total += count_fields(sub)
+    return total
+
+
+fields = count_fields(json.loads(m.group(1)))
+if fields > FIELD_LIMIT:
+    sys.exit(
+        'check-tpl-sync: template.tpl declares %d fields, over Google\'s limit of %d. '
+        'GTM will refuse to create it. Free fields before adding any.' % (fields, FIELD_LIMIT)
+    )
+
+print('check-tpl-sync: ok (%d/%d fields)' % (fields, FIELD_LIMIT))

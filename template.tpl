@@ -50,7 +50,7 @@ ___TEMPLATE_PARAMETERS___
     ],
     "simpleValueType": true,
     "defaultValue": "conversion",
-    "help": "\u003cb\u003eConversion\u003c/b\u003e\n\u003cbr/\u003e\nSends the conversion event.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003ePageview\u003c/b\u003e \n\u003cbr/\u003e\nSets the the \u003ci\u003e_dm_session_attributes\u003c/i\u003e cookie containing a base64 JSON encoded string with the \u003ci\u003eSession Attributes\u003c/i\u003e values for conversion event attribution and modeling. Useful for Floodlight and Google Ads conversions.\n\u003cbr/\u003e\nDefault mappings: \n\u003cul\u003e \n\u003cli\u003eSession Attribute \u003ci\u003egad_source\u003c/i\u003e: \u003ci\u003egad_source\u003c/i\u003e URL Parameter value \u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003egad_campaignid\u003c/i\u003e: \u003ci\u003egad_campaignid\u003c/i\u003e URL Parameter value\u003c/li\u003e \u003cli\u003eSession Attribute \u003ci\u003elanding_page_url\u003c/i\u003e: \u003ci\u003epage_location\u003c/i\u003e Event Data value\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_referrer\u003c/i\u003e: \u003ci\u003epage_referrer\u003c/i\u003e Event Data value\u003c/li\u003e\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_user_agent\u003c/i\u003e: \u003ci\u003euser_agent\u003c/i\u003e Event Data value\u003c/li\u003e\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003esession_start_time_usec\u003c/i\u003e: current timestamp of the time when the Pageview tag set the cookie\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e Learn more: \u003ca href\u003d\"https://support.google.com/google-ads/answer/16194756?hl\u003den\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://ads-developers.googleblog.com/2025/08/maximize-performance-of-your-google-ads.html\"\u003e[2]\u003c/a\u003e."
+    "help": "<b>Conversion</b>\n<br/>\nSends the conversion event.\n<br/><br/>\n<b>Pageview</b> \n<br/>\nSets the the <i>_dm_session_attributes</i> cookie containing a base64 JSON encoded string with the <i>Session Attributes</i> values for conversion event attribution and modeling. Useful for Floodlight and Google Ads conversions.\n<br/>\nDefault mappings: \n<ul> \n<li>Session Attribute <i>gad_source</i>: <i>gad_source</i> URL Parameter value </li>\n<li>Session Attribute <i>gad_campaignid</i>: <i>gad_campaignid</i> URL Parameter value</li> <li>Session Attribute <i>landing_page_url</i>: <i>page_location</i> Event Data value</li>\n<li>Session Attribute <i>landing_page_referrer</i>: <i>page_referrer</i> Event Data value</li></li>\n<li>Session Attribute <i>landing_page_user_agent</i>: <i>user_agent</i> Event Data value</li></li>\n<li>Session Attribute <i>session_start_time_usec</i>: current timestamp of the time when the Pageview tag set the cookie</li>\n</ul>\n<br/> Learn more: <a href=\"https://support.google.com/google-ads/answer/16194756?hl=en\">[1]</a> and <a href=\"https://ads-developers.googleblog.com/2025/08/maximize-performance-of-your-google-ads.html\">[2]</a>."
   },
   {
     "type": "GROUP",
@@ -67,7 +67,7 @@ ___TEMPLATE_PARAMETERS___
             "name": "cookieExpiration",
             "displayName": "Cookie Expiration",
             "simpleValueType": true,
-            "help": "The number of days Session Attributes cookie will live.\n\u003cbr\u003e\u003cbr\u003e\nGoogle advertising platforms have a maximum lookback window of 90 days. Therefore, it\u0027s advised not to exceed 90 days of expiration.",
+            "help": "The number of days Session Attributes cookie will live.\n<br><br>\nGoogle advertising platforms have a maximum lookback window of 90 days. Therefore, it's advised not to exceed 90 days of expiration.",
             "valueUnit": "days",
             "defaultValue": 90,
             "valueHint": "90",
@@ -82,7 +82,7 @@ ___TEMPLATE_PARAMETERS___
             "name": "cookieDomain",
             "displayName": "Cookie Domain",
             "simpleValueType": true,
-            "help": "Overrides the cookie domain (defaults to \u003cb\u003eauto\u003c/b\u003e).\n\u003cbr/\u003e\nEnter your website\u0027s top-level domain as a fixed value (e.g., example.com).\n\u003cbr/\u003e\nIf left as default, the top-level domain will be automatically determined using the following priority:\n\u003cul\u003e\n\u003cli\u003eTop-level domain of the \u003ci\u003eForwarded\u003c/i\u003e header (if present).\u003c/li\u003e\n\u003cli\u003eTop-level domain of the \u003ci\u003eX-Forwarded-Host\u003c/i\u003e header (if present).\u003c/li\u003e\n\u003cli\u003eTop-level domain of the \u003ci\u003eHost\u003c/i\u003e header.\u003c/li\u003e\n\u003c/ul\u003e",
+            "help": "Overrides the cookie domain (defaults to <b>auto</b>).\n<br/>\nEnter your website's top-level domain as a fixed value (e.g., example.com).\n<br/>\nIf left as default, the top-level domain will be automatically determined using the following priority:\n<ul>\n<li>Top-level domain of the <i>Forwarded</i> header (if present).</li>\n<li>Top-level domain of the <i>X-Forwarded-Host</i> header (if present).</li>\n<li>Top-level domain of the <i>Host</i> header.</li>\n</ul>",
             "valueValidators": [
               {
                 "type": "NON_EMPTY"
@@ -112,7 +112,7 @@ ___TEMPLATE_PARAMETERS___
             ],
             "simpleValueType": true,
             "defaultValue": "none",
-            "help": "\u003ca href\u003d\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie#samesitesamesite-value\"\u003eLearn more\u003c/a\u003e."
+            "help": "<a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie#samesitesamesite-value\">Learn more</a>."
           },
           {
             "type": "SELECT",
@@ -155,13 +155,13 @@ ___TEMPLATE_PARAMETERS___
           {
             "value": "stape",
             "displayValue": "Stape Google Connection",
-            "help": "You can enable it on the Stape container settings, in the \u003ca href\u003d\"https://app.stape.io/container/\" target\u003d\"_blank\"\u003eConnections\u003c/a\u003e section.\n\u003c/br\u003e\u003c/br\u003e\n\u003ca href\u003d\"https://stape.io/solutions/data-manager-api-connection\" target\u003d\"_blank\"\u003eLearn more here.\u003c/a\u003e",
+            "help": "You can enable it on the Stape container settings, in the <a href=\"https://app.stape.io/container/\" target=\"_blank\">Connections</a> section.\n</br></br>\n<a href=\"https://stape.io/solutions/data-manager-api-connection\" target=\"_blank\">Learn more here.</a>",
             "subParams": []
           },
           {
             "value": "own",
             "displayValue": "Own Google Credentials",
-            "help": "This type of auth is more complicated. Only choose it if you know what you are doing and do not want to use the Stape Google Connection authentication.\n\u003cbr/\u003e\u003cbr/\u003e\nIt uses the \u003ca href\u003d\"https://cloud.google.com/docs/authentication/application-default-credentials\"\u003eGCP Application Default Credentials\u003c/a\u003e to automatically find credentials from the server environment.\n\u003cbr/\u003e\u003cbr/\u003e\nIt\u0027s performed through a \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/quickstart/set-up-access?credential_type\u003dservice_account\"\u003eService Account impersonation\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003ca href\u003d\"https://github.com/stape-io/google-conversion-events-tag?tab\u003dreadme-ov-file#how-to-use-the-google-conversion-events-tag\"\u003eLearn more and how-to\u003c/a\u003e."
+            "help": "This type of auth is more complicated. Only choose it if you know what you are doing and do not want to use the Stape Google Connection authentication.\n<br/><br/>\nIt uses the <a href=\"https://cloud.google.com/docs/authentication/application-default-credentials\">GCP Application Default Credentials</a> to automatically find credentials from the server environment.\n<br/><br/>\nIt's performed through a <a href=\"https://developers.google.com/data-manager/api/devguides/quickstart/set-up-access?credential_type=service_account\">Service Account impersonation</a>.\n<br/><br/>\n<a href=\"https://github.com/stape-io/google-conversion-events-tag?tab=readme-ov-file#how-to-use-the-google-conversion-events-tag\">Learn more and how-to</a>."
           }
         ],
         "simpleValueType": true,
@@ -260,7 +260,7 @@ ___TEMPLATE_PARAMETERS___
               }
             ],
             "newRowButtonText": "Add Conversion Event",
-            "help": "\u003cb\u003eProduct\u003c/b\u003e: The Product the Conversion belongs to.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eOperating Customer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e (without hyphens) of the account (Google Ads account, DV360 account etc.) that will receive the conversion events. \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eCustomer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e (without hyphens) of the account for which the link between the Data Partner account (Stape) and the Advertiser account was established.\n\u003cbr/\u003e\ne.g. the link between the Data Partner account (Stape) and Advertiser account can be done at MCC level, but the data is going to be sent to a subaccount of the MCC.\n\u003cbr/\u003e\nIn this case: the \u003ci\u003eCustomer Account\u003c/i\u003e is the MCC, and \u003ci\u003eOperating Customer Account\u003c/i\u003e is the subaccount.\n\u003cbr/\u003e\nIf the link is done with the same account that will receive the data, then the \u003ci\u003eCustomer Account\u003c/i\u003e and \u003ci\u003eOperating Customer Account\u003c/i\u003e are the same.\n\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eConversion Event ID\u003c/b\u003e: The ID of the conversion you want to interact with.\n\u003cbr/\u003e\nYou can find it by going to the \u003ci\u003eGoogle Ads account \u003e Goals \u003e Conversions \u003e Summary \u003e Access the desired Conversion Action\u003c/i\u003e. After you click on the Conversion Action, the ID is on the \u003cb\u003ectId\u003c/b\u003e URL query parameter on your browser.\n\u003cbr/\u003e"
+            "help": "<b>Product</b>: The Product the Conversion belongs to.\n<br/><br/>\n<b>Operating Customer ID</b>: The <i>Account ID</i> (without hyphens) of the account (Google Ads account, DV360 account etc.) that will receive the conversion events. <a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\">Learn more</a>.\n<br/><br/>\n<b>Customer ID</b>: The <i>Account ID</i> (without hyphens) of the account for which the link between the Data Partner account (Stape) and the Advertiser account was established.\n<br/>\ne.g. the link between the Data Partner account (Stape) and Advertiser account can be done at MCC level, but the data is going to be sent to a subaccount of the MCC.\n<br/>\nIn this case: the <i>Customer Account</i> is the MCC, and <i>Operating Customer Account</i> is the subaccount.\n<br/>\nIf the link is done with the same account that will receive the data, then the <i>Customer Account</i> and <i>Operating Customer Account</i> are the same.\n<br/>\n<a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\">Learn more</a>.\n<br/><br/>\n<b>Conversion Event ID</b>: The ID of the conversion you want to interact with.\n<br/>\nYou can find it by going to the <i>Google Ads account > Goals > Conversions > Summary > Access the desired Conversion Action</i>. After you click on the Conversion Action, the ID is on the <b>ctId</b> URL query parameter on your browser.\n<br/>"
           },
           {
             "type": "SIMPLE_TABLE",
@@ -356,7 +356,7 @@ ___TEMPLATE_PARAMETERS___
               }
             ],
             "newRowButtonText": "Add Conversion Event",
-            "help": "\u003cb\u003eProduct\u003c/b\u003e: The Product the Conversion belongs to.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eOperating Customer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e (without hyphens) of the account (Google Analytics property, Google Ads account, CM360 account etc.) that will receive the conversion events. \n\u003cbr/\u003e\nFor CM360, it\u0027s the \u003ca href\u003d\"https://support.google.com/campaignmanager/answer/11568119?hl\u003den\"\u003e\u003ci\u003eAdvertiser ID\u003c/i\u003e\u003c/a\u003e.\n\u003cbr/\u003e\nFor Google Analytics, it\u0027s the \u003ca href\u003d\"https://developers.google.com/analytics/devguides/reporting/data/v1/property-id#google_analytics\"\u003eProperty ID\u003c/a\u003e.\n\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eCustomer ID\u003c/b\u003e: The \u003ci\u003eAccount ID\u003c/i\u003e of the account (Google Analytics property, Google Ads account, CM360 account etc.) used for authorization (without hyphens) when making the API request. \n\u003cbr/\u003e\nFor CM360, it\u0027s the \u003ca href\u003d\"https://support.google.com/campaignmanager/answer/11568119?hl\u003den\"\u003e\u003ci\u003eAdvertiser ID\u003c/i\u003e\u003c/a\u003e.\n\u003cbr/\u003e\nFor Google Analytics, it\u0027s the \u003ca href\u003d\"https://developers.google.com/analytics/devguides/reporting/data/v1/property-id#google_analytics\"\u003eProperty ID\u003c/a\u003e (you can leave it blank).\n\u003cbr/\u003e\nFor ads products:\n\u003cul\u003e\n\u003cli\u003eIf your credentials are for access to a \u003ci\u003eManager Account\u003c/i\u003e that has the \u003ci\u003eOperating Account\u003c/i\u003e as one of its subaccounts, set the \u003ci\u003eCustomer ID\u003c/i\u003e to the ID of the \u003ci\u003eManager Account\u003c/i\u003e.\u003c/li\u003e\n\u003cli\u003eIf your credentials are for the account that is the \u003ci\u003eOperating Account\u003c/i\u003e, you don\u0027t need to set \u003ci\u003eCustomer ID\u003c/i\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/quickstart/send-events?persona\u003dadvertiser#prepare_a_destination\"\u003e[2]\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eConversion Event ID\u003c/b\u003e: The ID of the conversion you want to interact with.\n\u003cbr/\u003e\nFor \u003cb\u003eGoogle Ads\u003c/b\u003e, you can find it by going to the \u003ci\u003eGoogle Ads account \u003e Goals \u003e Conversions \u003e Summary \u003e Access the desired Conversion Action\u003c/i\u003e. After you click on the Conversion Action, the ID is on the \u003cb\u003ectId\u003c/b\u003e URL query parameter on your browser. \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#ads-event\"\u003eLearn more\u003c/a\u003e\n\u003cbr/\u003e\nFor \u003cb\u003eCM, DV and SA 360\u003c/b\u003e, it\u0027s the Floodlight Activity ID. You can find it by going to the \u003ci\u003eActivities\u003c/i\u003e page. The ID is the number next to the name in the Activity name column. \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#floodlight-event\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\nFor \u003cb\u003eGoogle Analytics\u003c/b\u003e, it\u0027s the \u003ca href\u003d\"https://support.google.com/analytics/answer/12270356\"\u003eMeasurement ID\u003c/a\u003e (for web streams) or the \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#ga-event\"\u003eFirebase App ID\u003c/a\u003e (for app streams).\n\u003cbr/\u003e"
+            "help": "<b>Product</b>: The Product the Conversion belongs to.\n<br/><br/>\n<b>Operating Customer ID</b>: The <i>Account ID</i> (without hyphens) of the account (Google Analytics property, Google Ads account, CM360 account etc.) that will receive the conversion events. \n<br/>\nFor CM360, it's the <a href=\"https://support.google.com/campaignmanager/answer/11568119?hl=en\"><i>Advertiser ID</i></a>.\n<br/>\nFor Google Analytics, it's the <a href=\"https://developers.google.com/analytics/devguides/reporting/data/v1/property-id#google_analytics\">Property ID</a>.\n<br/>\n<a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\">Learn more</a>.\n<br/><br/>\n<b>Customer ID</b>: The <i>Account ID</i> of the account (Google Analytics property, Google Ads account, CM360 account etc.) used for authorization (without hyphens) when making the API request. \n<br/>\nFor CM360, it's the <a href=\"https://support.google.com/campaignmanager/answer/11568119?hl=en\"><i>Advertiser ID</i></a>.\n<br/>\nFor Google Analytics, it's the <a href=\"https://developers.google.com/analytics/devguides/reporting/data/v1/property-id#google_analytics\">Property ID</a> (you can leave it blank).\n<br/>\nFor ads products:\n<ul>\n<li>If your credentials are for access to a <i>Manager Account</i> that has the <i>Operating Account</i> as one of its subaccounts, set the <i>Customer ID</i> to the ID of the <i>Manager Account</i>.</li>\n<li>If your credentials are for the account that is the <i>Operating Account</i>, you don't need to set <i>Customer ID</i>.</li>\n</ul>\n<br/>\nLearn more: <a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/Destination\">[1]</a> and <a href=\"https://developers.google.com/data-manager/api/get-started/quickstart/send-events?persona=advertiser#prepare_a_destination\">[2]</a>.\n<br/><br/>\n<b>Conversion Event ID</b>: The ID of the conversion you want to interact with.\n<br/>\nFor <b>Google Ads</b>, you can find it by going to the <i>Google Ads account > Goals > Conversions > Summary > Access the desired Conversion Action</i>. After you click on the Conversion Action, the ID is on the <b>ctId</b> URL query parameter on your browser. <a href=\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#ads-event\">Learn more</a>\n<br/>\nFor <b>CM, DV and SA 360</b>, it's the Floodlight Activity ID. You can find it by going to the <i>Activities</i> page. The ID is the number next to the name in the Activity name column. <a href=\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#floodlight-event\">Learn more</a>.\n<br/>\nFor <b>Google Analytics</b>, it's the <a href=\"https://support.google.com/analytics/answer/12270356\">Measurement ID</a> (for web streams) or the <a href=\"https://developers.google.com/data-manager/api/devguides/concepts/destinations#ga-event\">Firebase App ID</a> (for app streams).\n<br/>"
           }
         ]
       },
@@ -376,7 +376,7 @@ ___TEMPLATE_PARAMETERS___
           }
         ],
         "simpleValueType": true,
-        "help": "If \u003cb\u003etrue\u003c/b\u003e, the request is validated but not executed. Only errors are returned, not results.\u003cbr /\u003e \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#request-body\"\u003eLearn more\u003c/a\u003e.",
+        "help": "If <b>true</b>, the request is validated but not executed. Only errors are returned, not results.<br /> <a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#request-body\">Learn more</a>.",
         "defaultValue": false
       },
       {
@@ -405,11 +405,6 @@ ___TEMPLATE_PARAMETERS___
         "groupStyle": "ZIPPY_OPEN_ON_PARAM",
         "subParams": [
           {
-            "type": "LABEL",
-            "name": "requestLevelConsentGroupLabel",
-            "displayName": "Request-level consent to apply to all users in the request.\n\u003cbr/\u003e\nUser-level consent overrides request-level consent, and can be specified for each conversion event when sending data to \u003ci\u003eMultiple Conversion Events\u003c/i\u003e in the \u003cb\u003eConversion Events\u003c/b\u003e section.\n\u003cbr/\u003e\u003cbr/\u003e"
-          },
-          {
             "type": "SELECT",
             "name": "adUserData",
             "displayName": "Consent for Ad User Data",
@@ -429,7 +424,7 @@ ___TEMPLATE_PARAMETERS___
               }
             ],
             "simpleValueType": true,
-            "help": "This represents consent to Ad User Data. \n\u003cbr/\u003e\u003cbr/\u003e\nWhen passing the value using a variable, make sure to return the exact strings (case insensitive) as defined below: \n\u003cul\u003e\n\u003cli\u003eFor consent granted: \u003ci\u003eCONSENT_GRANTED\u003c/i\u003e, \u003ci\u003eGRANTED\u003c/i\u003e or \u003ci\u003eTRUE\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eFor consent denied: \u003ci\u003eCONSENT_DENIED\u003c/i\u003e, \u003ci\u003eDENIED\u003c/i\u003e or \u003ci\u003eFALSE\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eFor consent unknown: \u003ci\u003eCONSENT_STATUS_UNSPECIFIED\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+            "help": "Request-level consent to apply to all users in the request.\n<br/>\nUser-level consent overrides request-level consent, and can be specified for each conversion event when sending data to <i>Multiple Conversion Events</i> in the <b>Conversion Events</b> section.<br><br>This represents consent to Ad User Data. \n<br/><br/>\nWhen passing the value using a variable, make sure to return the exact strings (case insensitive) as defined below: \n<ul>\n<li>For consent granted: <i>CONSENT_GRANTED</i>, <i>GRANTED</i> or <i>TRUE</i></li>\n<li>For consent denied: <i>CONSENT_DENIED</i>, <i>DENIED</i> or <i>FALSE</i></li>\n<li>For consent unknown: <i>CONSENT_STATUS_UNSPECIFIED</i></li>\n</ul>",
             "notSetText": "(not set)"
           },
           {
@@ -452,7 +447,7 @@ ___TEMPLATE_PARAMETERS___
               }
             ],
             "simpleValueType": true,
-            "help": "This represents consent to Ad Personalization.\n\u003cbr/\u003e\u003cbr/\u003e\nWhen passing the value using a variable, make sure to return the exact strings (case insensitive) as defined below: \n\u003cul\u003e\n\u003cli\u003eFor consent granted: \u003ci\u003eCONSENT_GRANTED\u003c/i\u003e, \u003ci\u003eGRANTED\u003c/i\u003e or \u003ci\u003eTRUE\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eFor consent denied: \u003ci\u003eCONSENT_DENIED\u003c/i\u003e, \u003ci\u003eDENIED\u003c/i\u003e or \u003ci\u003eFALSE\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eFor consent unknown: \u003ci\u003eCONSENT_STATUS_UNSPECIFIED\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+            "help": "This represents consent to Ad Personalization.\n<br/><br/>\nWhen passing the value using a variable, make sure to return the exact strings (case insensitive) as defined below: \n<ul>\n<li>For consent granted: <i>CONSENT_GRANTED</i>, <i>GRANTED</i> or <i>TRUE</i></li>\n<li>For consent denied: <i>CONSENT_DENIED</i>, <i>DENIED</i> or <i>FALSE</i></li>\n<li>For consent unknown: <i>CONSENT_STATUS_UNSPECIFIED</i></li>\n</ul>",
             "notSetText": "(not set)"
           }
         ]
@@ -479,7 +474,7 @@ ___TEMPLATE_PARAMETERS___
               }
             ],
             "simpleValueType": true,
-            "help": "The encoding type of the user identifiers SHA256 hash: \u003ci\u003eHEX\u003c/i\u003e or \u003ci\u003eBASE64\u003c/i\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eRequired\u003c/b\u003e for \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/UserData\"\u003e\u003ci\u003eUserData\u003c/i\u003e\u003c/a\u003e (User Email Address, User Phone Number and User Given/Family Name) uploads.\n\u003cbr/\u003e\nFor other types (User Address Region and User Address Postal Code) uploads, this field is \u003cb\u003eignored\u003c/b\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\nFor hashed user identifiers, this is the encoding type of the hashed string. \n\u003cbr/\u003e\nFor encrypted hashed user identifiers, this is the encoding type of the outer encrypted string, but not necessarily the inner hashed string, meaning the inner hashed string could be encoded in a different way than the outer encrypted string.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eDefault\u003c/b\u003e: \u003ci\u003eHEX\u003c/i\u003e - when passing a non-hashed value to \u003ci\u003eUserData\u003c/i\u003e (User Email Address, User Phone Number and User Given/Family Name) fields; or when using default values from GA4 Event Data.",
+            "help": "The encoding type of the user identifiers SHA256 hash: <i>HEX</i> or <i>BASE64</i>.\n<br/><br/>\n<b>Required</b> for <a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/UserData\"><i>UserData</i></a> (User Email Address, User Phone Number and User Given/Family Name) uploads.\n<br/>\nFor other types (User Address Region and User Address Postal Code) uploads, this field is <b>ignored</b>.\n<br/><br/>\nFor hashed user identifiers, this is the encoding type of the hashed string. \n<br/>\nFor encrypted hashed user identifiers, this is the encoding type of the outer encrypted string, but not necessarily the inner hashed string, meaning the inner hashed string could be encoded in a different way than the outer encrypted string.\n<br/><br/>\n<b>Default</b>: <i>HEX</i> - when passing a non-hashed value to <i>UserData</i> (User Email Address, User Phone Number and User Given/Family Name) fields; or when using default values from GA4 Event Data.",
             "notSetText": "(not set)"
           },
           {
@@ -498,7 +493,7 @@ ___TEMPLATE_PARAMETERS___
               }
             ],
             "simpleValueType": true,
-            "help": "Encryption information for \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/UserData\"\u003e\u003ci\u003eUserData\u003c/i\u003e\u003c/a\u003e (User Email Address, User Phone Number and User Given/Family Name) uploads.\n\u003cbr/\u003e\u003cbr/\u003e\nIf not set, it\u0027s assumed that uploaded identifying information is hashed but not encrypted.\n\u003cbr/\u003e\u003cbr/\u003e \nFor other types (User Address Region and User Address Postal Code) uploads, this field is \u003cb\u003eignored\u003c/b\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\nReferences:  \n\u003cul\u003e \n\u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/encryption\"\u003eData Manager API: Getting started with Encryption\u003c/a\u003e\u003c/li\u003e \u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/EncryptionInfo\"\u003eEncryptionInfo object\u003c/a\u003e\u003c/li\u003e \u003c/ul\u003e",
+            "help": "Encryption information for <a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/UserData\"><i>UserData</i></a> (User Email Address, User Phone Number and User Given/Family Name) uploads.\n<br/><br/>\nIf not set, it's assumed that uploaded identifying information is hashed but not encrypted.\n<br/><br/> \nFor other types (User Address Region and User Address Postal Code) uploads, this field is <b>ignored</b>.\n<br/><br/>\nReferences:  \n<ul> \n<li><a href=\"https://developers.google.com/data-manager/api/get-started/encryption\">Data Manager API: Getting started with Encryption</a></li> <li><a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/EncryptionInfo\">EncryptionInfo object</a></li> </ul>",
             "defaultValue": false,
             "subParams": [
               {
@@ -536,7 +531,7 @@ ___TEMPLATE_PARAMETERS___
                         "type": "NON_EMPTY"
                       }
                     ],
-                    "help": "The \u003ca href\u003d\"https://cloud.google.com/iam/docs/workload-identity-federation\"\u003eWorkload Identity\u003c/a\u003e pool provider required to use KEK."
+                    "help": "The <a href=\"https://cloud.google.com/iam/docs/workload-identity-federation\">Workload Identity</a> pool provider required to use KEK."
                   },
                   {
                     "type": "TEXT",
@@ -548,7 +543,7 @@ ___TEMPLATE_PARAMETERS___
                         "type": "NON_EMPTY"
                       }
                     ],
-                    "help": "The Google Cloud Platform \u003ca href\u003d\"https://cloud.google.com/kms/docs/getting-resource-ids\"\u003eCloud Key Management Service resource ID\u003c/a\u003e."
+                    "help": "The Google Cloud Platform <a href=\"https://cloud.google.com/kms/docs/getting-resource-ids\">Cloud Key Management Service resource ID</a>."
                   },
                   {
                     "type": "TEXT",
@@ -620,7 +615,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n\u003cbr/\u003e\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eTransaction/Order ID: \u003ci\u003eeventData.transaction_id\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eCurrency: \u003ci\u003eeventData.currency\u003c/i\u003e\n\u003cli\u003eConversion Value:\n\u003cul\u003e\n\u003cli\u003e\u003ci\u003eeventData.value\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eSum of \u003ci\u003eeventData.items\u003c/i\u003e or \u003ci\u003eeventData.ecommerce.items\u003c/i\u003e Price * Quantity\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/ul\u003e",
+                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n<br/><br/>\nAny value you manually enter in a field below will always override the auto-mapped value.\n<br/><br/>\nDefault mappings:\n<ul>\n<li>Transaction/Order ID: <i>eventData.transaction_id</i></li>\n<li>Currency: <i>eventData.currency</i>\n<li>Conversion Value:\n<ul>\n<li><i>eventData.value</i></li>\n<li>Sum of <i>eventData.items</i> or <i>eventData.ecommerce.items</i> Price * Quantity</li>\n</ul>\n</ul>",
                 "defaultValue": true
               },
               {
@@ -651,7 +646,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "\u003cb\u003eRequired.\u003c/b\u003e\n\u003cbr/\u003e\u003cbr/\u003e\nA signal for where the event happened originally (web, app, in-store, etc.).\n\u003cbr/\u003e\nGA4 events support only \u003ci\u003eWEB\u003c/i\u003e and \u003ci\u003eAPP\u003c/i\u003e.",
+                "help": "<b>Required.</b>\n<br/><br/>\nA signal for where the event happened originally (web, app, in-store, etc.).\n<br/>\nGA4 events support only <i>WEB</i> and <i>APP</i>.",
                 "valueValidators": [
                   {
                     "type": "NON_EMPTY"
@@ -664,28 +659,28 @@ ___TEMPLATE_PARAMETERS___
                 "name": "transactionId",
                 "displayName": "Transaction/Order ID",
                 "simpleValueType": true,
-                "help": "The unique identifier for this event.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eOptional\u003c/b\u003e when sending offline conversion or enhanced conversion for leads.\n\u003cbr/\u003e\n\u003cb\u003eRequired\u003c/b\u003e when sending offline conversion as an additional data source to boost performance and data strength of an online conversion.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/events\"\u003eLearn more.\u003c/a\u003e"
+                "help": "The unique identifier for this event.\n<br/><br/>\n<b>Optional</b> when sending offline conversion or enhanced conversion for leads.\n<br/>\n<b>Required</b> when sending offline conversion as an additional data source to boost performance and data strength of an online conversion.\n<br/><br/>\n<a href=\"https://developers.google.com/data-manager/api/devguides/events\">Learn more.</a>"
               },
               {
                 "type": "TEXT",
                 "name": "eventTimestamp",
                 "displayName": "Event Timestamp",
                 "simpleValueType": true,
-                "help": "\u003cb\u003eRequired.\u003c/b\u003e\n\u003cbr/\u003e\u003cbr/\u003e\nThe time the event occurred.\n\u003cbr/\u003e\u003cbr/\u003e\nThe supported formats are:\n\u003cul\u003e \n\u003cli\u003eRFC 3339 compliant formats:\n\u003cul\u003e\n\u003cli\u003e2014-10-02T15:01:23Z\u003c/li\u003e\n\u003cli\u003e2014-10-02T15:01:23.045123456Z\u003c/li\u003e\n\u003cli\u003e2014-10-02T15:01:23+05:30\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e \n\u003cli\u003eUnix timestamp (in seconds or milliseconds)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\nIf not set, the tag will fallback to the current time if none is found."
+                "help": "<b>Required.</b>\n<br/><br/>\nThe time the event occurred.\n<br/><br/>\nThe supported formats are:\n<ul> \n<li>RFC 3339 compliant formats:\n<ul>\n<li>2014-10-02T15:01:23Z</li>\n<li>2014-10-02T15:01:23.045123456Z</li>\n<li>2014-10-02T15:01:23+05:30</li>\n</ul>\n</li> \n<li>Unix timestamp (in seconds or milliseconds)</li>\n</ul>\n<br/>\nIf not set, the tag will fallback to the current time if none is found."
               },
               {
                 "type": "TEXT",
                 "name": "lastUpdatedTimestamp",
                 "displayName": "Last Updated Timestamp",
                 "simpleValueType": true,
-                "help": "The last time the event was updated.\n\u003cbr/\u003e\u003cbr/\u003e\nThe supported formats are:\n\u003cul\u003e \n\u003cli\u003eRFC 3339 compliant formats:\n\u003cul\u003e\n\u003cli\u003e2014-10-02T15:01:23Z\u003c/li\u003e\n\u003cli\u003e2014-10-02T15:01:23.045123456Z\u003c/li\u003e\n\u003cli\u003e2014-10-02T15:01:23+05:30\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e \n\u003cli\u003eUnix timestamp (in seconds or milliseconds)\u003c/li\u003e\n\u003c/ul\u003e"
+                "help": "The last time the event was updated.\n<br/><br/>\nThe supported formats are:\n<ul> \n<li>RFC 3339 compliant formats:\n<ul>\n<li>2014-10-02T15:01:23Z</li>\n<li>2014-10-02T15:01:23.045123456Z</li>\n<li>2014-10-02T15:01:23+05:30</li>\n</ul>\n</li> \n<li>Unix timestamp (in seconds or milliseconds)</li>\n</ul>"
               },
               {
                 "type": "TEXT",
                 "name": "currency",
                 "displayName": "Currency",
                 "simpleValueType": true,
-                "help": "The currency code associated with all monetary values within this event.\n\u003cbr/\u003e\u003cbr/\u003e\nThe value must be a recognized currency code as per \u003ca href\u003d\"http://en.wikipedia.org/wiki/ISO_4217\"\u003eISO-4217 standard\u003c/a\u003e (e.g. EUR, USD, etc.)."
+                "help": "The currency code associated with all monetary values within this event.\n<br/><br/>\nThe value must be a recognized currency code as per <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO-4217 standard</a> (e.g. EUR, USD, etc.)."
               },
               {
                 "type": "TEXT",
@@ -699,7 +694,7 @@ ___TEMPLATE_PARAMETERS___
                 "name": "conversionCount",
                 "displayName": "Conversion Quantity",
                 "simpleValueType": true,
-                "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe conversion quantity or the number of items associated with the event, for counting-based conversions. Must be at least 1 for the conversion to count towards certain metrics (such as Total Conversions).",
+                "help": "For Floodlight conversions.\n<br/>\nThe conversion quantity or the number of items associated with the event, for counting-based conversions. Must be at least 1 for the conversion to count towards certain metrics (such as Total Conversions).",
                 "enablingConditions": [
                   {
                     "paramName": "authFlow",
@@ -762,7 +757,7 @@ ___TEMPLATE_PARAMETERS___
                       }
                     ],
                     "newRowButtonText": "Add Parameter",
-                    "help": "\u003cb\u003eEvent Name\u003c/b\u003e\n\u003cb\u003eRequired\u003c/b\u003e if GA4 is a destination.\u003cbr/\u003eThe GA4 event name limitations and requirements apply. Learn more: \u003ca href\u003d\"https://support.google.com/analytics/answer/9267744\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://support.google.com/analytics/answer/13316687\"\u003e[2]\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eUser ID\u003c/b\u003e\n\u003cbr/\u003e\nThe unique identifier for a user. \u003ca href\u003d\"https://support.google.com/analytics/answer/9213390\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eClient ID\u003c/b\u003e\n\u003cbr/\u003e\n\u003cb\u003eRequired\u003c/b\u003e if GA4 is a destination and a web stream will receive the event. \u003ca href\u003d\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/index.md?client_type\u003dgtag#payload_post_body\"\u003eLearn more\u003c/a\u003e.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eApp Instance ID\u003c/b\u003e\n\u003cbr/\u003e\n\u003cb\u003eRequired\u003c/b\u003e if GA4 is a destination and an app stream will receive the event. \u003ca href\u003d\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/index.md?client_type\u003dfirebase#payload_post_body\"\u003eLearn more\u003c/a\u003e."
+                    "help": "<b>Event Name</b>\n<b>Required</b> if GA4 is a destination.<br/>The GA4 event name limitations and requirements apply. Learn more: <a href=\"https://support.google.com/analytics/answer/9267744\">[1]</a> and <a href=\"https://support.google.com/analytics/answer/13316687\">[2]</a>.\n<br/><br/>\n<b>User ID</b>\n<br/>\nThe unique identifier for a user. <a href=\"https://support.google.com/analytics/answer/9213390\">Learn more</a>.\n<br/><br/>\n<b>Client ID</b>\n<br/>\n<b>Required</b> if GA4 is a destination and a web stream will receive the event. <a href=\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/index.md?client_type=gtag#payload_post_body\">Learn more</a>.\n<br/><br/>\n<b>App Instance ID</b>\n<br/>\n<b>Required</b> if GA4 is a destination and an app stream will receive the event. <a href=\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/index.md?client_type=firebase#payload_post_body\">Learn more</a>."
                   }
                 ],
                 "enablingConditions": [
@@ -782,11 +777,6 @@ ___TEMPLATE_PARAMETERS___
             "groupStyle": "ZIPPY_OPEN_ON_PARAM",
             "subParams": [
               {
-                "type": "LABEL",
-                "name": "userDataGroupLabel",
-                "displayName": "When sending User Data Identifiers, \u003cb\u003eat least one\u003c/b\u003e of User Email Address(es), User Phone Number(s) or User Address must be specified.\nThe total number of User Data identifiers must not exceed 10 items.\n\u003cbr/\u003e\n❗ Ensure you have accepted the \u003ca href\u003d\"https://support.google.com/adspolicy/answer/7475709\"\u003e\u003cb\u003eCustomer Data Terms\u003c/b\u003e\u003c/a\u003e and enabled \u003cb\u003eEnhanced Conversions\u003c/b\u003e and \u003cb\u003eEnhanced Conversions for Leads\u003c/b\u003e in Google Ads (\u003ci\u003eGoals \u003e Conversions \u003e Settings\u003c/i\u003e) or CM360. These settings must be active for the destination account and its manager (MCC) account, if applicable.\n\u003cbr/\u003e\u003cbr/\u003e"
-              },
-              {
                 "type": "SELECT",
                 "name": "autoMapUserData",
                 "displayName": "Auto-map User Data Information",
@@ -802,7 +792,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n\u003cbr/\u003e\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eEmail:\n\u003cul\u003e\n\u003cli\u003e\u003ci\u003eeventData.email\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eeventData.email_address\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.email\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.email_address\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.sha256_email_address\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003ePhone:\n\u003cul\u003e\n\u003cli\u003e\u003ci\u003eeventData.phone\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eeventData.phone_number\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.phone\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.phone_number\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.sha256_phone_number\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eUser Given Name:\n\u003cul\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.address.first_name\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.address.sha256_first_name\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eUser Family Name:\n\u003cul\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.address.last_name\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.address.sha256_last_name\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eUser Address Region:\n\u003cul\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.address.country\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eUser Address Postal Code:\n\u003cul\u003e\n\u003cli\u003e\u003ci\u003eeventData.user_data.address.postal_code\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
+                "help": "When sending User Data Identifiers, <b>at least one</b> of User Email Address(es), User Phone Number(s) or User Address must be specified.\nThe total number of User Data identifiers must not exceed 10 items.\n<br/>\n\u2757 Ensure you have accepted the <a href=\"https://support.google.com/adspolicy/answer/7475709\"><b>Customer Data Terms</b></a> and enabled <b>Enhanced Conversions</b> and <b>Enhanced Conversions for Leads</b> in Google Ads (<i>Goals > Conversions > Settings</i>) or CM360. These settings must be active for the destination account and its manager (MCC) account, if applicable.<br><br>If enabled, the tag will attempt to automatically map parameters from the Event Data.\n<br/><br/>\nAny value you manually enter in a field below will always override the auto-mapped value.\n<br/><br/>\nDefault mappings:\n<ul>\n<li>Email:\n<ul>\n<li><i>eventData.email</i></li>\n<li><i>eventData.email_address</i></li>\n<li><i>eventData.user_data.email</i></li>\n<li><i>eventData.user_data.email_address</i></li>\n<li><i>eventData.user_data.sha256_email_address</i></li>\n</ul>\n</li>\n<li>Phone:\n<ul>\n<li><i>eventData.phone</i></li>\n<li><i>eventData.phone_number</i></li>\n<li><i>eventData.user_data.phone</i></li>\n<li><i>eventData.user_data.phone_number</i></li>\n<li><i>eventData.user_data.sha256_phone_number</i></li>\n</ul>\n</li>\n<li>User Given Name:\n<ul>\n<li><i>eventData.user_data.address.first_name</i></li>\n<li><i>eventData.user_data.address.sha256_first_name</i></li>\n</ul>\n</li>\n<li>User Family Name:\n<ul>\n<li><i>eventData.user_data.address.last_name</i></li>\n<li><i>eventData.user_data.address.sha256_last_name</i></li>\n</ul>\n</li>\n<li>User Address Region:\n<ul>\n<li><i>eventData.user_data.address.country</i></li>\n</ul>\n</li>\n<li>User Address Postal Code:\n<ul>\n<li><i>eventData.user_data.address.postal_code</i></li>\n</ul>\n</li>\n</ul>",
                 "defaultValue": true
               },
               {
@@ -810,7 +800,7 @@ ___TEMPLATE_PARAMETERS___
                 "name": "userDataEmailAddresses",
                 "displayName": "User Email Address(es)",
                 "simpleValueType": true,
-                "help": "Specify a single email address, or an array of email addresses. Each item can be already SHA256 hashed or not. They can be already encrypted as well.\n\u003cbr/\u003e\u003cbr/\u003e\nIf already SHA256 hashed, make sure to follow these \u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/formatting#userdata_format\"\u003enormalization guidelines\u003c/a\u003e before applying the hash, and also to \u003cb\u003especify the hash encoding in the corresponding template field\u003c/b\u003e.",
+                "help": "Specify a single email address, or an array of email addresses. Each item can be already SHA256 hashed or not. They can be already encrypted as well.\n<br/><br/>\nIf already SHA256 hashed, make sure to follow these <a href=\"https://developers.google.com/data-manager/api/get-started/formatting#userdata_format\">normalization guidelines</a> before applying the hash, and also to <b>specify the hash encoding in the corresponding template field</b>.",
                 "valueHint": "jane@example.com"
               },
               {
@@ -818,7 +808,7 @@ ___TEMPLATE_PARAMETERS___
                 "name": "userDataPhoneNumbers",
                 "displayName": "User Phone Number(s)",
                 "simpleValueType": true,
-                "help": "Specify a single phone number, or an array of phone numbers. Each item can be already SHA256 hashed or not. They can be already encrypted as well.\n\u003cbr/\u003e\u003cbr/\u003e\nUse \u003ca href\u003d\"https://en.wikipedia.org/wiki/E.164\"\u003eE.164 format\u003c/a\u003e. Include the plus sign (+) and the country code.\n\u003cbr/\u003e\nIf already SHA256 hashed, make sure to follow these \u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/formatting#userdata_format\"\u003enormalization guidelines\u003c/a\u003e before applying the hash, and also to \u003cb\u003especify the hash encoding in the corresponding template field\u003c/b\u003e.",
+                "help": "Specify a single phone number, or an array of phone numbers. Each item can be already SHA256 hashed or not. They can be already encrypted as well.\n<br/><br/>\nUse <a href=\"https://en.wikipedia.org/wiki/E.164\">E.164 format</a>. Include the plus sign (+) and the country code.\n<br/>\nIf already SHA256 hashed, make sure to follow these <a href=\"https://developers.google.com/data-manager/api/get-started/formatting#userdata_format\">normalization guidelines</a> before applying the hash, and also to <b>specify the hash encoding in the corresponding template field</b>.",
                 "valueHint": "+1555999999999"
               },
               {
@@ -832,16 +822,11 @@ ___TEMPLATE_PARAMETERS___
                     "name": "userDataAddressGroup",
                     "subParams": [
                       {
-                        "type": "LABEL",
-                        "name": "userDataAddressLabel",
-                        "displayName": "You must specify \u003cb\u003eall\u003c/b\u003e the fields below (User Given Name, User Family Name, User Address Region and User Address Postal Code)."
-                      },
-                      {
                         "type": "TEXT",
                         "name": "userDataAddressGivenName",
                         "displayName": "User Given Name",
                         "simpleValueType": true,
-                        "help": "Specify the User Given Name (First Name). Don\u0027t include prefixes such as \u003ci\u003eMrs.\u003c/i\u003e. It can be already SHA256 hashed or not. It can be encrypted as well.\n\u003cbr/\u003e\u003cbr/\u003e\nIf already SHA256 hashed, make sure to follow these \u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/formatting#userdata_format\"\u003enormalization guidelines\u003c/a\u003e before applying the hash, and also to \u003cb\u003especify the hash encoding in the corresponding template field\u003c/b\u003e.",
+                        "help": "You must specify <b>all</b> the fields below (User Given Name, User Family Name, User Address Region and User Address Postal Code).<br><br>Specify the User Given Name (First Name). Don't include prefixes such as <i>Mrs.</i>. It can be already SHA256 hashed or not. It can be encrypted as well.\n<br/><br/>\nIf already SHA256 hashed, make sure to follow these <a href=\"https://developers.google.com/data-manager/api/get-started/formatting#userdata_format\">normalization guidelines</a> before applying the hash, and also to <b>specify the hash encoding in the corresponding template field</b>.",
                         "valueHint": "john",
                         "valueValidators": []
                       },
@@ -850,7 +835,7 @@ ___TEMPLATE_PARAMETERS___
                         "name": "userDataAddressFamilyName",
                         "displayName": "User Family Name",
                         "simpleValueType": true,
-                        "help": "Specify the User Family Name (Last Name). Don\u0027t include suffixes such as \u003ci\u003eJr\u003c/i\u003e. It can be already SHA256 hashed or not. It can be encrypted as well.\n\u003cbr/\u003e\u003cbr/\u003e\nIf already SHA256 hashed, make sure to follow these \u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/formatting#userdata_format\"\u003enormalization guidelines\u003c/a\u003e before applying the hash, and also to \u003cb\u003especify the hash encoding in the corresponding template field\u003c/b\u003e.",
+                        "help": "Specify the User Family Name (Last Name). Don't include suffixes such as <i>Jr</i>. It can be already SHA256 hashed or not. It can be encrypted as well.\n<br/><br/>\nIf already SHA256 hashed, make sure to follow these <a href=\"https://developers.google.com/data-manager/api/get-started/formatting#userdata_format\">normalization guidelines</a> before applying the hash, and also to <b>specify the hash encoding in the corresponding template field</b>.",
                         "valueHint": "doe",
                         "valueValidators": []
                       },
@@ -859,7 +844,7 @@ ___TEMPLATE_PARAMETERS___
                         "name": "userDataAddressRegion",
                         "displayName": "User Address Region",
                         "simpleValueType": true,
-                        "help": "The 2-letter region code in \u003ca href\u003d\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\"\u003eISO-3166-1 alpha-2\u003c/a\u003e of the user\u0027s address. Do not hash.",
+                        "help": "The 2-letter region code in <a href=\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\">ISO-3166-1 alpha-2</a> of the user's address. Do not hash.",
                         "valueHint": "US",
                         "valueValidators": []
                       },
@@ -868,7 +853,7 @@ ___TEMPLATE_PARAMETERS___
                         "name": "userDataAddressPostalCode",
                         "displayName": "User Address Postal Code",
                         "simpleValueType": true,
-                        "help": "The postal code of the user\u0027s address. Do not hash.\n\u003cbr/\u003e\nBoth US and international zip and postal codes are allowed. \n\u003cbr/\u003e\nFor US addresses, use either 5 digits or 5 digits followed by a 4-digit extension. Using a 4-digit extension may improve your match rate.\n\u003cbr/\u003e\nFor all other countries, don\u0027t use postal code extensions.",
+                        "help": "The postal code of the user's address. Do not hash.\n<br/>\nBoth US and international zip and postal codes are allowed. \n<br/>\nFor US addresses, use either 5 digits or 5 digits followed by a 4-digit extension. Using a 4-digit extension may improve your match rate.\n<br/>\nFor all other countries, don't use postal code extensions.",
                         "valueHint": "10001",
                         "valueValidators": []
                       }
@@ -908,7 +893,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "If enabled, the tag will attempt to automatically map the \u003ci\u003egclid\u003c/i\u003e, \u003ci\u003egbraid\u003c/i\u003e and \u003ci\u003ewbraid\u003c/i\u003e values using the following sources (in order):\n\u003cul\u003e\n\u003cli\u003eEvent Data\u003c/li\u003e\n\u003cli\u003eURL Parameter\u003c/li\u003e\n\u003cli\u003eServer Cookie\u003c/li\u003e\n\u003cli\u003eJavaScript Cookie\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\n⚠️ Note that this feature might break if Google changes the format of the cookie values. Stape will do its best to keep up with the changes. \n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n  \u003cli\u003egclid:\n    \u003cul\u003e\n      \u003cli\u003e\u003ci\u003egclid\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003egclid\u003c/i\u003e URL Parameter value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003eFPGCLAW\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003eFPGCLAW\u003c/i\u003e Common Cookie value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003eFPGCLAW\u003c/i\u003e Server Cookie value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003e_gcl_aw\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003egcl_aw\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003e_gcl_aw\u003c/i\u003e Common Cookie value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003e_gcl_aw\u003c/i\u003e JavaScript cookie value\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003egbraid:\n    \u003cul\u003e\n      \u003cli\u003e\u003ci\u003egbraid\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003egbraid\u003c/i\u003e URL Parameter value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003eFPGCLAG\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003eFPGCLAG\u003c/i\u003e Common Cookie value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003eFPGCLAG\u003c/i\u003e Server Cookie value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003e_gcl_ag\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003egcl_ag\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003e_gcl_ag\u003c/i\u003e Common Cookie value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003e_gcl_ag\u003c/i\u003e JavaScript cookie value\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003ewbraid:\n    \u003cul\u003e\n      \u003cli\u003e\u003ci\u003ewbraid\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003ewbraid\u003c/i\u003e URL Parameter value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003eFPGCLGB\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003eFPGCLGB\u003c/i\u003e Common Cookie value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003eFPGCLGB\u003c/i\u003e Server Cookie value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003e_gcl_gb\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003egcl_gb\u003c/i\u003e Event Data value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003e_gcl_gb\u003c/i\u003e Common Cookie value\u003c/li\u003e\n      \u003cli\u003e\u003ci\u003e_gcl_gb\u003c/i\u003e JavaScript cookie value\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n\u003c/ul\u003e",
+                "help": "If enabled, the tag will attempt to automatically map the <i>gclid</i>, <i>gbraid</i> and <i>wbraid</i> values using the following sources (in order):\n<ul>\n<li>Event Data</li>\n<li>URL Parameter</li>\n<li>Server Cookie</li>\n<li>JavaScript Cookie</li>\n</ul>\n<br/>\nAny value you manually enter in a field below will always override the auto-mapped value.\n<br/><br/>\n\u26a0\ufe0f Note that this feature might break if Google changes the format of the cookie values. Stape will do its best to keep up with the changes. \n<br/><br/>\nDefault mappings:\n<ul>\n  <li>gclid:\n    <ul>\n      <li><i>gclid</i> Event Data value</li>\n      <li><i>gclid</i> URL Parameter value</li>\n      <li><i>FPGCLAW</i> Event Data value</li>\n      <li><i>FPGCLAW</i> Common Cookie value</li>\n      <li><i>FPGCLAW</i> Server Cookie value</li>\n      <li><i>_gcl_aw</i> Event Data value</li>\n      <li><i>gcl_aw</i> Event Data value</li>\n      <li><i>_gcl_aw</i> Common Cookie value</li>\n      <li><i>_gcl_aw</i> JavaScript cookie value</li>\n    </ul>\n  </li>\n  <li>gbraid:\n    <ul>\n      <li><i>gbraid</i> Event Data value</li>\n      <li><i>gbraid</i> URL Parameter value</li>\n      <li><i>FPGCLAG</i> Event Data value</li>\n      <li><i>FPGCLAG</i> Common Cookie value</li>\n      <li><i>FPGCLAG</i> Server Cookie value</li>\n      <li><i>_gcl_ag</i> Event Data value</li>\n      <li><i>gcl_ag</i> Event Data value</li>\n      <li><i>_gcl_ag</i> Common Cookie value</li>\n      <li><i>_gcl_ag</i> JavaScript cookie value</li>\n    </ul>\n  </li>\n  <li>wbraid:\n    <ul>\n      <li><i>wbraid</i> Event Data value</li>\n      <li><i>wbraid</i> URL Parameter value</li>\n      <li><i>FPGCLGB</i> Event Data value</li>\n      <li><i>FPGCLGB</i> Common Cookie value</li>\n      <li><i>FPGCLGB</i> Server Cookie value</li>\n      <li><i>_gcl_gb</i> Event Data value</li>\n      <li><i>gcl_gb</i> Event Data value</li>\n      <li><i>_gcl_gb</i> Common Cookie value</li>\n      <li><i>_gcl_gb</i> JavaScript cookie value</li>\n    </ul>\n  </li>\n</ul>",
                 "defaultValue": false
               },
               {
@@ -916,7 +901,7 @@ ___TEMPLATE_PARAMETERS___
                 "name": "adIdentifiersGclid",
                 "displayName": "gclid",
                 "simpleValueType": true,
-                "help": "The Google Click ID (\u003ci\u003egclid\u003c/i\u003e) associated with this event.\n\u003cbr/\u003e\nIt can also be used in GA4 if sending an event with a Transaction ID as an additional data source. \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/events/analytics/online\"Learn more\u003c/a\u003e."
+                "help": "The Google Click ID (<i>gclid</i>) associated with this event.\n<br/>\nIt can also be used in GA4 if sending an event with a Transaction ID as an additional data source. <a href=\"https://developers.google.com/data-manager/api/devguides/events/analytics/online\"Learn more</a>."
               },
               {
                 "type": "TEXT",
@@ -943,28 +928,28 @@ ___TEMPLATE_PARAMETERS___
                     "name": "adIdentifiersDclid",
                     "displayName": "dclid",
                     "simpleValueType": true,
-                    "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Display Click ID (for Floodlight conversions) associated with this event."
+                    "help": "For Floodlight conversions.\n<br/>\nThe Display Click ID (for Floodlight conversions) associated with this event."
                   },
                   {
                     "type": "TEXT",
                     "name": "adIdentifiersMatchId",
                     "displayName": "Match ID",
                     "simpleValueType": true,
-                    "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Match ID field used to join this event with a previous event."
+                    "help": "For Floodlight conversions.\n<br/>\nThe Match ID field used to join this event with a previous event."
                   },
                   {
                     "type": "TEXT",
                     "name": "adIdentifiersImpressionId",
                     "displayName": "Impression ID",
                     "simpleValueType": true,
-                    "help": "For Floodlight conversions.\n\u003cbr/\u003e\nThe Impression ID associated with this event."
+                    "help": "For Floodlight conversions.\n<br/>\nThe Impression ID associated with this event."
                   },
                   {
                     "type": "TEXT",
                     "name": "adIdentifiersEncryptedUserId",
                     "displayName": "Encrypted User ID",
                     "simpleValueType": true,
-                    "help": "For Floodlight conversions.\n\u003cbr/\u003e\nAn array of objects containing an user identifier issued to be used for attribution.\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#adidentifiers\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#encrypteduserid\"\u003e[2]\u003c/a\u003e."
+                    "help": "For Floodlight conversions.\n<br/>\nAn array of objects containing an user identifier issued to be used for attribution.\n<br/>\nLearn more: <a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#adidentifiers\">[1]</a> and <a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#encrypteduserid\">[2]</a>."
                   }
                 ],
                 "enablingConditions": [
@@ -980,21 +965,21 @@ ___TEMPLATE_PARAMETERS___
                 "name": "adIdentifiersMobileDeviceId",
                 "displayName": "Mobile Device ID",
                 "simpleValueType": true,
-                "help": "The mobile identifier for advertisers. This would be IDFA on iOS, AAID/GAID on Android, or other platforms’ identifiers for advertisers."
+                "help": "The mobile identifier for advertisers. This would be IDFA on iOS, AAID/GAID on Android, or other platforms\u2019 identifiers for advertisers."
               },
               {
                 "type": "TEXT",
                 "name": "adIdentifiersLandingPageDeviceInfoUserAgent",
                 "displayName": "Landing Page User Agent",
                 "simpleValueType": true,
-                "help": "Information gathered about the device\u0027s user agent being used (if any) at the time of landing onto the advertiser’s site after interacting with the ad."
+                "help": "Information gathered about the device's user agent being used (if any) at the time of landing onto the advertiser\u2019s site after interacting with the ad."
               },
               {
                 "type": "TEXT",
                 "name": "adIdentifiersLandingPageDeviceInfoIpAddress",
                 "displayName": "Landing Page IP Address",
                 "simpleValueType": true,
-                "help": "Information gathered about the device\u0027s IP address being used (if any) at the time of landing onto the advertiser’s site after interacting with the ad.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eNote:\u003c/b\u003e Google Ads does not support IP address matching for end users in the European Economic Area (EEA), United Kingdom (UK), or Switzerland (CH). Add logic to conditionally exclude sharing IP addresses from users from these regions and ensure that you provide users with clear and comprehensive information about the data you collect on your sites, apps, and other properties and get consent where required by law or any applicable Google policies. See the \u003ca href\u003d\"https://support.google.com/google-ads/answer/2998031\"\u003eAbout offline conversion imports page\u003c/a\u003e for more details."
+                "help": "Information gathered about the device's IP address being used (if any) at the time of landing onto the advertiser\u2019s site after interacting with the ad.\n<br/><br/>\n<b>Note:</b> Google Ads does not support IP address matching for end users in the European Economic Area (EEA), United Kingdom (UK), or Switzerland (CH). Add logic to conditionally exclude sharing IP addresses from users from these regions and ensure that you provide users with clear and comprehensive information about the data you collect on your sites, apps, and other properties and get consent where required by law or any applicable Google policies. See the <a href=\"https://support.google.com/google-ads/answer/2998031\">About offline conversion imports page</a> for more details."
               },
               {
                 "type": "SELECT",
@@ -1012,7 +997,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "If enabled, the tag will attempt to automatically map the \u003ci\u003eSession Attributes\u003c/i\u003e from, in this order: \n\u003cul\u003e\n\u003cli\u003e\u003ci\u003esession_attributes\u003c/i\u003e Event Data value\u003c/li\u003e\n\u003cli\u003e \u003ci\u003e_dm_session_attributes\u003c/i\u003e Common Cookie value \u003c/li\u003e \n\u003cli\u003e\u003ci\u003e_dm_session_attributes\u003c/i\u003e cookie set by the Pageview event\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eSession Attribute \u003ci\u003egad_source\u003c/i\u003e: \u003ci\u003egad_source\u003c/i\u003e URL Parameter value \u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003egad_campaignid\u003c/i\u003e: \u003ci\u003egad_campaignid\u003c/i\u003e URL Parameter value\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_url\u003c/i\u003e: \u003ci\u003epage_location\u003c/i\u003e Event Data value\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_referrer\u003c/i\u003e: \u003ci\u003epage_referrer\u003c/i\u003e Event Data value\u003c/li\u003e\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003elanding_page_user_agent\u003c/i\u003e: \u003ci\u003euser_agent\u003c/i\u003e Event Data value\u003c/li\u003e\u003c/li\u003e\n\u003cli\u003eSession Attribute \u003ci\u003esession_start_time_usec\u003c/i\u003e: current timestamp of the time when the Pageview tag set the cookie\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://support.google.com/google-ads/answer/16194756?hl\u003den\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://ads-developers.googleblog.com/2025/08/maximize-performance-of-your-google-ads.html\"\u003e[2]\u003c/a\u003e.",
+                "help": "If enabled, the tag will attempt to automatically map the <i>Session Attributes</i> from, in this order: \n<ul>\n<li><i>session_attributes</i> Event Data value</li>\n<li> <i>_dm_session_attributes</i> Common Cookie value </li> \n<li><i>_dm_session_attributes</i> cookie set by the Pageview event</li>\n</ul>\n<br/>\nAny value you manually enter in a field below will always override the auto-mapped value.\n<br/><br/>\nDefault mappings:\n<ul>\n<li>Session Attribute <i>gad_source</i>: <i>gad_source</i> URL Parameter value </li>\n<li>Session Attribute <i>gad_campaignid</i>: <i>gad_campaignid</i> URL Parameter value</li>\n<li>Session Attribute <i>landing_page_url</i>: <i>page_location</i> Event Data value</li>\n<li>Session Attribute <i>landing_page_referrer</i>: <i>page_referrer</i> Event Data value</li></li>\n<li>Session Attribute <i>landing_page_user_agent</i>: <i>user_agent</i> Event Data value</li></li>\n<li>Session Attribute <i>session_start_time_usec</i>: current timestamp of the time when the Pageview tag set the cookie</li>\n</ul>\n<br/>\nLearn more: <a href=\"https://support.google.com/google-ads/answer/16194756?hl=en\">[1]</a> and <a href=\"https://ads-developers.googleblog.com/2025/08/maximize-performance-of-your-google-ads.html\">[2]</a>.",
                 "defaultValue": true
               },
               {
@@ -1020,7 +1005,7 @@ ___TEMPLATE_PARAMETERS___
                 "name": "adIdentifiersSessionAttributes",
                 "displayName": "Session Attributes String",
                 "simpleValueType": true,
-                "help": "Session attributes string for conversion event attribution and modeling.\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://support.google.com/google-ads/answer/16194756?hl\u003den\"\u003e[1]\u003c/a\u003e and \u003ca href\u003d\"https://ads-developers.googleblog.com/2025/08/maximize-performance-of-your-google-ads.html\"\u003e[2]\u003c/a\u003e."
+                "help": "Session attributes string for conversion event attribution and modeling.\n<br/>\nLearn more: <a href=\"https://support.google.com/google-ads/answer/16194756?hl=en\">[1]</a> and <a href=\"https://ads-developers.googleblog.com/2025/08/maximize-performance-of-your-google-ads.html\">[2]</a>."
               }
             ]
           },
@@ -1046,7 +1031,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n\u003cbr/\u003e\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eUser Agent: \u003ci\u003eeventData.user_agent\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eIP Address: \u003ci\u003eeventData.ip_override\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eScreen Width: \u003ci\u003eeventData.screen_resolution.split(\u0027x\u0027)[0]\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003eScreen Height: \u003ci\u003eeventData.screen_resolution.split(\u0027x\u0027)[1]\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n<br/><br/>\nAny value you manually enter in a field below will always override the auto-mapped value.\n<br/><br/>\nDefault mappings:\n<ul>\n<li>User Agent: <i>eventData.user_agent</i></li>\n<li>IP Address: <i>eventData.ip_override</i></li>\n<li>Screen Width: <i>eventData.screen_resolution.split('x')[0]</i></li>\n<li>Screen Height: <i>eventData.screen_resolution.split('x')[1]</i></li>\n</ul>",
                 "defaultValue": true
               },
               {
@@ -1054,14 +1039,14 @@ ___TEMPLATE_PARAMETERS___
                 "name": "eventDeviceInfoUserAgent",
                 "displayName": "User Agent",
                 "simpleValueType": true,
-                "help": "Information gathered about the device\u0027s user agent being used (if any) when the event happened."
+                "help": "Information gathered about the device's user agent being used (if any) when the event happened."
               },
               {
                 "type": "TEXT",
                 "name": "eventDeviceInfoIpAddress",
                 "displayName": "IP Address",
                 "simpleValueType": true,
-                "help": "Information gathered about the device\u0027s IP address being used (if any) when the event happened.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eNote:\u003c/b\u003e Google Ads does not support IP address matching for end users in the European Economic Area (EEA), United Kingdom (UK), or Switzerland (CH). Add logic to conditionally exclude sharing IP addresses from users from these regions and ensure that you provide users with clear and comprehensive information about the data you collect on your sites, apps, and other properties and get consent where required by law or any applicable Google policies. See the \u003ca href\u003d\"https://support.google.com/google-ads/answer/2998031\"\u003eAbout offline conversion imports page\u003c/a\u003e for more details."
+                "help": "Information gathered about the device's IP address being used (if any) when the event happened.\n<br/><br/>\n<b>Note:</b> Google Ads does not support IP address matching for end users in the European Economic Area (EEA), United Kingdom (UK), or Switzerland (CH). Add logic to conditionally exclude sharing IP addresses from users from these regions and ensure that you provide users with clear and comprehensive information about the data you collect on your sites, apps, and other properties and get consent where required by law or any applicable Google policies. See the <a href=\"https://support.google.com/google-ads/answer/2998031\">About offline conversion imports page</a> for more details."
               },
               {
                 "type": "SIMPLE_TABLE",
@@ -1134,7 +1119,7 @@ ___TEMPLATE_PARAMETERS___
                     ]
                   }
                 ],
-                "help": "\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#deviceinfo\"\u003eLearn more\u003c/a\u003e.",
+                "help": "<a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#deviceinfo\">Learn more</a>.",
                 "newRowButtonText": "Add Property"
               }
             ]
@@ -1227,7 +1212,7 @@ ___TEMPLATE_PARAMETERS___
                       }
                     ],
                     "newRowButtonText": "Add User Property",
-                    "help": "\u003ca href\u003d\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/user-properties\"\u003eLearn more\u003c/a\u003e."
+                    "help": "<a href=\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/user-properties\">Learn more</a>."
                   }
                 ],
                 "enablingConditions": [
@@ -1262,7 +1247,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "simpleValueType": true,
-                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n\u003cbr/\u003e\u003cbr/\u003e\nAny value you manually enter in a field below will always override the auto-mapped value.\n\u003cbr/\u003e\u003cbr/\u003e\nDefault mappings:\n\u003cul\u003e\n\u003cli\u003eItems: \u003ci\u003eeventData.items\u003c/i\u003e and \u003ci\u003eeventData.ecommerce.items\u003c/i\u003e. It only auto-maps items that have an \u003ci\u003eItem ID\u003c/i\u003e. Auto-mapped properties: \u003ci\u003eitemId\u003c/i\u003e, \u003ci\u003emerchantProductId\u003c/i\u003e (same as Item ID), \u003ci\u003equantity\u003c/i\u003e and \u003ci\u003eunitPrice\u003c/i\u003e. If the \u003ci\u003eAdd other Item Parameters\u003c/i\u003e checkbox below is enabled, any other item property is also mapped to \u003ci\u003eadditionalItemParameters\u003c/i\u003e for GA4 (and to \u003ci\u003ecustomVariables\u003c/i\u003e for Google Ads Store Sales conversions).\u003c/li\u003e\n\u003cli\u003eCoupon Codes: \u003ci\u003eeventData.coupon\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+                "help": "If enabled, the tag will attempt to automatically map parameters from the Event Data.\n<br/><br/>\nAny value you manually enter in a field below will always override the auto-mapped value.\n<br/><br/>\nDefault mappings:\n<ul>\n<li>Items: <i>eventData.items</i> and <i>eventData.ecommerce.items</i>. It only auto-maps items that have an <i>Item ID</i>. Auto-mapped properties: <i>itemId</i>, <i>merchantProductId</i> (same as Item ID), <i>quantity</i> and <i>unitPrice</i>. If the <i>Add other Item Parameters</i> checkbox below is enabled, any other item property is also mapped to <i>additionalItemParameters</i> for GA4 (and to <i>customVariables</i> for Google Ads Store Sales conversions).</li>\n<li>Coupon Codes: <i>eventData.coupon</i></li>\n</ul>",
                 "defaultValue": true,
                 "subParams": [
                   {
@@ -1270,7 +1255,7 @@ ___TEMPLATE_PARAMETERS___
                     "name": "itemIdKey",
                     "displayName": "Custom Item ID Key",
                     "simpleValueType": true,
-                    "help": "Optional. \u003cbr/\u003e\u003cbr/\u003e You can specify a custom key, which will be used to set the content Item ID, by default \u003ci\u003eitem_id\u003c/i\u003e will be used. This may be useful if you are using WooCommerce extensions.",
+                    "help": "Optional. <br/><br/> You can specify a custom key, which will be used to set the content Item ID, by default <i>item_id</i> will be used. This may be useful if you are using WooCommerce extensions.",
                     "enablingConditions": [
                       {
                         "paramName": "autoMapCartData",
@@ -1286,21 +1271,21 @@ ___TEMPLATE_PARAMETERS___
                 "name": "cartDataMerchantId",
                 "displayName": "Merchant Center Account ID",
                 "simpleValueType": true,
-                "help": "The Merchant Center Account ID.\n\u003cbr/\u003e\u003cbr/\u003e\nThis is located in the top-left corner under your account name. \n\u003cbr/\u003e\nAlternatively, you can find it in the URL as the value for the \u003ci\u003ea\u003d{Account ID}\u003c/i\u003e parameter."
+                "help": "The Merchant Center Account ID.\n<br/><br/>\nThis is located in the top-left corner under your account name. \n<br/>\nAlternatively, you can find it in the URL as the value for the <i>a={Account ID}</i> parameter."
               },
               {
                 "type": "TEXT",
                 "name": "cartDataMerchantFeedLabel",
                 "displayName": "Merchant Center Feed Label",
                 "simpleValueType": true,
-                "help": "The Merchant Center feed label associated with the feed of the items.\n\u003cbr/\u003e\u003cbr/\u003e\nYou can find it in the URL while editing a product in Merchant Center (e.g., \u003ci\u003efeedLabel\u003dDK\u003c/i\u003e). \n\u003cbr/\u003e\nAlternatively, add the \u003cb\u003eFeed Label\u003c/b\u003e column to your product table overview to see this value directly."
+                "help": "The Merchant Center feed label associated with the feed of the items.\n<br/><br/>\nYou can find it in the URL while editing a product in Merchant Center (e.g., <i>feedLabel=DK</i>). \n<br/>\nAlternatively, add the <b>Feed Label</b> column to your product table overview to see this value directly."
               },
               {
                 "type": "TEXT",
                 "name": "cartDataMerchantFeedLanguageCode",
                 "displayName": "Merchant Center Feed Language Code",
                 "simpleValueType": true,
-                "help": "The language code in ISO 639-1 associated with the Merchant Center feed of the items.where your items are uploaded.\n\u003cbr/\u003e\u003cbr/\u003e\nYou can find it in the URL while editing a product in Merchant Center (e.g., \u003ci\u003elanguage\u003dda\u003c/i\u003e). \n\u003cbr/\u003e\nAlternatively, add the \u003cb\u003eFeed Language\u003c/b\u003e column to your product table overview to see this value directly."
+                "help": "The language code in ISO 639-1 associated with the Merchant Center feed of the items.where your items are uploaded.\n<br/><br/>\nYou can find it in the URL while editing a product in Merchant Center (e.g., <i>language=da</i>). \n<br/>\nAlternatively, add the <b>Feed Language</b> column to your product table overview to see this value directly."
               },
               {
                 "type": "TEXT",
@@ -1314,14 +1299,14 @@ ___TEMPLATE_PARAMETERS___
                 "name": "cartDataCouponCodes",
                 "displayName": "Cart-level Coupon Codes",
                 "simpleValueType": true,
-                "help": "The coupon codes that were applied to the cart. Cart-level and item-level coupon codes are independent.\n\u003cbr/\u003e\nSpecify a single coupon code, or an array of coupon codes."
+                "help": "The coupon codes that were applied to the cart. Cart-level and item-level coupon codes are independent.\n<br/>\nSpecify a single coupon code, or an array of coupon codes."
               },
               {
                 "type": "CHECKBOX",
                 "name": "addAdditionalItemParameters",
                 "checkboxText": "Add other Item Parameters in Additional Item Parameters (for GA4) and Custom Variables (for Google Ads Store Sales only).",
                 "simpleValueType": true,
-                "help": "If enabled, any item property that is not \u003ci\u003emerchantProductId\u003c/i\u003e, \u003ci\u003eitemId\u003c/i\u003e, \u003ci\u003equantity\u003c/i\u003e or \u003ci\u003eunitPrice\u003c/i\u003e will also be added, per item, to \u003ci\u003eadditionalItemParameters\u003c/i\u003e (used by Google Analytics) and \u003ci\u003ecustomVariables\u003c/i\u003e (used by Google Ads and Floodlight).",
+                "help": "If enabled, any item property that is not <i>merchantProductId</i>, <i>itemId</i>, <i>quantity</i> or <i>unitPrice</i> will also be added, per item, to <i>additionalItemParameters</i> (used by Google Analytics) and <i>customVariables</i> (used by Google Ads and Floodlight).",
                 "defaultValue": false
               },
               {
@@ -1329,7 +1314,7 @@ ___TEMPLATE_PARAMETERS___
                 "name": "cartDataItems",
                 "displayName": "Items",
                 "simpleValueType": true,
-                "help": "The array of items associated with the event.\n\u003cbr/\u003e\nEach item in the array is an object that must follow the \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#item\"\u003eItem\u003c/a\u003e object guidelines and supported properties.\n\u003cbr/\u003e\u003cbr/\u003e\nSupported properties: \n\u003cul\u003e\n\u003cli\u003e\u003ci\u003eitemId\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003emerchantProductId\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003equantity\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eunitPrice\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003emerchantId\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003emerchantFeedLabel\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003emerchantFeedLanguageCode\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003econversionValue\u003c/i\u003e\u003c/li\u003e\n\u003cli\u003e\u003ci\u003eadditionalItemParameters\u003c/i\u003e (for GA4) and \u003ci\u003ecustomVariables\u003c/i\u003e (the latter, only for Google Ads Store Sales conversions)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cbr/\u003e\nIf an item has neither an \u003ci\u003eitemId\u003c/i\u003e nor a \u003ci\u003emerchantProductId\u003c/i\u003e property, it won\u0027t be included in the array."
+                "help": "The array of items associated with the event.\n<br/>\nEach item in the array is an object that must follow the <a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#item\">Item</a> object guidelines and supported properties.\n<br/><br/>\nSupported properties: \n<ul>\n<li><i>itemId</i></li>\n<li><i>merchantProductId</i></li>\n<li><i>quantity</i></li>\n<li><i>unitPrice</i></li>\n<li><i>merchantId</i></li>\n<li><i>merchantFeedLabel</i></li>\n<li><i>merchantFeedLanguageCode</i></li>\n<li><i>conversionValue</i></li>\n<li><i>additionalItemParameters</i> (for GA4) and <i>customVariables</i> (the latter, only for Google Ads Store Sales conversions)</li>\n</ul>\n<br/>\nIf an item has neither an <i>itemId</i> nor a <i>merchantProductId</i> property, it won't be included in the array."
               }
             ]
           },
@@ -1378,7 +1363,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "newRowButtonText": "Add Custom Variable",
-                "help": "\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#customvariable\"\u003eLearn more\u003c/a\u003e about Custom Variables.\n\u003cbr/\u003e\n\u003ca href\u003d\"https://github.com/stape-io/google-conversion-events-tag?tab\u003dreadme-ov-file#how-to-obtain-the-variable-id\"\u003eLearn more\u003c/a\u003e about how to obtain the \u003ci\u003eCustom Variable ID\u003c/i\u003e.\n\u003cbr/\u003e\nIn the optional \u003ci\u003eDestination References\u003c/i\u003e column, you may leave it blank, or specify either a single reference or an array of references.",
+                "help": "<a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#customvariable\">Learn more</a> about Custom Variables.\n<br/>\n<a href=\"https://github.com/stape-io/google-conversion-events-tag?tab=readme-ov-file#how-to-obtain-the-variable-id\">Learn more</a> about how to obtain the <i>Custom Variable ID</i>.\n<br/>\nIn the optional <i>Destination References</i> column, you may leave it blank, or specify either a single reference or an array of references.",
                 "displayName": "Custom Variables"
               }
             ]
@@ -1444,7 +1429,7 @@ ___TEMPLATE_PARAMETERS___
                     ]
                   }
                 ],
-                "help": "The location where the event occurred. \n\u003cbr/\u003e\nUseful for Store Sales conversions for Google Ads, or for adding geographical information to a Google Analytics event.\n\u003cbr/\u003e\n\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#eventlocation\"\u003eLearn more\u003c/a\u003e.",
+                "help": "The location where the event occurred. \n<br/>\nUseful for Store Sales conversions for Google Ads, or for adding geographical information to a Google Analytics event.\n<br/>\n<a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#eventlocation\">Learn more</a>.",
                 "newRowButtonText": "Add Property"
               }
             ]
@@ -1485,7 +1470,7 @@ ___TEMPLATE_PARAMETERS___
                   }
                 ],
                 "newRowButtonText": "Add Parameter",
-                "help": "Populate this list with any Google Analytics event parameters that aren\u0027t captured in the other fields. The parameters can include \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/analytics/recommended-events\"\u003eadditional recommended parameters\u003c/a\u003e for the event or any other parameters you want to capture.\n\u003cbr/\u003e\nLearn more: \u003ca href\u003d\"https://developers.google.com/data-manager/api/devguides/events/send-events#add_analytics_info\"\u003e[1]\u003c/a\u003e, \u003ca href\u003d\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events\"\u003e[2]\u003c/a\u003e and \u003ca href\u003d\"https://support.google.com/analytics/answer/9267744?hl\u003den\"\u003e[3]\u003c/a\u003e."
+                "help": "Populate this list with any Google Analytics event parameters that aren't captured in the other fields. The parameters can include <a href=\"https://developers.google.com/data-manager/api/reference/analytics/recommended-events\">additional recommended parameters</a> for the event or any other parameters you want to capture.\n<br/>\nLearn more: <a href=\"https://developers.google.com/data-manager/api/devguides/events/send-events#add_analytics_info\">[1]</a>, <a href=\"https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events\">[2]</a> and <a href=\"https://support.google.com/analytics/answer/9267744?hl=en\">[3]</a>."
               }
             ],
             "enablingConditions": [
@@ -1514,7 +1499,7 @@ ___TEMPLATE_PARAMETERS___
             "name": "conversionEvents",
             "displayName": "Conversion Events Array",
             "simpleValueType": true,
-            "help": "Specify the Conversion Events array. This is useful when you need to upload data for multiple conversion events at once. At most 2000 Conversion Events can be specified in the array.\n\u003cbr/\u003e\u003cbr/\u003e\nThe array must be formatted as specified in the\nGoogle Documentation. You can specify different consent types for each Conversion Event, overriding the request-level consent.\n\u003cbr/\u003e\u003cbr/\u003e\n\u003cb\u003eIf you already pass SHA256 hashed fields to \u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/UserData\"\u003e\u003ci\u003eUserData\u003c/i\u003e\u003c/a\u003e field, make sure to specify the SHA256 hash encoding in the corresponding template field. Otherwise, the tag will hash it automatically and set it for you.\u003c/b\u003e\n\u003cbr/\u003e\u003cbr/\u003e\nWhen working with multiple Conversion Event IDs, you can direct an event to a specific subset of them. To do so, list the desired Conversion Event IDs in the \u003ca target\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#event\"\u003e\u003ci\u003edestinationReferences\u003c/i\u003e\u003c/a\u003e array.\n\u003cbr/\u003e\u003cbr/\u003e\nReferences: \n\u003cul\u003e\n\u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#Event\"\u003eConversion Event\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/formatting\"\u003eNormalization guidelines\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href\u003d\"https://developers.google.com/data-manager/api/get-started/quickstart/send-events?persona\u003dadvertiser#build_the_request_body\"\u003eExample\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+            "help": "Specify the Conversion Events array. This is useful when you need to upload data for multiple conversion events at once. At most 2000 Conversion Events can be specified in the array.\n<br/><br/>\nThe array must be formatted as specified in the\nGoogle Documentation. You can specify different consent types for each Conversion Event, overriding the request-level consent.\n<br/><br/>\n<b>If you already pass SHA256 hashed fields to <a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/UserData\"><i>UserData</i></a> field, make sure to specify the SHA256 hash encoding in the corresponding template field. Otherwise, the tag will hash it automatically and set it for you.</b>\n<br/><br/>\nWhen working with multiple Conversion Event IDs, you can direct an event to a specific subset of them. To do so, list the desired Conversion Event IDs in the <a target=\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#event\"><i>destinationReferences</i></a> array.\n<br/><br/>\nReferences: \n<ul>\n<li><a href=\"https://developers.google.com/data-manager/api/reference/rest/v1/events/ingest#Event\">Conversion Event</a></li>\n<li><a href=\"https://developers.google.com/data-manager/api/get-started/formatting\">Normalization guidelines</a></li>\n<li><a href=\"https://developers.google.com/data-manager/api/get-started/quickstart/send-events?persona=advertiser#build_the_request_body\">Example</a></li>\n</ul>",
             "valueValidators": [
               {
                 "type": "NON_EMPTY"
@@ -1542,7 +1527,7 @@ ___TEMPLATE_PARAMETERS___
             "name": "xGoogUserProject",
             "displayName": "X-Goog-User-Project header",
             "simpleValueType": true,
-            "help": "A request header that specifies the GCP project to bill for access charges associated with the request.\n\u003ca href\u003d\"https://docs.cloud.google.com/storage/docs/json_api/v1/parameters#xgooguserproject\"\u003eLearn more.\u003c/a\u003e"
+            "help": "A request header that specifies the GCP project to bill for access charges associated with the request.\n<a href=\"https://docs.cloud.google.com/storage/docs/json_api/v1/parameters#xgooguserproject\">Learn more.</a>"
           }
         ],
         "enablingConditions": [
@@ -1580,7 +1565,7 @@ ___TEMPLATE_PARAMETERS___
           {
             "value": "required",
             "displayValue": "Send data in case marketing consent given",
-            "help": "Aborts the tag execution if marketing consent (\u003ci\u003ead_storage\u003c/i\u003e Google Consent Mode or Stape\u0027s Data Tag parameter) is not given."
+            "help": "Aborts the tag execution if marketing consent (<i>ad_storage</i> Google Consent Mode or Stape's Data Tag parameter) is not given."
           }
         ],
         "simpleValueType": true,
@@ -1613,15 +1598,7 @@ ___TEMPLATE_PARAMETERS___
         ],
         "simpleValueType": true,
         "defaultValue": "debug"
-      }
-    ]
-  },
-  {
-    "displayName": "BigQuery Logs Settings",
-    "name": "bigQueryLogsGroup",
-    "groupStyle": "ZIPPY_CLOSED",
-    "type": "GROUP",
-    "subParams": [
+      },
       {
         "type": "RADIO",
         "name": "bigQueryLogType",
@@ -1639,40 +1616,16 @@ ___TEMPLATE_PARAMETERS___
         "defaultValue": "no"
       },
       {
-        "type": "GROUP",
-        "name": "logsBigQueryConfigGroup",
-        "groupStyle": "NO_ZIPPY",
-        "subParams": [
+        "type": "TEXT",
+        "name": "logBigQueryTable",
+        "displayName": "BigQuery Table",
+        "simpleValueType": true,
+        "valueValidators": [
           {
-            "type": "TEXT",
-            "name": "logBigQueryProjectId",
-            "displayName": "BigQuery Project ID",
-            "simpleValueType": true,
-            "help": "Optional.  \u003cbr\u003e\u003cbr\u003e  If omitted, it will be retrieved from the environment variable \u003cI\u003eGOOGLE_CLOUD_PROJECT\u003c/i\u003e where the server container is running. If the server container is running on Google Cloud, \u003cI\u003eGOOGLE_CLOUD_PROJECT\u003c/i\u003e will already be set to the Google Cloud project\u0027s ID."
-          },
-          {
-            "type": "TEXT",
-            "name": "logBigQueryDatasetId",
-            "displayName": "BigQuery Dataset ID",
-            "simpleValueType": true,
-            "valueValidators": [
-              {
-                "type": "NON_EMPTY"
-              }
-            ]
-          },
-          {
-            "type": "TEXT",
-            "name": "logBigQueryTableId",
-            "displayName": "BigQuery Table ID",
-            "simpleValueType": true,
-            "valueValidators": [
-              {
-                "type": "NON_EMPTY"
-              }
-            ]
+            "type": "NON_EMPTY"
           }
         ],
+        "help": "The table to log to, as <i>project.dataset.table</i>.<br><br>Write it as <i>dataset.table</i> to take the project from the <i>GOOGLE_CLOUD_PROJECT</i> environment variable of the server container. On Google Cloud that is already set to the project's ID.<br><br>One field rather than three because Google caps a custom template at 100 fields, and the tag sits on that cap.",
         "enablingConditions": [
           {
             "paramName": "bigQueryLogType",
@@ -3155,12 +3108,30 @@ function logConsole(dataToLog) {
   logToConsole(JSON.stringify(dataToLog));
 }
 
+function getBigQueryConnectionInfo() {
+  // One field instead of upstream's three. Google caps a custom template at 100
+  // fields and this template already sits on that cap, so the whole target is
+  // written as 'project.dataset.table'. Two parts means the project comes from
+  // the container's GOOGLE_CLOUD_PROJECT, which is what an omitted projectId did
+  // before.
+  const parts = (data.logBigQueryTable || '').split('.');
+
+  if (parts.length === 3) {
+    return { projectId: parts[0], datasetId: parts[1], tableId: parts[2] };
+  }
+
+  if (parts.length === 2) {
+    return { datasetId: parts[0], tableId: parts[1] };
+  }
+
+  return undefined;
+}
+
 function logToBigQuery(dataToLog) {
-  const connectionInfo = {
-    projectId: data.logBigQueryProjectId,
-    datasetId: data.logBigQueryDatasetId,
-    tableId: data.logBigQueryTableId
-  };
+  const connectionInfo = getBigQueryConnectionInfo();
+  // A malformed table is the one thing here that can throw, and a logging call
+  // must never take the tag down with it.
+  if (!connectionInfo) return;
 
   dataToLog.timestamp = getTimestampMillis();
 
