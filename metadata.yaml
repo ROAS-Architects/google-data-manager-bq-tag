@@ -1,5 +1,5 @@
 homepage: 'https://roasarchitects.com/?utm_source=gtm-gallery&utm_medium=referral&utm_campaign=google-data-manager-bq'
-documentation: 'https://github.com/ROAS-Architects/google-conversion-events-tag'
+documentation: 'https://github.com/ROAS-Architects/google-data-manager-bq-tag'
 versions:
   - sha: d8461045722e0dba2ee4808b830e73dfd6b126fe
     changeNotes: >-
