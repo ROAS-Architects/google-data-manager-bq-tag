@@ -1,4 +1,4 @@
-# Google Data Manager API Conversion Events Tag for GTM Server Side, with BigQuery logging
+# Google Data Manager + BQ by ROAS Architects
 
 A fork of
 [`stape-io/google-conversion-events-tag`](https://github.com/stape-io/google-conversion-events-tag),
