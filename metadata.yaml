@@ -1,6 +1,10 @@
 homepage: 'https://roasarchitects.com/?utm_source=gtm-gallery&utm_medium=referral&utm_campaign=google-data-manager-bq'
 documentation: 'https://github.com/ROAS-Architects/google-data-manager-bq-tag'
 versions:
+  - sha: 0b24e125a46b002f476c48ce3c2feb1bf054eaf2
+    changeNotes: >-
+      Renamed the template to "Google Data Manager + BQ by ROAS Architects" so
+      the gallery listing names its submitter. No functional change.
   - sha: d8461045722e0dba2ee4808b830e73dfd6b126fe
     changeNotes: >-
       Restored the BigQuery request/response logging removed upstream, in two
